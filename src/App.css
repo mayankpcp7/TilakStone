@@ -10,14 +10,14 @@
 
 input[type="text"] {
   height: 52px;
-  /* color: #666666 !important; */
+  color: #666666 !important;
 }
 
 ::placeholder {
   color: #666666 !important;
 }
 
-.input ::placeholder {
+input::placeholder {
   color: #666666 !important;
 }
 
@@ -43,6 +43,7 @@ input[type="text"] {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .success-popup {
   transform: translate(-50%, -50%);
   z-index: 999;
