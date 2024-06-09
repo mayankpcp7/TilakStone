@@ -31,8 +31,9 @@ module.exports = {
       lineHeight: {
         full: "100%",
         sm: "120%",
-        md: "150%",
-        lg: "166%",
+        md: "125%",
+        lg: "150%",
+        xl: "166%",
       },
     },
   },
