@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { LocationIcon, MessageIcon, PhoneIcon } from './common/Icons';
-import contactVector from '../assets/images/webp/contact/contectVector.png';
-import temple from '../assets/images/webp/contact/temple.png';
+import contactVector from '../assets/images/webp/contact/contectVector.webp';
+import temple from '../assets/images/webp/contact/temple.webp';
 
 
 const ContactInformation = () => {
