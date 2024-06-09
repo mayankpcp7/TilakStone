@@ -18,6 +18,7 @@ module.exports = {
         blogPera: "#000700",
         blogBorder: "#D4D4D4",
         skyBlue: "#4286F4",
+        lightBlack: "#43181829",
       },
       fontFamily: {
         plusJkarta: "Plus Jakarta Sans",
@@ -34,6 +35,7 @@ module.exports = {
         md: "125%",
         lg: "150%",
         xl: "166%",
+        "2md":"140%",
       },
     },
   },

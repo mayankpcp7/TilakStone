@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LocationIcon, MessageIcon, PhoneIcon } from './common/Icons';
 import contactVector from '../assets/images/webp/contact/contectVector.webp';
 import temple from '../assets/images/webp/contact/temple.webp';
-
-
 const ContactInformation = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -26,6 +24,7 @@ const ContactInformation = () => {
         box: "",
     });
     const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData((prevFormData) => ({
@@ -40,9 +39,9 @@ const ContactInformation = () => {
             lastname: /^[a-zA-Z\s]+$/,
             company: /^[a-zA-Z\s]+$/,
             city: /^[a-zA-Z\s]+$/,
-            details: /^[a-zA-Z\s]+$/,
+            details: /^\S+/,
             email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-            message: /^[a-zA-Z\s]+$/,
+            message: /^\S+/,
         };
         const errors = {};
         if (!regex.name.test(formData.name)) {
@@ -73,6 +72,10 @@ const ContactInformation = () => {
         if (Object.keys(errors).length === 0) {
             setShowSuccessPopup(true);
         }
+        setFormErrors(errors);
+        if (Object.keys(errors).length === 0) {
+            setShowSuccessPopup(true);
+        }
     };
     const handlePopupClose = () => {
         setShowSuccessPopup(false);
@@ -97,8 +100,25 @@ const ContactInformation = () => {
             box: "",
         });
     };
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (!e.target.closest(".success-popup")) {
+                handlePopupClose();
+            }
+        };
+        if (showSuccessPopup) {
+            document.addEventListener("mousedown", handleOutsideClick);
+        } else {
+            document.removeEventListener("mousedown", handleOutsideClick);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, [showSuccessPopup]);
+
     return (
-        <div className='pt-[140px] relative'>
+        <div className={`pt-[140px] relative ${showSuccessPopup ? 'bg-blur' : ''}`}>
             <img src={contactVector} alt="contactVector" className="pointer-events-none absolute right-[-2%] lg:right-0 max-w-[164px] h-[222px] lg:max-w-[235px] lg:h-[318px] top-[7%] lg:top-[15%] md:block hidden" />
             <img src={temple} alt="temple" className="pointer-events-none absolute left-[-47%] lg:left-[-28%] max-w-[846] h-[877px] top-[10%] lg:top-0 z-[0] md:block hidden" />
             <div className='container xl:max-w-[1164px] px-3 mx-auto relative z-[1]'>
@@ -106,8 +126,8 @@ const ContactInformation = () => {
                 <div className='bg-white rounded-2xl shadow-[0px_0px_10px_0px_#0000001A]'>
                     <div className='lg:p-[32px_32px_34px_32px] sm:p-[50px_44px_50px_44px] p-[20px_12px_20px_12px] flex flex-row flex-wrap justify-between items-cen ter'>
                         <div className='lg:w-[42.2%] w-full '>
-                            <div className='rounded-xl bg-[#FCF7E9] sm:p-[32px_44px_32px_30px] p-[15px] '>
-                                <h3 className='font-medium font-plusJkarta text-black text-base sm:text-[28px] leading-[140%] mb-3'>Contact Information</h3>
+                            <div className='rounded-xl bg-lightBrown sm:p-[32px_44px_32px_30px] p-[15px] '>
+                                <h3 className='font-medium font-plusJkarta text-black text-base sm:text-3xl leading-2md mb-3'>Contact Information</h3>
                                 <p className='text-black font-plusJkarta opacity-[80%] font-normal text-sm sm:text-base max-w-[380px] mb-6 lg:pr-5'>Please drop in your details. Our team will get in touch with you soon.</p>
                                 <div className='flex items-center gap-3 mb-4'>
                                     <div>
@@ -138,8 +158,8 @@ const ContactInformation = () => {
                         <div className='lg:w-[52%] w-full mt-[40px] md:mt-[60px] lg:mt-0'>
                             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
                                 <div className='flex sm:flex-row flex-col sm:gap-4'>
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded "
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded "
                                             type="text"
                                             placeholder="First Name*"
                                             id="name"
@@ -152,8 +172,8 @@ const ContactInformation = () => {
                                             <p className="error-message font-plusJkarta">{formErrors.name}</p>
                                         )}
                                     </div>
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Last Name*"
                                             id="lastname"
@@ -168,8 +188,8 @@ const ContactInformation = () => {
                                     </div>
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Email*"
                                             id="email"
@@ -182,8 +202,8 @@ const ContactInformation = () => {
                                             <p className="error-message font-plusJkarta">{formErrors.email}</p>
                                         )}
                                     </div>
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Company*"
                                             id="company"
@@ -198,8 +218,8 @@ const ContactInformation = () => {
                                     </div>
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="City*"
                                             id="city"
@@ -212,8 +232,8 @@ const ContactInformation = () => {
                                             <p className="error-message font-plusJkarta">{formErrors.city}</p>
                                         )}
                                     </div>
-                                    <div className="form-group lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                    <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
+                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Customer details*"
                                             id="details"
@@ -227,8 +247,8 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                 </div>
-                                <div className="form-group w-full sm:mb-[20px] mb-[15px]">
-                                    <textarea className="resize-none font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-[#43181829] rounded"
+                                <div className="w-full sm:mb-[20px] mb-[15px]">
+                                    <textarea className="resize-none font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                         type="text"
                                         placeholder="Message*"
                                         id="message"
@@ -243,7 +263,7 @@ const ContactInformation = () => {
                                         <p className="error-message font-plusJkarta">{formErrors.message}</p>
                                     )}
                                 </div>
-                                <div className="form-group w-full sm:mb-[32px] mb-[35px]">
+                                <div className="w-full sm:mb-[32px] mb-[35px]">
                                     <div className="flex gap-3">
                                         <input className="custom-checkbox text-base w-[20px] h-[20px] sm:h-[24px] sm:w-[24px] font-normal p-3 outline-none rounded"
                                             type="checkbox"
@@ -263,9 +283,11 @@ const ContactInformation = () => {
                                 </button>
                             </form>
                             {showSuccessPopup && (
-                                <div className="success-popup fixed top-[50%] left-[50%] w-full max-w-[550px] bg-white border border-solid border-darkYellow p-[40px] rounded  shadow-[0px_0px_10px_0px_#0000001A] ">
-                                    <p className="mb-[40px] text-black text-3xl font-plusJkarta text-center">Form submitted successfully!</p>
-                                    <button onClick={handlePopupClose}>Close</button>
+                                <div className="success-popup fixed top-[50%] left-[50%] h-[200px] sm:h-[280px] md:h-[350px] w-full max-w-[300px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] bg-white border border-solid border-darkYellow p-[20px] sm:p-[40px] rounded  shadow-[0px_0px_10px_0px_#0000001A] flex justify-center items-center flex-col">
+                                    <p className="mb-[40px] text-black text-xl sm:text-3xl font-semibold font-plusJkarta text-center leading-lg">Your form submitted successfully!</p>
+                                    <div className="flex justify-center items-center">
+                                        <button onClick={handlePopupClose}>Close</button>
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -275,5 +297,4 @@ const ContactInformation = () => {
         </div>
     );
 }
-
 export default ContactInformation;
