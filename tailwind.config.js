@@ -28,6 +28,12 @@ module.exports = {
         "3xl": "28px",
         "4xl": "42px",
       },
+      lineHeight: {
+        full: "100%",
+        sm: "120%",
+        md: "150%",
+        lg: "166%",
+      },
     },
   },
   plugins: [],
