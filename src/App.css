@@ -86,10 +86,10 @@
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
 }
-
+/* 
 .swiper-pagination {
   position: unset !important;
-}
+} */
 
 .swiper-pagination-bullet {
   width: 12px !important;

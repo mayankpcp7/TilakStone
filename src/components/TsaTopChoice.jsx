@@ -39,7 +39,7 @@ const TsaTopChoice = () => {
             }}
             loop={true}
             modules={[Pagination]}
-            className="mySwiper md:!pb-[52px] !pb-[37px]"
+            className="md:!pb-[52px] !pb-[37px]"
           >
             {topChoiceCardlist.map((value, index) => (
               <SwiperSlide key={index} className=''>

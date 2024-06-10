@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { featuredSlider } from "./common/Helper";
+import Heading from "./common/Heading";
 
 const Featured = () => {
   const pagination = {
@@ -25,11 +26,9 @@ const Featured = () => {
 
   return (
     <div className="container overflow-hidden xl:max-w-[1172px] mx-auto lg:px-4 md:px-[27px] px-5 lg:pt-[118px] md:pt-[168px] pt-[70px]">
-      <h2 className="text-center font-plusJkarta capitalize font-bold text-black sm:text-5xl text-2xl leading-md mb-[18px]">
-        Featured On
-      </h2>
+      <Heading commonHeading="Featured On" className="capitalize mb-[18px]" />
       <Swiper
-        className="overflow-visible"
+        className="sm:!pt-[30px] sm:!pb-[60px] !pt-[14px] !pb-[44px] !overflow-visible"
         ref={sliderRef}
         slidesPerView={3}
         spaceBetween={10}
