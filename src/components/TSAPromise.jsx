@@ -12,8 +12,8 @@ const TSAPromise = () => {
         <div className="lg:w-6/12 sm:w-[75.70%] w-full flex gap-6 flex-col">
           {promiseCardlist.map((obj, id) => (
             <div key={id} className="w-full">
-              <div className="max-w-full group hover:bg-darkYellow bg-white transition-colors ease-linear duration-300 border border-solid border-[#EFEFEF] sm:py-4 sm:pl-4 p-4 rounded-2xl">
-                <p className="text-black font-plusJkarta sm:text-xl text-base font-bold group-hover:text-white leading-[125%] transition-colors ease-linear duration-300 mb-2">
+              <div className="w-full group hover:bg-darkYellow bg-white transition-colors ease-linear duration-300 border border-solid border-[#EFEFEF] sm:py-4 sm:pl-4 p-4 rounded-2xl max-w-[511px]">
+                <p className="text-black font-plusJkarta sm:text-xl text-base font-bold group-hover:text-white !leading-md transition-colors ease-linear duration-300 mb-2">
                   {obj.tittle}
                 </p>
                 <p
@@ -21,9 +21,9 @@ const TSAPromise = () => {
                     id === 0
                       ? "lg:max-w-[414px] max-[420px]:max-w-[302px]"
                       : id === 1
-                      ? "lg:max-w-[431px] max-[420px]:max-w-[299px]"
+                      ? "lg:max-w-[456px] max-[420px]:max-w-[299px]"
                       : id === 2
-                      ? "lg:max-w-[455px] max-[420px]:max-w-[297px]"
+                      ? "lg:max-w-[460px] max-[420px]:max-w-[297px]"
                       : ""
                   } font-normal font-plusJkarta sm:text-base text-sm leading-normal sm:text-black opacity-80 text-lightBlack group-hover:text-white transition-colors ease-linear duration-300`}
                 >
