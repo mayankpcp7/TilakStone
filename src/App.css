@@ -6,13 +6,6 @@
 }
 
 /* ===================================== FEATURED ON ===================================== */
-.swiper-wrapper {
-  @apply sm:pt-[30px] sm:pb-[60px] pt-[14px] pb-[44px]
-}
-
-.swiper {
-  @apply !overflow-visible
-}
 
 .active-slide {
   box-shadow: 0px 4px 10px 5px #0000000D;
