@@ -2,7 +2,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { YelloCommonButton } from "./common/Button";
 import { EllipesLeftHeader, EllipesRightHeader } from "./common/Icons";
-import laxmiDoll from "../assets/images/webp/header/laxmiDoll.webp";
+import laxmiDoll from "../assets/images/webp/header/laxmi-doll.webp";
 
 const HelpingDevotees = () => {
   return (

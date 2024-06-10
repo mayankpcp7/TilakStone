@@ -1,10 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
   font-family: "graphik";
-  src: url(assets/fonts/Graphik-600-Semibold.otf);
+  src: url(./assets/fonts/Graphik-600-Semibold.otf);
 }
 
+/* ===================================== FEATURED ON ===================================== */
+.active-slide {
+  box-shadow: 0px 4px 10px 5px #0000000D;
+  transition: box-shadow 0.3s;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+  opacity: 100% !important;
+  z-index: 20 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 100% !important;
+}
+
+
+
+.scroll-bar-hidden::-webkit-scrollbar {
+  display: none !important;
+}
+
+.pursuit .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 100%;
+  background: #E0A922 !important;
+  opacity: 0.3;
+}
+
+.pursuit .swiper-pagination-bullet-active {
+  background: #E0A922 !important;
+  position: relative !important;
+  opacity: 1;
+}
+
+.partners_slider_track {
+  animation: scroll 20s linear infinite;
+}
+
+.partners_slider_track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(calc(-200px * 5));
+  }
+}
+
+.leading-128 {
+  line-height: 128%;
+}
+
+.leading-138 {
+  line-height: 138%;
+}
+
+.text-thinBlack {
+  color: #0E0E0ECC;
+}
 
 /*--------------------------Contact-Information----------------------*/
 
@@ -40,4 +105,27 @@ textarea::placeholder {
 .success-popup {
   transform: translate(-50%, -50%);
   z-index: 999;
+}
+
+
+.leading-128 {
+  line-height: 128%;
+}
+
+.footerLineGradient {
+  background: linear-gradient(90deg, #f6f3fb 0%, #0c0c0c 51.5%, #f6f3fb 100%);
+}
+
+.lightSkyBlue {
+  background-color: #F5F5F5;
+}
+
+.text-faqAccordionBlack {
+  color: #575757;
+}
+
+@media (min-width:400px) {
+  .xs-w-auto {
+    width: auto;
+  }
 }
