@@ -58,7 +58,7 @@ const LatestBlogs = () => {
           {LatestBlogsArray.map((obj, index) => (
             <SwiperSlide key={index}>
               {" "}
-              <div className="border border-blogBorder rounded-xl md:max-w-[364px] duration-300 hover:shadow-[0px_11px_15.9px_0px_#00000014] my-[25px] hover:-translate-y-3 sm:my-10">
+              <div className="border border-blogBorder rounded-xl md:max-w-[364px] duration-300 hover:shadow-[0px_11px_15.9px_0px_#00000014] mb-[35px] mt-[25px] hover:-translate-y-2 sm:hover:-translate-y-3 sm:my-10">
                 <img
                   className="w-full rounded-t-xl"
                   src={obj.LatestBlogsTempleImg}
