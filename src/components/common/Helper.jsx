@@ -39,4 +39,29 @@ export const faqAccordionData = [
         content:
           "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
       },
-  ];
+  ];export const navData = [
+  {
+    name: "About Us",
+    to: "#aboutus",
+  },
+  {
+    name: "Our Services",
+    to: "#ourservices",
+  },
+  {
+    name: "Why choose Us",
+    to: "#whychooseus",
+  },
+  {
+    name: "Careers",
+    to: "#careers",
+  },
+  {
+    name: "Testimonials",
+    to: "#testimonials",
+  },
+  {
+    name: "Contact Us",
+    to: "#contactus",
+  },
+];

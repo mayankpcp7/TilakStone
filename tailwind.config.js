@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      backgroundSize: {
+        "full": "100% 100%"
+      },
       colors: {
         darkYellow: "#E0A922",
         gold: "#EDC743",
@@ -18,6 +21,7 @@ module.exports = {
         red: "#ff0000",
         blogPera: "#000700",
         blogBorder: "#D4D4D4",
+        navBorder: "#D4D4D4",
         navBlack: "#333333",
         skyBlue: "#4286F4",
       },
@@ -39,6 +43,9 @@ module.exports = {
         lg: "150%",
         xl: "166%",
       },
+      screen:{
+        xs : "400px"
+      }
     },
   },
   plugins: [],
