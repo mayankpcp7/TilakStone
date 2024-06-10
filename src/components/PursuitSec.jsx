@@ -54,7 +54,7 @@ const PursuitSec = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex justify-center gap-2 mt-6 swiper-pagination sm:hidden pursuit"><span className='swiper-pagination-bullet'></span></div>
+                <div className="flex justify-center mt-6 swiper-pagination sm:hidden pursuit"><span className='!mx-1 swiper-pagination-bullet'></span></div>
                 <div className="flex items-center justify-center gap-4 mt-8 max-sm:hidden lg:hidden">
                     <button onClick={handlePrev}  className='flex next-arrow items-center justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 group-hover:stroke-white" /></button>
                     <button onClick={handleNext} className='flex items-center prev-arrow justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 rotate-180 group-hover:stroke-white" /></button>
