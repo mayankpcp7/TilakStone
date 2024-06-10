@@ -1,10 +1,11 @@
 import "./App.css";
+import TempleJourney from "./components/TempleJourney";
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <p className="text-5xl text-black text-center font-plusJkarta font-semibold">hello</p>
-    </div>
+      <TempleJourney/>
+        </div>
   );
 }
 
