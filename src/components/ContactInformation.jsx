@@ -281,14 +281,14 @@ const ContactInformation = () => {
                                         <p className="error-message font-plusJkarta text-red-500">{formErrors.box}</p>
                                     )}
                                 </div>
-                                <YelloCommonButton className="flex justify-center" text="Submit" />
+                                <YelloCommonButton text="Submit" />
                             </form>
                             {showSuccessPopup && (
                                 <div className="success-popup fixed top-[50%] left-[50%] h-[200px] sm:h-[280px] md:h-[350px] w-full max-w-[300px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] bg-white border border-solid border-darkYellow p-[20px] sm:p-[40px] rounded  shadow-[0px_0px_10px_0px_#0000001A] flex justify-center items-center flex-col">
                                     <p className="mb-[40px] text-black text-xl sm:text-3xl font-semibold font-plusJkarta text-center leading-lg">Your form submitted successfully!</p>
                                     <div className="flex justify-center items-center">
                                         <div className='w-full'>
-                                            <YelloCommonButton onClick={handlePopupClose} className="" text="Close" />
+                                            <YelloCommonButton onClick={handlePopupClose} text="Close" />
                                         </div>
                                     </div>
                                 </div>
