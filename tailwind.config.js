@@ -13,6 +13,7 @@ module.exports = {
         lightBlack: "#1A1A1A",
         lightGrey: "#DADADA",
         thinGrey: "#4D524D",
+        faqHeadBlack:"#0E0E0E",
         faqPeraBlack: "#3E3E3E",
         red: "#ff0000",
         blogPera: "#000700",

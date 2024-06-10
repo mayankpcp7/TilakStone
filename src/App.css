@@ -4,3 +4,13 @@
   font-family: "graphik";
   src: url(assets/fonts/Graphik-600-Semibold.otf);
 }
+
+.leading-128{
+  line-height: 128%;
+}
+.leading-138{
+  line-height: 138%;
+}
+.text-thinBlack{
+  color: #0E0E0ECC;
+}
