@@ -1,6 +1,7 @@
 import "./App.css";
 import Featured from "./components/Featured";
 import TSAPromise from "./components/TSAPromise";
+import GetInspired from "./components/GetInspired";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <p className="text-5xl text-black text-center font-plusJkarta font-semibold">
         hello
       </p>
+      <GetInspired />
     </div>
   );
 }
