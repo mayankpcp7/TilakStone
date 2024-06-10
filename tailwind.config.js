@@ -26,6 +26,7 @@ module.exports = {
         navBorder: "#D4D4D4",
         navBlack: "#333333",
         skyBlue: "#4286F4",
+        lightBlack: "#43181829",
       },
       backgroundImage: {
         latestblogsgradient: [
@@ -50,6 +51,7 @@ module.exports = {
         xmd: "138%",
         lg: "150%",
         xl: "166%",
+        "2md":"140%",
       },
       boxShadow: {
         "inspire-img-shadow": "0px 4px 16px 0px #0000000F",

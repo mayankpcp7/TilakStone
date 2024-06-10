@@ -6,14 +6,6 @@
 }
 
 /* ===================================== FEATURED ON ===================================== */
-.swiper-wrapper {
-  @apply sm:pt-[30px] sm:pb-[60px] pt-[14px] pb-[44px]
-}
-
-.swiper {
-  @apply !overflow-visible
-}
-
 .active-slide {
   box-shadow: 0px 4px 10px 5px #0000000D;
   transition: box-shadow 0.3s;
@@ -137,4 +129,40 @@
 
 .text-thinBlack {
   color: #0E0E0ECC;
+}
+
+/*--------------------------Contact-Information----------------------*/
+
+input[type="text"] {
+  height: 52px;
+}
+
+::placeholder {
+  color: #666666 !important;
+}
+
+input::placeholder {
+  color: #666666 !important;
+}
+
+textarea::placeholder {
+  color: #666666 !important;
+}
+
+.custom-checkbox {
+  accent-color: #E0A922;
+}
+
+.error {
+  border-color: #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.success-popup {
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }

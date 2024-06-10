@@ -4,7 +4,7 @@ import HelpingDevotees from "./HelpingDevotees";
 
 const Header = () => {
   return (
-    <header>
+    <header className="z-[21]">
       <NavBar />
       <HelpingDevotees />
     </header>

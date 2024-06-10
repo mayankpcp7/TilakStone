@@ -12,6 +12,7 @@ import ThisYou from "./components/ThisYou";
 import TempleJourney from "./components/TempleJourney";
 import Choose from "./components/Choose";
 import LatestBlogs from "./components/LatestBlogs";
+import ContactInformation from "./components/ContactInformation";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Choose />
       <TempleJourney />
       <TSAPromise />
+      <ContactInformation />
       <GetInspired />
       <Featured />
       <LatestBlogs />

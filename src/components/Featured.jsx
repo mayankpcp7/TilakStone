@@ -29,6 +29,7 @@ const Featured = () => {
         Featured On
       </h2>
       <Swiper
+        className="overflow-visible"
         ref={sliderRef}
         slidesPerView={3}
         spaceBetween={10}
