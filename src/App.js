@@ -1,11 +1,12 @@
 import "./App.css";
-// import GetInspired from "./components/GetInspired";
-import Header from "./components/Header";
+import HelpingDevotees from "./components/HelpingDevotees";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <Header />
+      <NavBar />
+      <HelpingDevotees />
     </>
   );
 }

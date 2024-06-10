@@ -10,7 +10,7 @@ const NavBar = () => {
     document.body.classList.remove("overflow-hidden");
   }
   return (
-    <nav>
+    <nav className=" relative z-30">
       <div className="max-w-[1164px] mx-auto px-3">
         <div className="lg:px-[50px] p-2 sm:p-[15px] lg:py-[11px] border-navBorder  border rounded-[84px] mt-5 flex justify-between items-center">
           <ul className="hidden lg:flex gap-5 lg:gap-10 items-center ">
@@ -29,7 +29,7 @@ const NavBar = () => {
             <img
               src={navLogo}
               alt="navLogo"
-              className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]"
+              className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] relative z-[4]"
             />
           </a>
           <ul
