@@ -14,7 +14,7 @@ import Heading from './common/Heading';
 const TempleJourney = () => {
   return (
     <div id='journey_swiper' className='relative pt-[90px] sm:pt-[120px] lg:pt-[140px] overflow-hidden'>
-      <img src={ellips} alt="ellips" className='w-[130px] h-[176px] absolute top-[-8%] right-[-33%] rotate-[-80deg] sm:rotate-0   sm:top-[34%] lg:top-[37%] sm:right-[0.5%] lg:right-[10%] 2xl:right-[20%]' />
+      <img src={ellips} alt="ellips" className='w-[130px] h-[176px] absolute top-[-8%] right-[-33%] rotate-[-80deg] sm:rotate-[-10deg] lg:rotate-0   sm:top-[40%] lg:top-[45%] sm:right-[0.6%] lg:right-[10%] 2xl:right-[20%]' />
 
       <div className="max-w-[400px] sm:max-w-[738px] lg:max-w-[1064px]  mx-auto px-[20px] sm:px-3">
        <h2 className='font-plusJkarta font-bold text-black leading-md text-2xl sm:text-4xl  md:text-5xl text-center sm:mb-2'>Your Dream Temple Journey</h2>
