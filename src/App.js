@@ -1,11 +1,14 @@
 import "./App.css";
+import LatestBlogs from "./components/LatestBlogs";
 
 function App() {
-  return (
-    <div className="overflow-hidden">
-      <p className="text-5xl text-black text-center font-plusJkarta font-semibold">hello</p>
-    </div>
-  );
+    return ( <
+        >
+        <
+        LatestBlogs / >
+        <
+        />
+    );
 }
 
 export default App;
