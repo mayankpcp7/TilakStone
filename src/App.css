@@ -5,24 +5,6 @@
   src: url(./assets/fonts/Graphik-600-Semibold.otf);
 }
 
-/* ===================================== FEATURED ON ===================================== */
-.active-slide {
-  box-shadow: 0px 4px 10px 5px #0000000D;
-  transition: box-shadow 0.3s;
-}
-
-.swiper-pagination {
-  bottom: 0 !important;
-  opacity: 100% !important;
-  z-index: 20 !important;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 100% !important;
-}
-
-
-
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
 }
@@ -59,63 +41,6 @@
   }
 }
 
-.leading-128 {
-  line-height: 128%;
-}
-
-.leading-138 {
-  line-height: 138%;
-}
-
-.text-thinBlack {
-  color: #0E0E0ECC;
-}
-
-/*--------------------------Contact-Information----------------------*/
-
-input[type="text"] {
-  height: 52px;
-}
-
-::placeholder {
-  color: #666666 !important;
-}
-
-input::placeholder {
-  color: #666666 !important;
-}
-
-textarea::placeholder {
-  color: #666666 !important;
-}
-
-.custom-checkbox {
-  accent-color: #E0A922;
-}
-
-.error {
-  border-color: #ff0000;
-}
-
-.error-message {
-  color: #ff0000;
-  margin-top: 5px;
-}
-
-.success-popup {
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
-
-
-.leading-128 {
-  line-height: 128%;
-}
-
-.lightSkyBlue {
-  background-color: #F5F5F5;
-}
-
-.text-faqAccordionBlack {
-  color: #575757;
+.featured-swiper {
+  transform: unset !important;
 }

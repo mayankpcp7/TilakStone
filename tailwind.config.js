@@ -32,7 +32,8 @@ module.exports = {
         navBlack: "#333333",
         skyBlue: "#4286F4",
         lightSkyBlue: "#f5f5f5",
-        tundora: "#4D4D4D"
+        tundora: "#4D4D4D",
+        whitegrey: "#fefefe",
       },
       backgroundImage: {
         latestblogsgradient: ["linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 49.55%, rgba(255, 255, 255, 0.1) 100%)",],
@@ -58,6 +59,10 @@ module.exports = {
         lg: "150%",
         xl: "166%",
         "2md": "140%",
+      },
+      backgroundImage: {
+        videoBackground:
+          "url('/src/assets/images/webp/header/videoBackground.webp')",
       },
       boxShadow: {
         "inspire-img-shadow": "0px 4px 16px 0px #0000000F",

@@ -30,9 +30,9 @@ function App() {
       <TsaTopChoice />
       <Choose />
       <TSAPromise />
-      <ContactInformation />
       <Featured />
       <GetInspired />
+      <ContactInformation />
       <LatestBlogs />
       <Faq /> */}
       <GetTouch />
