@@ -23,7 +23,7 @@ const PursuitSec = () => {
     const pagination = {
         clickable: true,
         renderBullet: (index, className) => {
-            return `<span class="${className} !w-3 !h-3 rounded-full sm:!hidden !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear"></span>`;
+            return `<span class="${className} !w-3 !h-3 rounded-full sm:!hidden !left-0 !bottom-0 !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear"></span>`;
         },
     };
 
