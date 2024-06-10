@@ -4,3 +4,9 @@
   font-family: "graphik";
   src: url(assets/fonts/Graphik-600-Semibold.otf);
 }
+.leading-128 {
+  line-height: 128%;
+}
+.footerLineGradient {
+  background: linear-gradient(90deg,#f6f3fb 0%,#0c0c0c 51.5%,#f6f3fb 100%);
+}
