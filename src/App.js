@@ -9,12 +9,12 @@ import TempleJourney from "./components/TempleJourney";
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      <Header />
+      {/* <Header />
       <HeroVideo />
       <ThisYou />
       <PursuitSec />
       <TempleJourney />
-      <Commuinity />
+      <Commuinity /> */}
       <GetInspired />
     </div>
   );
