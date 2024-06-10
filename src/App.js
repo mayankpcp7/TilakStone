@@ -10,6 +10,7 @@ import HeroVideo from "./components/HeroVideo";
 import ThisYou from "./components/ThisYou";
 import TempleJourney from "./components/TempleJourney";
 import Choose from "./components/Choose";
+import LatestBlogs from "./components/LatestBlogs";
 
 function App() {
   return (
@@ -17,14 +18,15 @@ function App() {
       <Header />
       <HeroVideo />
       <ThisYou />
-      <Featured />
-      <GetInspired />
       <PursuitSec />
       <Commuinity />
       <TsaTopChoice />
       <Choose />
       <TempleJourney />
       <TSAPromise />
+      <GetInspired />
+      <Featured />
+      <LatestBlogs />
     </div>
   );
 }
