@@ -113,3 +113,5 @@ export const CommuinityList3 = [
   { image: taliatate, alt: "taliatate" },
   { image: travis, alt: "travis" },
 ];
+
+

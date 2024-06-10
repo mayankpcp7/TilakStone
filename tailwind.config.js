@@ -13,9 +13,11 @@ module.exports = {
         offBlack: "#0C0C0C",
         offGrey: "#666666",
         grey: "#525252",
+        albumColor:"#F3F3F3",
         lightBlack: "#1A1A1A",
         lightGrey: "#DADADA",
         thinGrey: "#4D524D",
+        germanGrey:"#DEDEDE",
         faqPeraBlack: "#3E3E3E",
         red: "#ff0000",
         blogPera: "#000700",
@@ -58,3 +60,4 @@ module.exports = {
   },
   plugins: [],
 };
+
