@@ -38,6 +38,10 @@ module.exports = {
         lg: "150%",
         xl: "166%",
       },
+      backgroundImage: {
+        videoBackground:
+          "url('/src/assets/images/webp/header/videoBackground.webp')",
+      },
     },
   },
   plugins: [],
