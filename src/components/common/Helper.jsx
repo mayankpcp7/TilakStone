@@ -1,8 +1,8 @@
-import brownGirl from '../../assets/images/webp/tsaTopChoice/brownGirl.webp'
-import yellowLady from '../../assets/images/webp/tsaTopChoice/yellowLady.webp'
-import dreamTemple from '../../assets/images/webp/tsaTopChoice/dreamTemple.webp'
-import artistGuy from '../../assets/images/webp/tsaTopChoice/artistGuy.webp'
-import beautifulCollection from '../../assets/images/webp/tsaTopChoice/beautifulCollection.webp'
+import brownGirl from "../../assets/images/webp/tsaTopChoice/brownGirl.webp";
+import yellowLady from "../../assets/images/webp/tsaTopChoice/yellowLady.webp";
+import dreamTemple from "../../assets/images/webp/tsaTopChoice/dreamTemple.webp";
+import artistGuy from "../../assets/images/webp/tsaTopChoice/artistGuy.webp";
+import beautifulCollection from "../../assets/images/webp/tsaTopChoice/beautifulCollection.webp";
 import dreamEmoji from "../../assets/images/webp/thisYou/dreamEmoji.webp";
 import sleepEmoji from "../../assets/images/webp/thisYou/sleepEmoji.webp";
 import facehideEmoji from "../../assets/images/webp/thisYou/facehideEmoji.webp";
@@ -84,25 +84,25 @@ export const LatestBlogsArray = [
 export const topChoiceCardlist = [
     {
         img: brownGirl,
-        alt: "brownGirl"
+        alt: "brownGirl",
     },
     {
         img: yellowLady,
-        alt: "yellowLady"
+        alt: "yellowLady",
     },
     {
         img: dreamTemple,
-        alt: "dreamTemple"
+        alt: "dreamTemple",
     },
     {
         img: artistGuy,
-        alt: "artistGuy"
+        alt: "artistGuy",
     },
     {
         img: beautifulCollection,
-        alt: "beautifulCollection"
+        alt: "beautifulCollection",
     },
-]
+];
 
 export const navData = [
     {
@@ -178,24 +178,17 @@ export const CommuinityList = [
     { image: travis, alt: "travis" },
     { image: lynch, alt: "lynch" },
     { image: mattan, alt: "mattan" },
-];
-export const CommuinityList2 = [
-    { image: taliatate, alt: "taliatate" },
-    { image: travis, alt: "travis" },
-    { image: katya, alt: "katya" },
-    { image: lynch, alt: "lynch" },
-    { image: mattan, alt: "mattan" },
-    { image: tony, alt: "tony" },
-];
-export const CommuinityList3 = [
-    { image: lynch, alt: "lynch" },
-    { image: mattan, alt: "mattan" },
     { image: katya, alt: "katya" },
     { image: tony, alt: "tony" },
     { image: taliatate, alt: "taliatate" },
     { image: travis, alt: "travis" },
-]
-
+];
+export const CommuinitySlidList = [
+    { image: katya, alt: "katya" },
+    { image: tony, alt: "tony" },
+    { image: taliatate, alt: "taliatate" },
+    { image: travis, alt: "travis" },
+];
 
 // =============================== The TSA PROMISE ===============================
 export const promiseCardlist = [
@@ -217,48 +210,48 @@ export const promiseCardlist = [
 ];
 // ============================= FEATURED ON =============================
 export const featuredSlider = [
-  {
-    url: "https://tembonickel.com/",
-    lable: "tembonickel",
-    img: temboNickel,
-    alt: "temboNickel",
-  },
-  {
-    url: "https://www.whitebirdjewellery.com/",
-    lable: "whitebird",
-    img: whitebird,
-    alt: "whitebird",
-  },
-  {
-    url: "https://www.dixoninfo.com/",
-    lable: "dixon",
-    img: dixon,
-    alt: "dixon",
-  },
-  {
-    url: "https://first-quantum.com/",
-    lable: "firstQuantumMinerals",
-    img: firstQuantumMinerals,
-    alt: "firstQuantumMinerals",
-  },
-  {
-    url: "https://www.nasa.gov/humans-in-space/artemis/",
-    lable: "artemis",
-    img: artemis,
-    alt: "artemis",
-  },
-  {
-    url: "https://steppegold.com/",
-    lable: "steppeGold",
-    img: steppeGold,
-    alt: "steppeGold",
-  },
-  {
-    url: "https://trxgold.com/",
-    lable: "trxGold",
-    img: trxGold,
-    alt: "trxGold",
-  },
+    {
+        url: "https://tembonickel.com/",
+        lable: "tembonickel",
+        img: temboNickel,
+        alt: "temboNickel",
+    },
+    {
+        url: "https://www.whitebirdjewellery.com/",
+        lable: "whitebird",
+        img: whitebird,
+        alt: "whitebird",
+    },
+    {
+        url: "https://www.dixoninfo.com/",
+        lable: "dixon",
+        img: dixon,
+        alt: "dixon",
+    },
+    {
+        url: "https://first-quantum.com/",
+        lable: "firstQuantumMinerals",
+        img: firstQuantumMinerals,
+        alt: "firstQuantumMinerals",
+    },
+    {
+        url: "https://www.nasa.gov/humans-in-space/artemis/",
+        lable: "artemis",
+        img: artemis,
+        alt: "artemis",
+    },
+    {
+        url: "https://steppegold.com/",
+        lable: "steppeGold",
+        img: steppeGold,
+        alt: "steppeGold",
+    },
+    {
+        url: "https://trxgold.com/",
+        lable: "trxGold",
+        img: trxGold,
+        alt: "trxGold",
+    },
 ];
 
 export const features = [
@@ -400,14 +393,34 @@ export const faqAccordionData = [
 // ================pursuit section data ====================
 
 export const pursuitSecList = [
-    { title: "Desire a pooja room that’s a true  reflection of your faith and aesthetics?" },
+    {
+        title:
+            "Desire a pooja room that’s a true  reflection of your faith and aesthetics?",
+    },
     { title: "Exhausted by the search for creators who understand your vision?" },
-    { title: "Longing for a bespoke design that blends tradition, modernity and functionality ?" },
-    { title: "Need a guarantee that your most spiritual space will be crafted with devotion?" },
-    { title: "Disappointed with the standards of local craftsmanship and service?" },
-    { title: "Looking for an all-in-one service to design, deliver, and install your sacred space?" },
+    {
+        title:
+            "Longing for a bespoke design that blends tradition, modernity and functionality ?",
+    },
+    {
+        title:
+            "Need a guarantee that your most spiritual space will be crafted with devotion?",
+    },
+    {
+        title:
+            "Disappointed with the standards of local craftsmanship and service?",
+    },
+    {
+        title:
+            "Looking for an all-in-one service to design, deliver, and install your sacred space?",
+    },
     { title: "In search of expert advice and superior marble artistry?" },
-    { title: "Are you a designer seeking a collaborator who values precision and detail?" },
-    { title: "Require a partner who brings both technical expertise and creative insight?" },
-]
-
+    {
+        title:
+            "Are you a designer seeking a collaborator who values precision and detail?",
+    },
+    {
+        title:
+            "Require a partner who brings both technical expertise and creative insight?",
+    },
+];
