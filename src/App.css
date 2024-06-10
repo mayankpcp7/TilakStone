@@ -4,3 +4,7 @@
   font-family: "graphik";
   src: url(assets/fonts/Graphik-600-Semibold.otf);
 }
+
+.swiper-wrapper {
+  @apply py-[30px]
+}
