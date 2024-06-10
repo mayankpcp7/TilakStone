@@ -5,8 +5,13 @@
   src: url(assets/fonts/Graphik-600-Semibold.otf);
 }
 
+/* ===================================== FEATURED ON ===================================== */
 .swiper-wrapper {
   @apply sm:pt-[30px] sm:pb-[60px] pt-[14px] pb-[44px]
+}
+
+.swiper {
+  @apply !overflow-visible
 }
 
 .active-slide {

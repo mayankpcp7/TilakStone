@@ -39,7 +39,7 @@ const TSAPromise = () => {
             height={558}
             src={promiseclient}
             alt="Promise Client"
-            className="w-full lg:max-w-[558px] sm:max-w-[714px] min-w-[375px]"
+            className="w-full lg:max-w-[558px] lg:h-[558px] sm:max-w-[714px] sm:h-[714px] min-w-[375px]"
           />
         </div>
       </div>

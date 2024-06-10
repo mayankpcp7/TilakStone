@@ -24,7 +24,7 @@ const Featured = () => {
   };
 
   return (
-    <div className="container xl:max-w-[1172px] mx-auto lg:px-4 md:px-[27px] px-5 lg:pt-[118px] md:pt-[168px] pt-[80px]">
+    <div className="container overflow-hidden xl:max-w-[1172px] mx-auto lg:px-4 md:px-[27px] px-5 lg:pt-[118px] md:pt-[168px] pt-[70px]">
       <h2 className="text-center font-plusJkarta capitalize font-bold text-black sm:text-5xl text-2xl leading-md mb-[18px]">
         Featured On
       </h2>
