@@ -19,6 +19,7 @@ input[type="text"] {
 input::placeholder {
   color: #666666 !important;
 }
+
 textarea::placeholder {
   color: #666666 !important;
 }
@@ -36,28 +37,7 @@ textarea::placeholder {
   margin-top: 5px;
 }
 
-.submit-button {
-  background-color: #E0A922;
-  color: black;
-  padding: 10px 20px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .success-popup {
   transform: translate(-50%, -50%);
   z-index: 999;
-}
-
-.success-popup button {
-  background-color: #E0A922;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 300px;
-  cursor: pointer;
 }
