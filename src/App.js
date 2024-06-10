@@ -3,7 +3,7 @@ import TempleJourney from "./components/TempleJourney";
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div>
       <TempleJourney/>
         </div>
   );

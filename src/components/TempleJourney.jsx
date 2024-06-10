@@ -9,13 +9,13 @@ import { Pagination } from 'swiper/modules';
 
 const TempleJourney = () => {
   return (
-    <>
-      <div className="max-w-[400px] overflow-x-clip sm:max-w-[738px] lg:max-w-[1064px]  mx-auto px-[20px] sm:px-3 relative">
-        <img src={ellips} alt="ellips" className='w-[130px] h-[176px] absolute  top-[-3%] lg:top-56 right-[-8.5%] lg:right-[-5%]' />
+    <div id='journey_swiper' className='relative'>
+      <img src={ellips} alt="ellips" className='w-[130px] h-[176px] absolute hidden lg:block  top-[-3%] lg:top-56 right-[10%]' />
 
+      <div className="max-w-[400px] overflow-x-clip sm:max-w-[738px] lg:max-w-[1064px]  mx-auto px-[20px] sm:px-3">
         <div className="flex sm:flex-col">
           {/* -----------animation button */}
-          <div className="w-[20%] sm:w-full">
+          <div className="w-[20%] bg-white  sm:w-full">
             <div className=" w-[35px] min-h-[447px] overflow-hidden sm:min-h-[35px] sm:w-full flex-col sm:flex-row flex  mt-[65px]  sm:mt-[80px] sm:mx-auto  justify-between items-center max-w-[940px] relative after:absolute sm:after:w-full after:w-[5px] after:h-full sm:after:h-[8px] after:bg-albumColor after:left-4">
               <button className=' h-[42px] w-[35px] sm:w-[115px] sm:h-[55px] justify-center flex items-center  sm:px-[23.5px] relative z-10  sm:py-[13.5px] border-[1px] font-bold leading-lg font-plusJkarta text-white bg-darkYellow shadow-[0px_4px_16px_0px_#0000000F] border-germanGrey rounded-[12px] sm:rounded-2xl text-sm sm:text-lg'><span className='hidden mr-1 sm:block'>STEP</span> 01</button>
               <button className=' h-[42px] w-[35px] sm:w-[115px] sm:h-[55px] justify-center flex items-center  sm:px-[23.5px] relative z-10  sm:py-[13.5px] border-[1px] font-bold leading-lg font-plusJkarta text-white bg-darkYellow shadow-[0px_4px_16px_0px_#0000000F] border-germanGrey rounded-[12px] sm:rounded-2xl text-sm sm:text-lg'><span className='hidden mr-1 sm:block'>STEP</span> 02</button>
@@ -24,11 +24,11 @@ const TempleJourney = () => {
             </div>
           </div>
 
-          <div className='w-[80%] sm:w-full mx-auto'>
+          <div className='w-[80%] sm:w-full mx-auto overflow-hidden'>
             {/* -----------swiper slider----------- */}
-            <Swiper id='journey_swiper'
+            <Swiper 
               slidesPerView={1}
-              // spaceBetween={20}
+              spaceBetween={24}
               loop={true}
               modules={[Pagination]}
               pagination={{
@@ -88,7 +88,7 @@ const TempleJourney = () => {
         </div>
       </div>
 
-    </>
+    </div>
   )
 }
 

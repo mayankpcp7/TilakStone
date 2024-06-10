@@ -2,16 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+#journey_swiper .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
     display: inline-block;
-    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-    background: var(--swiper-pagination-bullet-inactive-color, #000);
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+    background: #E0A922 !important;
 }
 
-.swiper-pagination-bullet-active {
+#journey_swiper .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
     background: #E0A922 !important;
 }
+
+#journey_swiper horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 0px) !important;
+}
+
+@media (max-width:640px) {
+
+    #journey_swiper horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        left:-10% !important;
+        bottom: var(--swiper-pagination-bottom, -40px) !important;
+    }
+    #journey_swiper .swiper {
+        overflow: visible !important;
+    }
+    #journey_swiper .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    
+}
+
