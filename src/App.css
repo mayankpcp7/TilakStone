@@ -126,3 +126,15 @@
     transform: translatey(calc(-200px * 5));
   }
 }
+
+.leading-128 {
+  line-height: 128%;
+}
+
+.leading-138 {
+  line-height: 138%;
+}
+
+.text-thinBlack {
+  color: #0E0E0ECC;
+}

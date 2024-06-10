@@ -5,6 +5,7 @@ import PursuitSec from "./components/PursuitSec";
 import Commuinity from "./components/Commuinity";
 import Featured from "./components/Featured";
 import TSAPromise from "./components/TSAPromise";
+import Faq from "./components/Faq";
 import GetInspired from "./components/GetInspired";
 import HeroVideo from "./components/HeroVideo";
 import ThisYou from "./components/ThisYou";
@@ -27,6 +28,7 @@ function App() {
       <GetInspired />
       <Featured />
       <LatestBlogs />
+      <Faq />
     </div>
   );
 }
