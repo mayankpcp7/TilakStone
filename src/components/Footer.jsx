@@ -4,7 +4,7 @@ import { footerLinks, footerSocialIcons } from "./common/Helper";
 const Footer = () => {
   return (
     <div className=" sm:pt-60 pt-56 mt-2 lg:mt-[2px] sm:mt-1 lightSkyBlue">
-      <div className="container px-3 mx-auto pt-[2px] max-w-[1140px]">
+      <div className="container sm:px-3 px-4 mx-auto pt-[2px] max-w-[1140px]">
         <div className="flex flex-wrap flex-row -mx-3">
           <div className="lg:w-4/12 w-full lg:pb-0 sm:pb-[43px] pb-[25px] px-3">
             <div className="flex lg:justify-start sm:justify-center justify-start ">
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="lg:w-8/12 w-full px-3">
             <div className="flex flex-wrap flex-row -mx-3">
               <div className="sm:w-4/12 w-1/2 px-3">
-                <div className="flex lg:justify-end sm:justify-center">
+                <div className="flex lg:justify-center sm:justify-center">
                   <ul>
                     <li className=" text-offBlack lg:text-start sm:text-center text-start font-plusJkarta font-medium sm:text-lg text-sm">
                       Quick links
@@ -87,8 +87,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14 h-[1px] footerLineGradient"></div>
-      <p className=" font-plusJkarta font-normal sm:text-sm text-xs text-offBlack py-4 opacity-80 text-center">
+      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14 sm:pt-0 pt-1 h-[1px] footerLineGradient"></div>
+      <p className=" font-plusJkarta font-normal sm:text-sm text-xs text-offBlack py-5 opacity-80 text-center">
         Copyright © {new Date().getFullYear()} TilakStone. All Rights reserved.
       </p>
     </div>

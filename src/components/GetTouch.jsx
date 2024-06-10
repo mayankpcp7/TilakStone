@@ -5,9 +5,9 @@ import getRightEllipse2 from "../assets/images/webp/getTouch/getRightEllipse2.we
 
 const GetTouch = () => {
   return (
-    <div className=" lg:translate-y-[156px] sm:translate-y-[166px] translate-y-[172px]">
-      <div className="container max-w-[1140px] px-3 mx-auto">
-        <div className="bg-darkYellow px-11 relative rounded-xl sm:py-16 py-[50px]">
+    <div className=" lg:translate-y-[156px] sm:translate-y-[166px] lg:-mt-4 sm:mt-[-74px] -mt-24 translate-y-[172px]">
+      <div className="container max-w-[1140px] sm:px-3 px-5 mx-auto">
+        <div className="bg-darkYellow px-[35px] relative rounded-xl sm:py-16 py-[50px]">
           <img
             src={getLeftEllipse2}
             alt="left2"
@@ -28,14 +28,14 @@ const GetTouch = () => {
             alt="right"
             className="absolute lg:right-[-8%] right-[-2%] lg:top-[-28%] sm:block hidden top-[-14%] lg:max-w-[429px] max-w-[290px] max-h-[289px] lg:max-h-[428px]"
           />
-          <h2 className="font-plusJkarta font-semibold text-center text-white leading-128 sm:text-4xl text-2xl">
+          <h2 className="font-plusJkarta lg:pt-[2px] font-semibold text-center text-white leading-128 sm:text-4xl text-2xl">
             Get into touch
           </h2>
           <p className="text-center opacity-80 lg:max-w-[639px] max-w-[527px] mt-4 text-white mx-auto font-normal font-plusJkarta sm:text-base text-sm">
             Have questions or ready to get started? Reach out to us today. We're
             here to help you every step of the way on your journey to success.
           </p>
-          <div className="flex mt-[27px] justify-center">
+          <div className="flex sm:mt-[27px] lg:mb-[2px] mt-[30px] justify-center">
             <button className=" bg-[url(./assets/images/png/getBtn.png)] bg-full bg-center text-darkYellow hover:text-black duration-300 flex mx-auto bg-no-repeat font-semibold text-base font-plusJkarta leading-md p-[13.5px_44px]  border-0">
               Enquiry Now
             </button>
