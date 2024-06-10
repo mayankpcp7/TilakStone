@@ -83,3 +83,20 @@
   position: relative !important;
   opacity: 1;
 }
+
+.partners_slider_track {
+  animation: scroll 20s linear infinite;
+}
+.partners_slider_track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(calc(-200px * 5));
+  }
+}
