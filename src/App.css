@@ -65,3 +65,21 @@
     height: 74px;
   }
 }
+
+.swiper-pagination {
+  position: unset;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 100%;
+  background: #E0A922 !important;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  background: #E0A922 !important;
+  position: relative !important;
+  opacity: 1;
+}
