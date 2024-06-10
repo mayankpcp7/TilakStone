@@ -31,18 +31,33 @@ import Godtemple from "../../assets/images/webp/latestblogs/latest-blogs-god-pic
 import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons";
 
 export const footerLinks = {
-    column1: [
-        { link: "About Us" },
-        { link: "Our Services" },
-        { link: "Why choose Us" },
-        { link: "Testimonials" },
-        { link: "Contact Us" },
-    ],
-    column2: [
-        { link: "Privacy Policy" },
-        { link: " Privacy settings" },
-        { link: "Terms and conditions" },
-    ],
+  column1: [
+    {
+      link: "About Us",
+      to: "#aboutus",
+    },
+    {
+      link: "Our Services",
+      to: "#ourservices",
+    },
+    {
+      link: "Why choose Us",
+      to: "#whychooseus",
+    },
+    {
+      link: "Testimonials",
+      to: "#testimonials",
+    },
+    {
+      link: "Contact Us",
+      to: "#contactus",
+    },
+  ],
+  column2: [
+    { link: "Privacy Policy" },
+    { link: " Privacy settings" },
+    { link: "Terms and conditions" },
+  ],
 };
 export const footerSocialIcons = [
     {

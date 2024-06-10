@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/footerLogo.svg"
+import footerLogo from "../assets/images/footerLogo.svg";
 import { footerLinks, footerSocialIcons } from "./common/Helper";
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
                         className="pt-4 lg:text-start sm:text-center text-start"
                       >
                         <a
-                          href=""
+                          href={obj.to}
                           className="text-offBlack footerLinkHover sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
                         >
                           {obj.link}
@@ -95,6 +95,6 @@ const Footer = () => {
       </p>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
