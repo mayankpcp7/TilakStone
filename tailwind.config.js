@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      backgroundSize: {
+        "full": "100% 100%"
+      },
       colors: {
         darkYellow: "#E0A922",
         gold: "#EDC743",

@@ -1,10 +1,11 @@
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="overflow-hidden">
-      <p className="text-5xl text-black text-center font-plusJkarta font-semibold">hello</p>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
