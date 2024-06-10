@@ -10,8 +10,8 @@ const Commuinity = () => {
   return (
     <div className="max-w-[1180px] mx-auto px-5 lg:pt-[140px] sm:pt-[123px] pt-[90px]">
       <Heading commonHeading="Our Online Community" />
-      <div className="flex gap-6 sm:mt-20 mt-10 max-h-[722px] overflow-y-hidden justify-center">
-        <div className="flex flex-col partners_slider_track gap-6 max-w-[364px]">
+      <div className="flex lg:gap-6 gap-5 sm:mt-20 mt-10 max-h-[722px] overflow-y-hidden justify-center">
+        <div className="flex flex-col partners_slider_track lg:gap-6 gap-5 max-w-[364px]">
           {CommuinityList.map((obj, index) => (
             <div
               key={index}
@@ -23,8 +23,8 @@ const Commuinity = () => {
             </div>
           ))}
         </div>
-        <div className="sm:block hidden max-w-[364px]">
-          <div className="flex flex-col gap-6">
+        <div className="sm:block hidden max-w-[364px] partners_slider_track2">
+          <div className="flex flex-col lg:gap-6 gap-5">
             {CommuinityList2.map((obj, index) => (
               <div
                 key={index}
@@ -37,8 +37,8 @@ const Commuinity = () => {
             ))}
           </div>
         </div>
-        <div className="lg:block hidden max-w-[364px]">
-          <div className="flex flex-col gap-6">
+        <div className="lg:block hidden max-w-[364px] partners_slider_track">
+          <div className="flex flex-col lg:gap-6 gap-5">
             {CommuinityList3.map((obj, index) => (
               <div
                 key={index}
