@@ -14,8 +14,8 @@ const TSAPromise = () => {
         <div className="lg:w-6/12 sm:w-[75.70%] w-full flex gap-6 flex-col">
           {promiseCardlist.map((obj, id) => (
             <div key={id} className="w-full">
-              <div className="w-full group hover:bg-darkYellow bg-white transition-colors ease-linear duration-300 border border-solid border-[#EFEFEF] sm:py-4 sm:pl-4 p-4 rounded-2xl max-w-[511px]">
-                <p className="text-black font-plusJkarta sm:text-xl text-base font-bold group-hover:text-white !leading-md transition-colors ease-linear duration-300 mb-2">
+              <div className="w-full group hover:bg-darkYellow bg-white transition-colors ease-linear duration-300 border border-solid border-whitegrey sm:py-4 sm:pl-4 p-4 rounded-2xl max-w-[511px]">
+                <p className="sm:text-black text-lightBlack font-plusJkarta sm:text-xl text-base font-bold group-hover:text-white !leading-md transition-colors ease-linear duration-300 mb-2">
                   {obj.tittle}
                 </p>
                 <p

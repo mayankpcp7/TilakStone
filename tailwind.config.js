@@ -19,6 +19,7 @@ module.exports = {
         blogBorder: "#D4D4D4",
         navBlack: "#333333",
         skyBlue: "#4286F4",
+        whitegrey: "#fefefe",
       },
       fontFamily: {
         plusJkarta: "Plus Jakarta Sans",

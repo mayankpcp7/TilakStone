@@ -57,27 +57,29 @@ const Featured = () => {
         {featuredSlider.map((obj, index) => (
           <SwiperSlide key={index}>
             <div className="sm:max-w-[212px] hover:shadow-[0px_4px_10px_5px_#0000000D] transition-all ease-linear duration-300 max-sm:mx-auto !w-full sm:h-[100px] h-[48.25px] flex justify-center items-center bg-white border border-solid border-[#00000008] sm:rounded-xl rounded">
-              <img
-                src={obj.img}
-                alt={obj.alt}
-                className={`${
-                  index === 0
-                    ? "sm:max-w-[139px] max-w-[102px] w-full"
-                    : index === 1
-                    ? "sm:max-w-[184px] max-w-[88.77px] w-full"
-                    : index === 2
-                    ? "sm:max-w-[127px] max-w-[61.27px] w-full"
-                    : index === 3
-                    ? "sm:max-w-[145px] max-w-[69.96px] w-full"
-                    : index === 4
-                    ? "sm:max-w-[95px] max-w-[45.83px] w-full"
-                    : index === 5
-                    ? "sm:max-w-[134px] max-w-[64.65px] w-full"
-                    : index === 6
-                    ? "sm:max-w-[176px] max-w-[84.91px] w-full"
-                    : ""
-                }`}
-              />
+              <a aria-label={obj.lable} href={obj.url} target="_blank">
+                <img
+                  src={obj.img}
+                  alt={obj.alt}
+                  className={`${
+                    index === 0
+                      ? "sm:max-w-[139px] max-w-[102px] w-full"
+                      : index === 1
+                      ? "sm:max-w-[184px] max-w-[88.77px] w-full"
+                      : index === 2
+                      ? "sm:max-w-[127px] max-w-[61.27px] w-full"
+                      : index === 3
+                      ? "sm:max-w-[145px] max-w-[69.96px] w-full"
+                      : index === 4
+                      ? "sm:max-w-[95px] max-w-[45.83px] w-full"
+                      : index === 5
+                      ? "sm:max-w-[134px] max-w-[64.65px] w-full"
+                      : index === 6
+                      ? "sm:max-w-[176px] max-w-[84.91px] w-full"
+                      : ""
+                  }`}
+                />
+              </a>
             </div>
           </SwiperSlide>
         ))}
