@@ -1,9 +1,14 @@
 import React, { useState } from "react";
-import { Logo } from "./common/Icons";
+import navLogo from "../assets/images/png/navLogo.png";
 import { navData } from "./common/Helper";
 
 const NavBar = () => {
   const [navBarVisible, setNavBarVisible] = useState(false);
+  if (navBarVisible) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
   return (
     <nav>
       <div className="max-w-[1164px] mx-auto px-3">
@@ -20,7 +25,11 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <Logo width="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]" />
+          <img
+            src={navLogo}
+            alt="navLogo"
+            className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]"
+          />
           <ul
             className={`flex gap-5 z-[3] lg:gap-10 items-center fixed lg:static  bg-white lg:bg-transparent w-full h-full lg:w-auto lg:h-auto flex-col lg:flex-row justify-center duration-300  left-0 ${
               navBarVisible ? "top-0" : "-top-full"
@@ -29,6 +38,7 @@ const NavBar = () => {
             {navData.map((obj, i) => (
               <li key={i} className={`${i < 3 && "lg:hidden"} `}>
                 <a
+                  onClick={() => setNavBarVisible(false)}
                   className="font-plusJkarta block hover:text-gold duration-300 text-base leading-md font-normal text-navBlack relative z-[1]  after:absolute after:w-0  after:h-[2px] after:left-[50%] after:bottom-[-2px] hover:after:left-0 hover:after:w-full after:bg-gold after:duration-300 after:z-[-1]"
                   href={obj.to}
                 >
