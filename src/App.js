@@ -1,5 +1,6 @@
 import "./App.css";
 import Commuinity from "./components/Commuinity";
+import GetInspired from "./components/GetInspired";
 
 function App() {
   return (
