@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { topChoiceCardlist } from './common/Helper';
-import laxmiDoll from '../assets/images/webp/header/laxmi-doll.webp'
 
 const TsaTopChoice = () => {
   const pagination = {
@@ -15,9 +14,9 @@ const TsaTopChoice = () => {
   };
 
   return (
-    <div className='lg:py-32 md:my-3 md:py-28 py-20 my-2.5 relative overflow-x-clip'>
+    <div className='lg:pt-32 md:mt-3 md:pt-28 pt-20 mt-2.5'>
       <div className='container xl:max-w-[1172px] lg:px-4 md:px-[27px] px-5 mx-auto'>
-        <h2 className='font-plusJkarta font-bold md:text-5xl sm:text-4xl text-2xl text-black text-center sm:max-w-[563px] max-w-[400px] mx-auto !leading-md'>
+        <h2 className='font-plusJkarta font-bold sm:text-5xl text-2xl text-black text-center sm:max-w-[563px] max-w-[400px] mx-auto !leading-md'>
           TSA is the top choice by families like you.
         </h2>
         <div className='md:mt-20 mt-[30px]'>
@@ -63,10 +62,6 @@ const TsaTopChoice = () => {
           </Swiper>
         </div>
       </div>
-      <div className='absolute lg:bottom-[-5%] md:bottom-[3.5%] lg:left-[-19.7%] md:left-[-45%] left-[-36%] bottom-[-18%]'>
-        <img src={laxmiDoll} alt="laxmiDoll" className='lg:w-[846px] lg:h-[876px] md:w-[756px] md:h-[782px] w-[252px] h-[260px]' />
-      </div>
-
     </div>
   );
 };
