@@ -1,5 +1,7 @@
 import "./App.css";
 import TsaTopChoice from "./components/TsaTopChoice";
+import Footer from "./components/Footer";
+import GetTouch from "./components/GetTouch";
 import Header from "./components/Header";
 import PursuitSec from "./components/PursuitSec";
 import Commuinity from "./components/Commuinity";
@@ -31,6 +33,8 @@ function App() {
       <Featured />
       <LatestBlogs />
       <Faq />
+      <GetTouch />
+      <Footer />
     </div>
   );
 }

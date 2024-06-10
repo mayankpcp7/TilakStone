@@ -25,10 +25,44 @@ import firstQuantumMinerals from "../../assets/images/webp/featured/firstQuantum
 import artemis from "../../assets/images/webp/featured/artemis.webp";
 import steppeGold from "../../assets/images/webp/featured/steppeGold.webp";
 import trxGold from "../../assets/images/webp/featured/trxGold.webp";
-
 import Temple from "../../assets/images/webp/latestblogs/latest-blogs-temple.webp";
 import Hometemple from "../../assets/images/webp/latestblogs/latest-blogs-home-temple.webp";
 import Godtemple from "../../assets/images/webp/latestblogs/latest-blogs-god-picture.webp";
+import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons";
+
+export const footerLinks = {
+    column1: [
+        { link: "About Us" },
+        { link: "Our Services" },
+        { link: "Why choose Us" },
+        { link: "Testimonials" },
+        { link: "Contact Us" },
+    ],
+    column2: [
+        { link: "Privacy Policy" },
+        { link: " Privacy settings" },
+        { link: "Terms and conditions" },
+    ],
+};
+export const footerSocialIcons = [
+    {
+        icon: <FaceBookIcon />,
+        path: "https://www.facebook.com/login/",
+    },
+    {
+        icon: <TwitterIcon />,
+        path: "https://twitter.com",
+    },
+    {
+        icon: <LinkDinIcon />,
+        path: "https://www.linkedin.com",
+    },
+    {
+        icon: <InstaIcon />,
+        path: "https://www.linkedin.com",
+    },
+];
+
 export const LatestBlogsArray = [
     {
         LatestBlogsTempleImg: Temple,
@@ -352,14 +386,14 @@ export const faqAccordionData = [
 // ================pursuit section data ====================
 
 export const pursuitSecList = [
-  { title: "Desire a pooja room that’s a true  reflection of your faith and aesthetics?" },
-  { title: "Exhausted by the search for creators who understand your vision?" },
-  { title: "Longing for a bespoke design that blends tradition, modernity and functionality ?" },
-  { title: "Need a guarantee that your most spiritual space will be crafted with devotion?" },
-  { title: "Disappointed with the standards of local craftsmanship and service?" },
-  { title: "Looking for an all-in-one service to design, deliver, and install your sacred space?" },
-  { title: "In search of expert advice and superior marble artistry?" },
-  { title: "Are you a designer seeking a collaborator who values precision and detail?" },
-  { title: "Require a partner who brings both technical expertise and creative insight?" },
+    { title: "Desire a pooja room that’s a true  reflection of your faith and aesthetics?" },
+    { title: "Exhausted by the search for creators who understand your vision?" },
+    { title: "Longing for a bespoke design that blends tradition, modernity and functionality ?" },
+    { title: "Need a guarantee that your most spiritual space will be crafted with devotion?" },
+    { title: "Disappointed with the standards of local craftsmanship and service?" },
+    { title: "Looking for an all-in-one service to design, deliver, and install your sacred space?" },
+    { title: "In search of expert advice and superior marble artistry?" },
+    { title: "Are you a designer seeking a collaborator who values precision and detail?" },
+    { title: "Require a partner who brings both technical expertise and creative insight?" },
 ]
 

@@ -82,9 +82,11 @@
     height: 74px;
   }
 }
-.scroll-bar-hidden::-webkit-scrollbar{
+
+.scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
 }
+
 .swiper-pagination {
   position: unset !important;
 }
@@ -167,4 +169,17 @@ textarea::placeholder {
 .success-popup {
   transform: translate(-50%, -50%);
   z-index: 999;
+}
+
+
+.leading-128 {
+  line-height: 128%;
+}
+
+.footerLineGradient {
+  background: linear-gradient(90deg, #f6f3fb 0%, #0c0c0c 51.5%, #f6f3fb 100%);
+}
+
+.lightSkyBlue {
+  background-color: #F5F5F5;
 }
