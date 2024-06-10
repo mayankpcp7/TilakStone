@@ -63,8 +63,8 @@ const TsaTopChoice = () => {
           </Swiper>
         </div>
       </div>
-      <div className='absolute lg:bottom-[-5%] md:bottom-[3.5%] lg:left-[-19.7%] md:left-[-45%] left-[-36%] bottom-[-18%]'>
-        <img src={laxmiDoll} alt="laxmiDoll" className='lg:w-[846px] lg:h-[876px] md:w-[756px] md:h-[782px] w-[252px] h-[260px]' />
+      <div className='absolute lg:bottom-[-5%] sm:bottom-[3.5%] lg:left-[-19.7%] sm:left-[-45%] left-[-36%] bottom-[-18%]'>
+        <img src={laxmiDoll} alt="laxmiDoll" className='lg:w-[846px] lg:h-[876px] sm:w-[756px] sm:h-[782px]  w-[252px] h-[260px]' />
       </div>
 
     </div>

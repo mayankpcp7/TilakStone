@@ -20,23 +20,23 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      <NavBar />
+      {/* <NavBar />
       <HelpingDevotees />
       <HeroVideo />
       <ThisYou />
       <PursuitSec />
       <TempleJourney />
-      <Commuinity />
+      <Commuinity /> */}
       <TsaTopChoice />
-      <Choose />
-      <TSAPromise />
-      <Featured />
-      <GetInspired />
+      {/* <Choose /> */}
+      {/* <TSAPromise /> */}
+      {/* <Featured /> */}
+      {/* <GetInspired />
       <ContactInformation />
       <LatestBlogs />
       <Faq />
       <GetTouch />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
