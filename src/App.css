@@ -21,67 +21,7 @@
   opacity: 100% !important;
 }
 
-.dreamEmoji {
-  height: 52px !important;
-}
 
-.sleepEmoji {
-  height: 58px !important;
-}
-
-.hidefaceEmoji {
-  height: 57px;
-}
-
-.handsGroup {
-  height: 69px;
-}
-
-.twopersonEmoji {
-  height: 69px;
-}
-
-.deliveryBoy {
-  height: 65px;
-}
-
-@media (min-width: 768px) {
-  .dreamEmoji {
-    height: 62px;
-  }
-
-  .sleepEmoji {
-    height: 66px;
-  }
-
-  .hidefaceEmoji {
-    height: 64px;
-  }
-
-  .handsGroup {
-    height: 50px;
-  }
-
-  .twopersonEmoji {
-    height: 62px;
-  }
-
-  .deliveryBoy {
-    height: 74px;
-  }
-
-  .professionEmoji {
-    height: 91px;
-  }
-
-  .thumbEmoji {
-    height: 67px;
-  }
-
-  .templeEmoji {
-    height: 74px;
-  }
-}
 
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
