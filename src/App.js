@@ -1,10 +1,10 @@
 import "./App.css";
-import GetInspired from "./components/GetInspired";
+import Choose from "./components/Choose";
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <GetInspired />
+      <Choose/>
     </div>
   );
 }
