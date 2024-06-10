@@ -3,6 +3,8 @@ import whitebird from "../../assets/images/webp/featured/whitebird.webp";
 import dixon from "../../assets/images/webp/featured/dixon.webp";
 import firstQuantumMinerals from "../../assets/images/webp/featured/firstQuantumMinerals.webp";
 import artemis from "../../assets/images/webp/featured/artemis.webp";
+import steppeGold from "../../assets/images/webp/featured/steppeGold.webp";
+import trxGold from "../../assets/images/webp/featured/trxGold.webp";
 
 // =============================== The TSA PROMISE ===============================
 export const promiseCardlist = [
@@ -26,17 +28,30 @@ export const promiseCardlist = [
 export const featuredSlider = [
   {
     img: temboNickel,
+    alt: "temboNickel",
   },
   {
     img: whitebird,
+    alt: "whitebird",
   },
   {
     img: dixon,
+    alt: "dixon",
   },
   {
     img: firstQuantumMinerals,
+    alt: "firstQuantumMinerals",
   },
   {
     img: artemis,
+    alt: "artemis",
+  },
+  {
+    img: steppeGold,
+    alt: "steppeGold",
+  },
+  {
+    img: trxGold,
+    alt: "trxGold",
   },
 ];
