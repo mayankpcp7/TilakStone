@@ -101,3 +101,8 @@ textarea::placeholder {
 .text-faqAccordionBlack {
   color: #575757;
 }
+
+/* ============================== FEATURED ON ============================== */
+.featured-swiper {
+  transform: unset !important;
+}

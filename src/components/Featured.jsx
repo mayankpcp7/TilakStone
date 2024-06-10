@@ -106,7 +106,6 @@ import { featuredSlider } from "./common/Helper";
 import Heading from "./common/Heading";
 import temple from "../assets/images/webp/featured/featuredTemple.webp";
 import vector from "../assets/images/webp/featured/featuredLeftVector.webp";
-// import "./Featured.css"; // Import custom CSS
 
 const Featured = () => {
   const pagination = {
@@ -114,7 +113,7 @@ const Featured = () => {
     dynamicBullets: true,
     renderBullet: (index, className) => {
       return `
-        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear !transform-none"></span>
+        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block  featured-swiper"></span>
       `;
     },
   };
@@ -137,8 +136,8 @@ const Featured = () => {
         <Swiper
           className="sm:!pt-[30px] sm:!pb-[60px] !pt-[14px] !pb-[44px] !overflow-visible"
           ref={sliderRef}
-          slidesPerView={5}
-          spaceBetween={20}
+          slidesPerView={3}
+          spaceBetween={10}
           pagination={pagination}
           loop={true}
           modules={[Pagination]}
@@ -148,10 +147,14 @@ const Featured = () => {
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
             1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1280: {
               slidesPerView: 5,
               spaceBetween: 20,
             },
