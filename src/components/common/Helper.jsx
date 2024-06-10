@@ -217,34 +217,48 @@ export const promiseCardlist = [
 ];
 // ============================= FEATURED ON =============================
 export const featuredSlider = [
-    {
-        img: temboNickel,
-        alt: "temboNickel",
-    },
-    {
-        img: whitebird,
-        alt: "whitebird",
-    },
-    {
-        img: dixon,
-        alt: "dixon",
-    },
-    {
-        img: firstQuantumMinerals,
-        alt: "firstQuantumMinerals",
-    },
-    {
-        img: artemis,
-        alt: "artemis",
-    },
-    {
-        img: steppeGold,
-        alt: "steppeGold",
-    },
-    {
-        img: trxGold,
-        alt: "trxGold",
-    },
+  {
+    url: "https://tembonickel.com/",
+    lable: "tembonickel",
+    img: temboNickel,
+    alt: "temboNickel",
+  },
+  {
+    url: "https://www.whitebirdjewellery.com/",
+    lable: "whitebird",
+    img: whitebird,
+    alt: "whitebird",
+  },
+  {
+    url: "https://www.dixoninfo.com/",
+    lable: "dixon",
+    img: dixon,
+    alt: "dixon",
+  },
+  {
+    url: "https://first-quantum.com/",
+    lable: "firstQuantumMinerals",
+    img: firstQuantumMinerals,
+    alt: "firstQuantumMinerals",
+  },
+  {
+    url: "https://www.nasa.gov/humans-in-space/artemis/",
+    lable: "artemis",
+    img: artemis,
+    alt: "artemis",
+  },
+  {
+    url: "https://steppegold.com/",
+    lable: "steppeGold",
+    img: steppeGold,
+    alt: "steppeGold",
+  },
+  {
+    url: "https://trxgold.com/",
+    lable: "trxGold",
+    img: trxGold,
+    alt: "trxGold",
+  },
 ];
 
 export const features = [
