@@ -35,6 +35,7 @@ const LatestBlogs = () => {
           modules={[Navigation, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
+          slidesPerGroup={1}
           loop={true}
           autoplay={{ delay: 4000 }}
           speed={900}
@@ -73,7 +74,7 @@ const LatestBlogs = () => {
                       5 min read
                     </p>
                   </div>
-                  <h3 className="font-plusJkarta font-semibold text-base md:text-xl !leading-xmd capitalize mt-4">
+                  <h3 className="font-plusJkarta font-semibold text-base md:text-xl !leading-xmd capitalize mt-4 max-sm:max-w-[324px]">
                     {obj.title}
                   </h3>
                   <p className="font-plusJkarta font-normal text-blogPera text-sm !leading-lg mt-2">
