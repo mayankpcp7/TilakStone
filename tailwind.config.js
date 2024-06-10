@@ -32,7 +32,8 @@ module.exports = {
         navBlack: "#333333",
         skyBlue: "#4286F4",
         lightSkyBlue: "#f5f5f5",
-        tundora: "#4D4D4D"
+        tundora: "#4D4D4D",
+       lightBlackClr:"#18181829",
       },
       backgroundImage: {
         latestblogsgradient: [

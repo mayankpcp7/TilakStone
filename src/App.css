@@ -72,11 +72,6 @@
 }
 
 /*--------------------------Contact-Information----------------------*/
-
-input[type="text"] {
-  height: 52px;
-}
-
 ::placeholder {
   color: #666666 !important;
 }
@@ -100,11 +95,6 @@ textarea::placeholder {
 .error-message {
   color: #ff0000;
   margin-top: 5px;
-}
-
-.success-popup {
-  transform: translate(-50%, -50%);
-  z-index: 999;
 }
 
 
