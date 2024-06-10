@@ -1,21 +1,10 @@
 
 export const Plus = () => {
   return (
-    <svg
-      width="19"
-      height="17"
-      viewBox="0 0 19 17"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        opacity="0.2"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M30.0218 4.77255C76.8768 27.638 76.395 91.2614 64.5226 142.129C53.516 189.287 23.5539 233.982 -24.5812 238.721C-71.8571 243.376 -112.02 206 -127.327 161.019C-139.318 125.78 -108.18 97.0079 -81.7395 70.7525C-47.7888 37.0395 -12.8949 -16.171 30.0218 4.77255Z"
-        fill="#E0A922"
-      />
+    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9.5 14.5V1.5M16 8H3" stroke="black" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
+    
   );
 };
 

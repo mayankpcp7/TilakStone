@@ -26,7 +26,7 @@ const Faq = () => {
                     <span>{index + 1}. </span>   
                                   {item.head}
                </div>
-                                <span className="">{open === index ? (<span><Minus/></span>) : (<span ><Plus /></span>)}</span>
+                                <span className="">{open === index ? (<span><Minus/></span>) : (<span ><Plus/></span>)}</span>
                             </div>
                             <p className={`overflow-hidden pTag duration-500  px-4 text-faqAccordionBlack duration bg-transparentfont-plusJkarta text-sm leading-lg sm:text-base max-w-[756px] w-full" ${open === index ? "max-h-36 pb-3 sm:pb-4" : "max-h-0"}`}>{item.content}</p>
                         </div>))
@@ -38,7 +38,7 @@ const Faq = () => {
      <img src={faqEllipse} alt="faqellipse" className='absolute lg:right-0 right-[-10px]  top-[560px]  sm:block hidden' />
      <img src={faqTemple} alt="temple" className=' max-h-[547.39px] lg:max-h-[774px] absolute right-0 top-[-200px] lg:top-[-326px] z-[-1] sm:block hidden'/>
      <img src={faqSmallEllipse} alt='faqellipse' className='absolute left-[-2px] bottom-[108px] sm:hidden' />
-     <img src={faqSmallTemple} alt="temple"  className=' absolute sm:hidden left-0 max-h-[419.08px] top-[11%]'/>
+     <img src={faqSmallTemple} alt="temple"  className=' absolute sm:hidden left-0 max-h-[419.08px] top-[11%] z-[-1]'/>
     </div>
   )
 }
