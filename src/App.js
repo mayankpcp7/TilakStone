@@ -9,8 +9,8 @@ function App() {
     <div className="overflow-hidden max-w-[1920px] mx-auto">
       <Header />
       <HeroVideo />
+      <ThisYou />
       <GetInspired />
-      <ThisYou/>
     </div>
   );
 }

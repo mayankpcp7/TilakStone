@@ -30,9 +30,10 @@ export const navData = [
   },
   {
     name: "Contact Us",
-    to: "#contactus",]
+    to: "#contactus",
+  },
+];
 
-, 
 export const ThisYouData = [
   {
     emoji: dreamEmoji,
@@ -48,7 +49,7 @@ export const ThisYouData = [
   {
     emoji: facehideEmoji,
     description: "Can’t find someone to design pooja room for you",
-    customClass: "hidefaceEmoji"
+    customClass: "hidefaceEmoji",
   },
   {
     emoji: handsGroup,
