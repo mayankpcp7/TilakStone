@@ -9,6 +9,7 @@ import GetInspired from "./components/GetInspired";
 import HeroVideo from "./components/HeroVideo";
 import ThisYou from "./components/ThisYou";
 import TempleJourney from "./components/TempleJourney";
+import Choose from "./components/Choose";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PursuitSec />
       <Commuinity />
       <TsaTopChoice />
+      <Choose />
       <TempleJourney />
       <TSAPromise />
     </div>
