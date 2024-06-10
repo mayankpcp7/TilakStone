@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
- .footerLinkHover {
-    @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-darkYellow hover:text-darkYellow hover:after:w-full after:duration-300;
-  }
+.footerLinkHover {
+  @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-darkYellow hover:text-darkYellow hover:after:w-full after:duration-300;
+}
+
+.swiper-pagination-bullet {
+  display: none;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet+.swiper-pagination-bullet {
+  display: inline-block;
+}
+
+.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet:nth-last-child(2) {
+  display: inline-block;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(2) {
+  display: none;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(2),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(2),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(1) {
+  display: inline-block;
+}
