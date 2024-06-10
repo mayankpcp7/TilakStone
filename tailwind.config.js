@@ -65,8 +65,7 @@ module.exports = {
         xs: "425px",
       },
       backgroundImage: {
-        videoBackground:
-          "url('/src/assets/images/webp/header/video-background.webp')",
+        videoBackground:"url('/src/assets/images/webp/header/video-background.webp')",
         commuinityCard: "0px 4px 16px 0px #0000000F",
         commuinityin: "0px 2px 17.2px 0px #0000000A",
       },

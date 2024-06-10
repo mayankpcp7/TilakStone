@@ -26,7 +26,9 @@
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
 }
-
+.pursuit.swiper-pagination{
+  position: unset !important;
+}
 .pursuit .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
