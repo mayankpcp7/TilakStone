@@ -5,7 +5,7 @@ import getRightEllipse2 from "../assets/images/webp/getTouch/getRightEllipse2.we
 
 const GetTouch = () => {
   return (
-    <div className=" pt-32 mt-3">
+    <div className=" sm:translate-y-[166px] translate-y-[184px]">
       <div className="container max-w-[1140px] px-3 mx-auto">
         <div className="bg-darkYellow px-11 relative rounded-xl py-16">
           <img
@@ -35,8 +35,10 @@ const GetTouch = () => {
             Have questions or ready to get started? Reach out to us today. We're
             here to help you every step of the way on your journey to success.
           </p>
-          <div className="flex justify-center">
-            <button className="py-3 px-9 mt-7">Enquiry Now</button>
+          <div className="flex mt-[27px] justify-center">
+            <button className=" bg-[url(./assets/images/png/getBtn.png)] bg-full bg-center text-darkYellow hover:text-black duration-300 flex mx-auto bg-no-repeat font-semibold text-base font-plusJkarta leading-md p-[13.5px_44px]  border-0">
+              Enquiry Now
+            </button>
           </div>
         </div>
       </div>

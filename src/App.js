@@ -1,14 +1,16 @@
 import "./App.css";
 import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import GetTouch from "./components/GetTouch";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="overflow-hidden">
-      <p className="text-5xl text-black text-center font-plusJkarta font-semibold">hello</p>
+    <>
+      {/* <Header /> */}
       <GetTouch />
       <Footer/>
-    </div>
+    </>
   );
 }
 

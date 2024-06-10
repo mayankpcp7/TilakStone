@@ -1,36 +1,61 @@
-import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons"
+import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons";
 
+export const navData = [
+  {
+    name: "About Us",
+    to: "#aboutus",
+  },
+  {
+    name: "Our Services",
+    to: "#ourservices",
+  },
+  {
+    name: "Why choose Us",
+    to: "#whychooseus",
+  },
+  {
+    name: "Careers",
+    to: "#careers",
+  },
+  {
+    name: "Testimonials",
+    to: "#testimonials",
+  },
+  {
+    name: "Contact Us",
+    to: "#contactus",
+  },
+];
 
 export const footerLinks = {
-    column1: [
-        { link: "About Us" },
-        { link: "Our Services" },
-        { link: "Why choose Us" },
-        { link: "Testimonials" },
-        { link: "Contact Us" },
-    ],
-    column2: [
-        { link: "Privacy Policy" },
-        { link: " Privacy settings" },
-        { link: "Terms and conditions" },
-    ]
-}
+  column1: [
+    { link: "About Us" },
+    { link: "Our Services" },
+    { link: "Why choose Us" },
+    { link: "Testimonials" },
+    { link: "Contact Us" },
+  ],
+  column2: [
+    { link: "Privacy Policy" },
+    { link: " Privacy settings" },
+    { link: "Terms and conditions" },
+  ],
+};
 export const footerSocialIcons = [
-    {
-        icon: <FaceBookIcon />,
-        path:"https://www.facebook.com/login/"
-     },
-    {
-        icon: <TwitterIcon />,
-        path:"https://twitter.com"
-    },
-    {
-        icon: <LinkDinIcon />,
-        path:"https://www.linkedin.com"
-    },
-    {
-        icon: <InstaIcon />,
-       path:"https://www.linkedin.com"
-   }
-]
-
+  {
+    icon: <FaceBookIcon />,
+    path: "https://www.facebook.com/login/",
+  },
+  {
+    icon: <TwitterIcon />,
+    path: "https://twitter.com",
+  },
+  {
+    icon: <LinkDinIcon />,
+    path: "https://www.linkedin.com",
+  },
+  {
+    icon: <InstaIcon />,
+    path: "https://www.linkedin.com",
+  },
+];

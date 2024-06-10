@@ -3,8 +3,8 @@ import { footerLinks, footerSocialIcons } from "./common/Helper";
 
 const Footer = () => {
   return (
-    <div className=" sm:pt-20 pt-14 mt-1 lg:mt-[6px]">
-      <div className="container px-3 mx-auto max-w-[1140px]">
+    <div className=" sm:pt-60 pt-56 lg:mt-[2px] sm:mt-1 lightSkyBlue">
+      <div className="container px-3 mx-auto pt-[2px] max-w-[1140px]">
         <div className="flex flex-wrap flex-row -mx-3">
           <div className="lg:w-4/12 w-full lg:pb-0 sm:pb-[43px] pb-[25px] px-3">
             <div className="flex lg:justify-start sm:justify-center justify-start ">
