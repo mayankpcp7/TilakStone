@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { LocationIcon, MessageIcon, PhoneIcon } from './common/Icons';
 import contactVector from '../assets/images/webp/contact/contectVector.webp';
 import temple from '../assets/images/webp/contact/temple.webp';
+import Heading from "./common/Heading";
 const ContactInformation = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -122,7 +123,8 @@ const ContactInformation = () => {
             <img src={contactVector} alt="contactVector" className="pointer-events-none absolute right-[-2%] lg:right-0 max-w-[164px] h-[222px] lg:max-w-[235px] lg:h-[318px] top-[7%] lg:top-[15%] md:block hidden" />
             <img src={temple} alt="temple" className="pointer-events-none absolute left-[-47%] lg:left-[-28%] max-w-[846] h-[877px] top-[10%] lg:top-0 z-[0] md:block hidden" />
             <div className='container xl:max-w-[1164px] px-3 mx-auto relative z-[1]'>
-                <h2 className='text-center text-black mb-[25px] sm:mb-[40px] md:mb-16 text-5xl font-bold'>Contact Information</h2>
+                {/* <Heading commonHeading="Contact Information" /> */}
+                <Heading className='!leading-md mb-[25px] sm:mb-[40px] md:mb-16' commonHeading="Contact Information" />
                 <div className='bg-white rounded-2xl shadow-[0px_0px_10px_0px_#0000001A]'>
                     <div className='lg:p-[32px_32px_34px_32px] sm:p-[50px_44px_50px_44px] p-[20px_12px_20px_12px] flex flex-row flex-wrap justify-between items-cen ter'>
                         <div className='lg:w-[42.2%] w-full '>

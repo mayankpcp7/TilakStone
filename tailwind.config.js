@@ -17,6 +17,7 @@ module.exports = {
         red: "#ff0000",
         blogPera: "#000700",
         blogBorder: "#D4D4D4",
+        navBlack: "#333333",
         skyBlue: "#4286F4",
         lightBlack: "#43181829",
       },
@@ -27,7 +28,9 @@ module.exports = {
       fontSize: {
         "6xl": "64px",
         "3xl": "28px",
+        "3xxl": "32px",
         "4xl": "42px",
+        "4xxl": "52px",
       },
       lineHeight: {
         full: "100%",
