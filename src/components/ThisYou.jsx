@@ -26,7 +26,7 @@ const ThisYou = () => {
                 key={index}
                 className={`w-full sm:w-1/2 lg:w-1/3 px-5 sm:px-3 pb-[15px] md:pb-6 ${hideOnSmallScreen}`}
               >
-                <div className="w-f ull relative z-30 gap-3 flex items-center bg-white group mx-auto md:mx-0 h-full shadow-[0px_4px_16px_0px_#0000000F] py-5 px-6 duration-300 min-h-[117px] md:min-h-[130px] hover:bg-[#ecc744] border border-[#dedede] hover:border-[#bf9602] rounded-2xl">
+                <div className="w-f ull relative z-30 gap-3 flex items-center bg-white group mx-auto md:mx-0 h-full shadow-[0px_4px_16px_0px_#0000000F] py-5 px-6 duration-300 min-h-[117px] md:min-h-[130px] hover:bg-darkYellowPrimary border border-lightGreyPrimary hover:border-darkYellowSecondary rounded-2xl">
                   <img
                     className="w-[56px]  md:w-[64px] "
                     src={thisYou.emoji}
@@ -40,7 +40,7 @@ const ThisYou = () => {
             );
           })}
         </div>
-        <p className="text-center text-base font-roboto md:text-2xl  md:px-0 max-w-[694px] mx-auto text-black font-semibold leading-lg mt-[25px] md:mt-[14px] mb-10 font-graphik">
+        <p className="text-center text-base  md:text-2xl  md:px-0 max-w-[694px] mx-auto text-black font-semibold leading-lg mt-[25px] md:mt-[14px] mb-10 font-graphik">
           If you can relate to any of these, then we can help you
           <span className="text-darkYellow"> build the temple </span>
           of your Dreams
