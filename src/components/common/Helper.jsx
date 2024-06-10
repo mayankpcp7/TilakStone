@@ -9,17 +9,22 @@ import beautifulCollection from '../../assets/images/webp/tsaTopChoice/beautiful
 export const topChoiceCardlist = [
     {
         img: brownGirl,
+        alt:"brownGirl"
     },
     {
         img: yellowLady,
+        alt: "yellowLady"
     },
     {
         img: dreamTemple,
+        alt: "dreamTemple"
     },
     {
         img: artistGuy,
+        alt: "artistGuy"
     },
     {
         img: beautifulCollection,
+        alt: "beautifulCollection"
     },
 ]
