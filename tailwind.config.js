@@ -60,6 +60,8 @@ module.exports = {
       },
       boxShadow: {
         "inspire-img-shadow": "0px 4px 16px 0px #0000000F",
+        commuinityCard: "0px 4px 16px 0px #0000000F",
+        commuinityin: "0px 2px 17.2px 0px #0000000A",
       },
       screen: {
         xs: "425px",
@@ -67,14 +69,11 @@ module.exports = {
       backgroundImage: {
         videoBackground:
           "url('/src/assets/images/webp/header/video-background.webp')",
-        commuinityCard: "0px 4px 16px 0px #0000000F",
-        commuinityin: "0px 2px 17.2px 0px #0000000A",
       },
-      screen:{
-        xs : "400px"
-      }
+      screen: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],
 };
-

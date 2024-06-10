@@ -183,25 +183,11 @@ export const CommuinityList = [
   { image: taliatate, alt: "taliatate" },
   { image: travis, alt: "travis" },
 ];
-export const CommuinityList2 = [
-  { image: taliatate, alt: "taliatate" },
-  { image: travis, alt: "travis" },
-  { image: katya, alt: "katya" },
-  { image: lynch, alt: "lynch" },
-  { image: mattan, alt: "mattan" },
-  { image: tony, alt: "tony" },
-  { image: taliatate, alt: "taliatate" },
-  { image: travis, alt: "travis" },
-];
-export const CommuinityList3 = [
-  { image: lynch, alt: "lynch" },
-  { image: mattan, alt: "mattan" },
+export const CommuinitySlidList = [
   { image: katya, alt: "katya" },
   { image: tony, alt: "tony" },
   { image: taliatate, alt: "taliatate" },
   { image: travis, alt: "travis" },
-  { image: lynch, alt: "lynch" },
-  { image: mattan, alt: "mattan" },
 ];
 
 // =============================== The TSA PROMISE ===============================
