@@ -26,7 +26,7 @@ const HelpingDevotees = () => {
         Transforming Devotion: Crafting a Divine Space that Embodies
         Spirituality, Elegance, and Contemporary Style with Grace
       </p>
-      <YelloCommonButton />
+      <YelloCommonButton text="Get into touch" />
       <span className="pointer-events-none z-[-2] absolute right-[-10%] sm:right-0 bottom-[-25%] lg:bottom-[-10%]">
         <EllipesRightHeader />
       </span>

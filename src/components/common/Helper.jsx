@@ -1,26 +1,26 @@
 export const navData = [
   {
     name: "About Us",
-    to: "aboutus",
+    to: "#aboutus",
   },
   {
     name: "Our Services",
-    to: "ourservices",
+    to: "#ourservices",
   },
   {
     name: "Why choose Us",
-    to: "whychooseus",
+    to: "#whychooseus",
   },
   {
     name: "Careers",
-    to: "careers",
+    to: "#careers",
   },
   {
     name: "Testimonials",
-    to: "testimonials",
+    to: "#testimonials",
   },
   {
     name: "Contact Us",
-    to: "contactus",
+    to: "#contactus",
   },
 ];
