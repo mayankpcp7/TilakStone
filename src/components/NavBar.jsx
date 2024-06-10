@@ -25,11 +25,13 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <img
-            src={navLogo}
-            alt="navLogo"
-            className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]"
-          />
+          <a href="#">
+            <img
+              src={navLogo}
+              alt="navLogo"
+              className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]"
+            />
+          </a>
           <ul
             className={`flex gap-5 z-[3] lg:gap-10 items-center fixed lg:static  bg-white lg:bg-transparent w-full h-full lg:w-auto lg:h-auto flex-col lg:flex-row justify-center duration-300  left-0 ${
               navBarVisible ? "top-0" : "-top-full"
