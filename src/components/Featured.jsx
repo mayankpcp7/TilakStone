@@ -16,13 +16,13 @@ const Featured = () => {
     },
   };
   const sliderRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleSlideChange = () => {
-    if (sliderRef.current && sliderRef.current.swiper) {
-      setActiveIndex(sliderRef.current.swiper.realIndex);
-    }
-  };
+  // const handleSlideChange = () => {
+  //   if (sliderRef.current && sliderRef.current.swiper) {
+  //     setActiveIndex(sliderRef.current.swiper.realIndex);
+  //   }
+  // };
 
   return (
     <div className="container overflow-hidden xl:max-w-[1172px] mx-auto lg:px-4 md:px-[27px] px-5 lg:pt-[118px] md:pt-[168px] pt-[70px]">
@@ -53,15 +53,10 @@ const Featured = () => {
             spaceBetween: 20,
           },
         }}
-        onSlideChange={handleSlideChange}
       >
         {featuredSlider.map((obj, index) => (
           <SwiperSlide key={index}>
-            <div
-              className={`${
-                activeIndex === index ? "active-slide" : ""
-              } sm:max-w-[212px] max-sm:mx-auto !w-full sm:h-[100px] h-[48.25px] flex justify-center items-center bg-white border border-solid border-[#00000008] sm:rounded-xl rounded`}
-            >
+            <div className="sm:max-w-[212px] hover:shadow-[0px_4px_10px_5px_#0000000D] transition-all ease-linear duration-300 max-sm:mx-auto !w-full sm:h-[100px] h-[48.25px] flex justify-center items-center bg-white border border-solid border-[#00000008] sm:rounded-xl rounded">
               <img
                 src={obj.img}
                 alt={obj.alt}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { faqAccordionData } from './common/Helper';
-import Accordion from './Accordion';
 import Heading from './common/Heading';
 import faqEllipse from '../assets/images/faqEllipse.svg'
 import faqTemple from '../assets/images/webp/faq/faqTemple.webp'
@@ -11,11 +10,11 @@ import { Minus, Plus } from './common/Icons';
 const Faq = () => {
   const [open, setOpen] = useState(0);
   const toggleAccordion = (index) => {
-      setOpen(open === index ? true : index);
+    setOpen(open === index ? true : index);
   };
   return (
     <div className='lg:py-[140px] sm:py-[120px] py-20 relative z-[1]'>
-     <div className=' container max-w-[1164px] mx-auto sm:px-3 px-5'>
+      <div className=' container max-w-[1164px] mx-auto sm:px-3 px-5'>
         <Heading commonHeading={"Frequently Asked Questions"} className="!text-faqHeadBlack mb-4 leading-128" />
         <p className=' sm:text-base text-sm leading-lg text-faqPeraBlack max-w-[586px] text-center mx-auto mb-[25px] sm:mb-10'>Browse through our FAQs for quick answers to common queries about our services, policies, and procedures.</p>
          <div className=' lg:max-w-[840px] max-w-[714px]  mx-auto mb-[25px] sm:mb-8'>
@@ -33,7 +32,7 @@ const Faq = () => {
                     }
          </div>
          <p className=' font-plusJkarta font-normal sm:text-base text-sm leading-lg  text-thinBlack lg:max-w-[830px] max-w-[714px] mx-auto mb-10'>These FAQs are tailored to address common queries, aiming to provide clarity and reinforce the client's confidence in choosing Tilak Stone Arts for their sacred spaces.<a href="#read" className='text-skyBlue'> read more..</a></p>
-         <YelloCommonButton text="Enquiry Now" className="w-full xs-w-auto"/>
+         <YelloCommonButton text="Enquiry Now" className="w-full min-[400px]:w-auto"/>
      </div>
      <img src={faqEllipse} alt="faqellipse" className='absolute lg:right-0 right-[-10px]  top-[560px]  sm:block hidden' />
      <img src={faqTemple} alt="temple" className=' max-h-[547.39px] lg:max-h-[774px] absolute right-0 top-[-200px] lg:top-[-326px] z-[-1] sm:block hidden'/>
