@@ -110,7 +110,6 @@ export const EllipesLeftHeader = () => {
     </svg>
   );
 };
-
 export const Minus = () => {
   return (
     <svg

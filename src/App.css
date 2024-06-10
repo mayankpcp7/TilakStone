@@ -183,3 +183,13 @@ textarea::placeholder {
 .lightSkyBlue {
   background-color: #F5F5F5;
 }
+
+.text-faqAccordionBlack {
+  color: #575757;
+}
+
+@media (min-width:400px) {
+  .xs-w-auto {
+    width: auto;
+  }
+}
