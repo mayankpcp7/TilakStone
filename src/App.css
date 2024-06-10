@@ -76,20 +76,8 @@
   color: #666666 !important;
 }
 
-input::placeholder {
-  color: #666666 !important;
-}
-
-textarea::placeholder {
-  color: #666666 !important;
-}
-
 .custom-checkbox {
   accent-color: #E0A922;
-}
-
-.error {
-  border-color: #ff0000;
 }
 
 .error-message {
