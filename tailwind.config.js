@@ -61,6 +61,10 @@ module.exports = {
         xl: "166%",
         "2md": "140%",
       },
+      backgroundImage: {
+        videoBackground:
+          "url('/src/assets/images/webp/header/videoBackground.webp')",
+      },
       boxShadow: {
         "inspire-img-shadow": "0px 4px 16px 0px #0000000F",
       },
