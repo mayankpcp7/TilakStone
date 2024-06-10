@@ -11,6 +11,10 @@ export const CommuinityList = [
   { image: travis, alt: "travis" },
   { image: lynch, alt: "lynch" },
   { image: mattan, alt: "mattan" },
+  { image: katya, alt: "katya" },
+  { image: tony, alt: "tony" },
+  { image: taliatate, alt: "taliatate" },
+  { image: travis, alt: "travis" },
 ];
 export const CommuinityList2 = [
   { image: taliatate, alt: "taliatate" },
@@ -19,6 +23,8 @@ export const CommuinityList2 = [
   { image: lynch, alt: "lynch" },
   { image: mattan, alt: "mattan" },
   { image: tony, alt: "tony" },
+  { image: taliatate, alt: "taliatate" },
+  { image: travis, alt: "travis" },
 ];
 export const CommuinityList3 = [
   { image: lynch, alt: "lynch" },
@@ -27,4 +33,6 @@ export const CommuinityList3 = [
   { image: tony, alt: "tony" },
   { image: taliatate, alt: "taliatate" },
   { image: travis, alt: "travis" },
+  { image: lynch, alt: "lynch" },
+  { image: mattan, alt: "mattan" },
 ];
