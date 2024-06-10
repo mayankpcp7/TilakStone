@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className=" max-w-[1164px] mx-auto px-3">
-        <div className="lg:px-[50px] p-2 sm:p-[15px]  lg:py-[11px] border-black  border rounded-[84px] mt-5 flex justify-between items-center">
+        <div className="lg:px-[50px] p-2 sm:p-[15px]  lg:py-[11px] border-navBorder  border rounded-[84px] mt-5 flex justify-between items-center">
           <ul className="hidden lg:flex gap-5 lg:gap-10 items-center ">
             {navData.slice(0, 3).map((obj, i) => (
               <li key={i}>
