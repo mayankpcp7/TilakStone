@@ -7,7 +7,7 @@ function App() {
     <div className="overflow-hidden">
       <p className="text-5xl text-black text-center font-plusJkarta font-semibold">hello</p>
       <TsaTopChoice/>
-      {/* <GetInspired /> */}
+      <GetInspired />
     </div>
   );
 }
