@@ -7,7 +7,7 @@ import laxmiDoll from "../assets/images/webp/header/laxmi-doll.webp";
 const HelpingDevotees = () => {
   return (
     <main className="lg:mt-[100px] md:mt-[60px] mt-[30px] overflow-x-clip relative z-[1]">
-      <p className="text-navBlack text-base md:text-xl font-plusJkarta leading-md font-semibold text-center">
+      <p className="text-black text-base md:text-xl font-plusJkarta leading-md font-semibold text-center">
         Your Ultimate
         <Typewriter
           words={[" Pooja Room Destination", " Pooja Room Destination"]}
@@ -22,7 +22,7 @@ const HelpingDevotees = () => {
         Helping Devotees Re-Imagine Their{" "}
         <span className="text-darkYellow"> Pooja Rooms</span>
       </h1>
-      <p className="text-center text-navBlack leading-lg font-plusJkarta font-medium text-sm sm:text-lg  px-5 sm:px-0 max-w-[544px] lg:max-w-[822px] mx-auto mt-4 mb-[45px] md:mb-[50px]">
+      <p className="text-center text-black leading-lg font-plusJkarta font-medium text-sm sm:text-lg  px-5 sm:px-0 max-w-[544px] lg:max-w-[822px] mx-auto mt-4 mb-[45px] md:mb-[50px]">
         Transforming Devotion: Crafting a Divine Space that Embodies
         Spirituality, Elegance, and Contemporary Style with Grace
       </p>

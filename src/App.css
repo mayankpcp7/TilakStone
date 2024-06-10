@@ -2,75 +2,14 @@
 
 @font-face {
   font-family: "graphik";
-  src: url(assets/fonts/Graphik-600-Semibold.otf);
-}
-.dreamEmoji {
-  height: 52px !important;
+  src: url(./assets/fonts/Graphik-600-Semibold.otf);
 }
 
-.sleepEmoji {
-  height: 58px !important;
+.scroll-bar-hidden::-webkit-scrollbar {
+  display: none !important;
 }
 
-.hidefaceEmoji {
-  height: 57px;
-}
-
-.handsGroup {
-  height: 69px;
-}
-
-.twopersonEmoji {
-  height: 69px;
-}
-
-.deliveryBoy {
-  height: 65px;
-}
-
-@media (min-width: 768px) {
-  .dreamEmoji {
-    height: 62px;
-  }
-
-  .sleepEmoji {
-    height: 66px;
-  }
-
-  .hidefaceEmoji {
-    height: 64px;
-  }
-
-  .handsGroup {
-    height: 50px;
-  }
-
-  .twopersonEmoji {
-    height: 62px;
-  }
-
-  .deliveryBoy {
-    height: 74px;
-  }
-
-  .professionEmoji {
-    height: 91px;
-  }
-
-  .thumbEmoji {
-    height: 67px;
-  }
-
-  .templeEmoji {
-    height: 74px;
-  }
-}
-
-.swiper-pagination {
-  position: unset;
-}
-
-.swiper-pagination-bullet {
+.pursuit .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
   border-radius: 100%;
@@ -78,7 +17,7 @@
   opacity: 0.3;
 }
 
-.swiper-pagination-bullet-active {
+.pursuit .swiper-pagination-bullet-active {
   background: #E0A922 !important;
   position: relative !important;
   opacity: 1;
@@ -87,6 +26,7 @@
 .partners_slider_track {
   animation: scroll 20s linear infinite;
 }
+
 .partners_slider_track:hover {
   animation-play-state: paused;
 }
@@ -99,4 +39,8 @@
   100% {
     transform: translatey(calc(-200px * 5));
   }
+}
+
+.featured-swiper {
+  transform: unset !important;
 }
