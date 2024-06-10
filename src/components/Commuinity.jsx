@@ -11,7 +11,7 @@ const Commuinity = () => {
     <div className="max-w-[1180px] mx-auto px-5 pt-[140px]">
       <Heading commonHeading="Our Online Community" />
       <div className="flex gap-6 mt-20 max-h-[722px] overflow-y-hidden justify-center">
-        <div className="flex flex-col gap-6 max-w-[364px]">
+        <div className="flex flex-col partners_slider_track gap-6 max-w-[364px]">
           {CommuinityList.map((obj, index) => (
             <div
               key={index}

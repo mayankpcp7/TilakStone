@@ -4,3 +4,20 @@
   font-family: "graphik";
   src: url(assets/fonts/Graphik-600-Semibold.otf);
 }
+
+.partners_slider_track {
+  animation: scroll 20s linear infinite;
+}
+.partners_slider_track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(calc(-200px * 5));
+  }
+}
