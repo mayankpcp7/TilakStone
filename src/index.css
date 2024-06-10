@@ -44,3 +44,39 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(1) {
   display: inline-block;
 }
+
+#journey_swiper .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  display: inline-block;
+  background: #E0A922 !important;
+}
+
+#journey_swiper .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #E0A922 !important;
+}
+
+#journey_swiper horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -5px) !important;
+}
+
+@media (max-width:640px) {
+
+  #journey_swiper horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: -10% !important;
+    bottom: var(--swiper-pagination-bottom, -40px) !important;
+  }
+
+  #journey_swiper .swiper {
+    overflow: visible !important;
+  }
+
+  #journey_swiper .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+}

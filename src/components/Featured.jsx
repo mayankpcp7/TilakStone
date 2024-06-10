@@ -14,7 +14,7 @@ const Featured = () => {
     dynamicBullets: true,
     renderBullet: (index, className) => {
       return `
-        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block  featured-swiper"></span>
+        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block  featured-swiper !relative !bottom-0"></span>
       `;
     },
   };
