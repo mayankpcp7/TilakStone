@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import { Logo } from "./common/Icons";
+import navLogo from "../assets/images/png/navLogo.png";
 import { navData } from "./common/Helper";
 
 const NavBar = () => {
   const [navBarVisible, setNavBarVisible] = useState(false);
+  if (navBarVisible) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
   return (
-    <nav>
+    <nav className=" relative z-30">
       <div className="max-w-[1164px] mx-auto px-3">
         <div className="lg:px-[50px] p-2 sm:p-[15px] lg:py-[11px] border-navBorder  border rounded-[84px] mt-5 flex justify-between items-center">
           <ul className="hidden lg:flex gap-5 lg:gap-10 items-center ">
@@ -20,7 +25,13 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <Logo width="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]" />
+          <a href="#">
+            <img
+              src={navLogo}
+              alt="navLogo"
+              className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] relative z-[4]"
+            />
+          </a>
           <ul
             className={`flex gap-5 z-[3] lg:gap-10 items-center fixed lg:static  bg-white lg:bg-transparent w-full h-full lg:w-auto lg:h-auto flex-col lg:flex-row justify-center duration-300  left-0 ${
               navBarVisible ? "top-0" : "-top-full"
@@ -29,6 +40,7 @@ const NavBar = () => {
             {navData.map((obj, i) => (
               <li key={i} className={`${i < 3 && "lg:hidden"} `}>
                 <a
+                  onClick={() => setNavBarVisible(false)}
                   className="font-plusJkarta block hover:text-gold duration-300 text-base leading-md font-normal text-navBlack relative z-[1]  after:absolute after:w-0  after:h-[2px] after:left-[50%] after:bottom-[-2px] hover:after:left-0 hover:after:w-full after:bg-gold after:duration-300 after:z-[-1]"
                   href={obj.to}
                 >
@@ -40,7 +52,7 @@ const NavBar = () => {
           <button
             aria-label="navshow-hide"
             onClick={() => setNavBarVisible(!navBarVisible)}
-            className="md:hidden relative z-[4]"
+            className="lg:hidden relative z-[4]"
           >
             {navBarVisible ? (
               <div className="flex lg:hidden flex-col relative z-50 justify-between w-[25px]  h-[25px] sm:w-[45px] sm:h-[45px] p-[5.99px_3.39px] sm:p-[10.78px_6.09px] cursor-pointer">
