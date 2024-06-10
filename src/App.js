@@ -1,10 +1,11 @@
 import "./App.css";
 import PursuitSec from "./components/PursuitSec";
+import GetInspired from "./components/GetInspired";
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <p className="text-5xl font-semibold text-center text-black font-plusJkarta">hello</p>
+      {/* <GetInspired /> */}
       <PursuitSec />
     </div>
   );

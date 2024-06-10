@@ -1,3 +1,4 @@
+import Heading from "./common/Heading"
 
 const PursuitSec = () => {
 
@@ -12,11 +13,21 @@ const PursuitSec = () => {
         { title: "Desire a pooja room that’s a true reflection of your faith and aesthetics?" },
     ]
     return (
-        <div>
-            <div className="container">
-                <h2>In pursuit of the ideal pooja room? Look no further. if you</h2>
+        <section className="px-3">
+            <div className="container max-w-[1140px] mx-auto">
+                <Heading commonHeading="In pursuit of the ideal pooja room? Look no further. if you" />
+                <div className="grid grid-cols-3">
+                    {pursuitSecList.map((item, index) => (
+                        <div className="col-span-1" key={index}>
+                            <div className="flex flex-col items-center">
+                                <RightTick />
+                                <p>{item.title}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
