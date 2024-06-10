@@ -37,7 +37,7 @@ const ThisYou = () => {
             );
           })}
         </div>
-        <p className="text-center text-base  md:text-2xl  md:px-0 max-w-[694px] mx-auto text-black font-semibold !leading-lg mt-[25px] md:mt-4 mb-10 font-graphik">
+        <p className="text-center text-base  md:text-2xl px-4 md:px-0 max-w-[694px] mx-auto text-black font-semibold !leading-lg mt-[25px] md:mt-4 mb-[25px] sm:mb-10 font-graphik">
           If you can relate to any of these, then we can help you
           <span className="text-darkYellow"> build the temple </span>
           of your Dreams
