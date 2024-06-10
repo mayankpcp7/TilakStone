@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14  h-[1px] bg-footerLineGradient"></div>
+      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14  h-[1px] footerLineGradient"></div>
       <p className=" font-plusJkarta font-normal sm:text-sm text-xs text-offBlack py-5 opacity-80 text-center">
         Copyright © {new Date().getFullYear()} TilakStone. All Rights reserved.
       </p>

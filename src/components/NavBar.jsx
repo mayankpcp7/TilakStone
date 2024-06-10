@@ -10,7 +10,7 @@ const NavBar = () => {
     document.body.classList.remove("overflow-hidden");
   }
   return (
-    <nav className=" relative z-30">
+    <nav>
       <div className="max-w-[1164px] mx-auto px-3">
         <div className="lg:px-[50px] p-2 sm:p-[15px] lg:py-[11px] border-navBorder  border rounded-[84px] mt-5 flex justify-between items-center">
           <ul className="hidden lg:flex gap-5 lg:gap-10 items-center ">
@@ -25,13 +25,11 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <a href="#">
-            <img
-              src={navLogo}
-              alt="navLogo"
-              className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] relative z-[4]"
-            />
-          </a>
+          <img
+            src={navLogo}
+            alt="navLogo"
+            className="w-[34px] sm:w-[50px] md:w-[60px] lg:w-[68px] h-[34px] sm:h-[50px] md:h-[60px] lg:h-[68px] z-[4]"
+          />
           <ul
             className={`flex gap-5 z-[3] lg:gap-10 items-center fixed lg:static  bg-white lg:bg-transparent w-full h-full lg:w-auto lg:h-auto flex-col lg:flex-row justify-center duration-300  left-0 ${
               navBarVisible ? "top-0" : "-top-full"

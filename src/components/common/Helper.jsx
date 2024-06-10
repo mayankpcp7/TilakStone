@@ -1,8 +1,8 @@
-import brownGirl from '../../assets/images/webp/tsaTopChoice/brownGirl.webp'
-import yellowLady from '../../assets/images/webp/tsaTopChoice/yellowLady.webp'
-import dreamTemple from '../../assets/images/webp/tsaTopChoice/dreamTemple.webp'
-import artistGuy from '../../assets/images/webp/tsaTopChoice/artistGuy.webp'
-import beautifulCollection from '../../assets/images/webp/tsaTopChoice/beautifulCollection.webp'
+import brownGirl from "../../assets/images/webp/tsaTopChoice/brownGirl.webp";
+import yellowLady from "../../assets/images/webp/tsaTopChoice/yellowLady.webp";
+import dreamTemple from "../../assets/images/webp/tsaTopChoice/dreamTemple.webp";
+import artistGuy from "../../assets/images/webp/tsaTopChoice/artistGuy.webp";
+import beautifulCollection from "../../assets/images/webp/tsaTopChoice/beautifulCollection.webp";
 import dreamEmoji from "../../assets/images/webp/thisYou/dreamEmoji.webp";
 import sleepEmoji from "../../assets/images/webp/thisYou/sleepEmoji.webp";
 import facehideEmoji from "../../assets/images/webp/thisYou/facehideEmoji.webp";
@@ -36,176 +36,163 @@ import delivery from "../../assets/images/webp/templeJourney/delivery.webp"
 import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons";
 
 export const footerLinks = {
-    column1: [
-        {
-            link: "About Us",
-            to: "#aboutus",
-        },
-        {
-            link: "Our Services",
-            to: "#ourservices",
-        },
-        {
-            link: "Why choose Us",
-            to: "#whychooseus",
-        },
-        {
-            link: "Testimonials",
-            to: "#testimonials",
-        },
-        {
-            link: "Contact Us",
-            to: "#contactus",
-        },
-    ],
-    column2: [
-        { link: "Privacy Policy" },
-        { link: " Privacy settings" },
-        { link: "Terms and conditions" },
-    ],
+  column1: [
+    { link: "About Us" },
+    { link: "Our Services" },
+    { link: "Why choose Us" },
+    { link: "Testimonials" },
+    { link: "Contact Us" },
+  ],
+  column2: [
+    { link: "Privacy Policy" },
+    { link: " Privacy settings" },
+    { link: "Terms and conditions" },
+  ],
 };
 export const footerSocialIcons = [
-    {
-        icon: <FaceBookIcon />,
-        path: "https://www.facebook.com/login/",
-    },
-    {
-        icon: <TwitterIcon />,
-        path: "https://twitter.com",
-    },
-    {
-        icon: <LinkDinIcon />,
-        path: "https://www.linkedin.com",
-    },
-    {
-        icon: <InstaIcon />,
-        path: "https://www.linkedin.com",
-    },
+  {
+    icon: <FaceBookIcon />,
+    path: "https://www.facebook.com/login/",
+  },
+  {
+    icon: <TwitterIcon />,
+    path: "https://twitter.com",
+  },
+  {
+    icon: <LinkDinIcon />,
+    path: "https://www.linkedin.com",
+  },
+  {
+    icon: <InstaIcon />,
+    path: "https://www.linkedin.com",
+  },
 ];
 
 export const LatestBlogsArray = [
-    {
-        LatestBlogsTempleImg: Temple,
-        TempleHeading: "Temple",
-        title: "Lorem ipsum dolor sit amet conse ctetur.",
-    },
-    {
-        LatestBlogsTempleImg: Hometemple,
-        TempleHeading: "Home temple",
-        title: " Lorem ipsum dolor sit amet consectetur. Amet",
-    },
-    {
-        LatestBlogsTempleImg: Godtemple,
-        TempleHeading: "God picture",
-        title: "Lorem ipsum dolor sit amet consectetur. Volutp",
-    },
+  {
+    LatestBlogsTempleImg: Temple,
+    TempleHeading: "Temple",
+    title: "Lorem ipsum dolor sit amet conse ctetur.",
+  },
+  {
+    LatestBlogsTempleImg: Hometemple,
+    TempleHeading: "Home temple",
+    title: " Lorem ipsum dolor sit amet consectetur. Amet",
+  },
+  {
+    LatestBlogsTempleImg: Godtemple,
+    TempleHeading: "God picture",
+    title: "Lorem ipsum dolor sit amet consectetur. Volutp",
+  },
 ];
 // ===============================TSA TOP CHOICE =============================//
 export const topChoiceCardlist = [
-    {
-        img: brownGirl,
-        alt: "brownGirl"
-    },
-    {
-        img: yellowLady,
-        alt: "yellowLady"
-    },
-    {
-        img: dreamTemple,
-        alt: "dreamTemple"
-    },
-    {
-        img: artistGuy,
-        alt: "artistGuy"
-    },
-    {
-        img: beautifulCollection,
-        alt: "beautifulCollection"
-    },
-]
+  {
+    img: brownGirl,
+    alt: "brownGirl",
+  },
+  {
+    img: yellowLady,
+    alt: "yellowLady",
+  },
+  {
+    img: dreamTemple,
+    alt: "dreamTemple",
+  },
+  {
+    img: artistGuy,
+    alt: "artistGuy",
+  },
+  {
+    img: beautifulCollection,
+    alt: "beautifulCollection",
+  },
+];
 
 export const navData = [
-    {
-        name: "About Us",
-        to: "#aboutus",
-    },
-    {
-        name: "Our Services",
-        to: "#ourservices",
-    },
-    {
-        name: "Why choose Us",
-        to: "#whychooseus",
-    },
-    {
-        name: "Careers",
-        to: "#careers",
-    },
-    {
-        name: "Testimonials",
-        to: "#testimonials",
-    },
-    {
-        name: "Contact Us",
-        to: "#contactus",
-    },
+  {
+    name: "About Us",
+    to: "#aboutus",
+  },
+  {
+    name: "Our Services",
+    to: "#ourservices",
+  },
+  {
+    name: "Why choose Us",
+    to: "#whychooseus",
+  },
+  {
+    name: "Careers",
+    to: "#careers",
+  },
+  {
+    name: "Testimonials",
+    to: "#testimonials",
+  },
+  {
+    name: "Contact Us",
+    to: "#contactus",
+  },
 ];
 
 export const ThisYouData = [
-    {
-        emoji: dreamEmoji,
-        description: "You are looking for someone to make your dream pooja room",
-    },
-    {
-        emoji: sleepEmoji,
-        description:
-            "You are tired of finding the right brand who can do it for you",
-    },
-    {
-        emoji: facehideEmoji,
-        description: "Can’t find someone to design pooja room for you",
-    },
-    {
-        emoji: handsGroup,
-        description: "Can’t trust anyone with your most important room",
-    },
-    {
-        emoji: twoPerson,
-        description: "Local vendors are not up to the mark",
-    },
-    {
-        emoji: deliveryBoy,
-        description: "Need a one stop shop who can design deliver & install",
-    },
-    {
-        emoji: professional,
-        description: "Need a professionals help",
-    },
-    {
-        emoji: thumb,
-        description:
-            "That's exactly the idea! It succinctly communicates the message",
-    },
-    {
-        emoji: templeToday,
-        description: "Relate to these? We'll help build your dream temple today.",
-    },
+  {
+    emoji: dreamEmoji,
+    description: "You are looking for someone to make your dream pooja room",
+  },
+  {
+    emoji: sleepEmoji,
+    description:
+      "You are tired of finding the right brand who can do it for you",
+  },
+  {
+    emoji: facehideEmoji,
+    description: "Can’t find someone to design pooja room for you",
+  },
+  {
+    emoji: handsGroup,
+    description: "Can’t trust anyone with your most important room",
+  },
+  {
+    emoji: twoPerson,
+    description: "Local vendors are not up to the mark",
+  },
+  {
+    emoji: deliveryBoy,
+    description: "Need a one stop shop who can design deliver & install",
+  },
+  {
+    emoji: professional,
+    description: "Need a professionals help",
+  },
+  {
+    emoji: thumb,
+    description:
+      "That's exactly the idea! It succinctly communicates the message",
+  },
+  {
+    emoji: templeToday,
+    description: "Relate to these? We'll help build your dream temple today.",
+  },
 ];
 export const CommuinityList = [
-    { image: katya, alt: "katya" },
-    { image: tony, alt: "tony" },
-    { image: taliatate, alt: "taliatate" },
-    { image: travis, alt: "travis" },
-    { image: lynch, alt: "lynch" },
-    { image: mattan, alt: "mattan" },
+  { image: katya, alt: "katya" },
+  { image: tony, alt: "tony" },
+  { image: taliatate, alt: "taliatate" },
+  { image: travis, alt: "travis" },
+  { image: lynch, alt: "lynch" },
+  { image: mattan, alt: "mattan" },
+  { image: katya, alt: "katya" },
+  { image: tony, alt: "tony" },
+  { image: taliatate, alt: "taliatate" },
+  { image: travis, alt: "travis" },
 ];
-export const CommuinityList2 = [
-    { image: taliatate, alt: "taliatate" },
-    { image: travis, alt: "travis" },
-    { image: katya, alt: "katya" },
-    { image: lynch, alt: "lynch" },
-    { image: mattan, alt: "mattan" },
-    { image: tony, alt: "tony" },
+export const CommuinitySlidList = [
+  { image: katya, alt: "katya" },
+  { image: tony, alt: "tony" },
+  { image: taliatate, alt: "taliatate" },
+  { image: travis, alt: "travis" },
 ];
 export const CommuinityList3 = [
     { image: lynch, alt: "lynch" },
@@ -218,95 +205,95 @@ export const CommuinityList3 = [
 
 // =============================== The TSA PROMISE ===============================
 export const promiseCardlist = [
-    {
-        tittle: "Holistic Service",
-        description:
-            "We take care of everything from start to finish! From the first sketch to the final setup, we make sure your experience with us is smooth and hassle-free. Sit back, relax, and let us handle it all!",
-    },
-    {
-        tittle: "Tradition Meets Today",
-        description:
-            "Our designs are a mix of old and new. Imagine a timeless space that feels classic yet fits perfectly in your modern home. It's like bringing the best of the past into the present!",
-    },
-    {
-        tittle: "Create from Home Picture this",
-        description:
-            "You can plan and perfect your pooja room without ever leaving your house! We'll bring the entire process to you, making it super convenient. It's like having your dream temple delivered right to your doorstep!",
-    },
+  {
+    tittle: "Holistic Service",
+    description:
+      "We take care of everything from start to finish! From the first sketch to the final setup, we make sure your experience with us is smooth and hassle-free. Sit back, relax, and let us handle it all!",
+  },
+  {
+    tittle: "Tradition Meets Today",
+    description:
+      "Our designs are a mix of old and new. Imagine a timeless space that feels classic yet fits perfectly in your modern home. It's like bringing the best of the past into the present!",
+  },
+  {
+    tittle: "Create from Home Picture this",
+    description:
+      "You can plan and perfect your pooja room without ever leaving your house! We'll bring the entire process to you, making it super convenient. It's like having your dream temple delivered right to your doorstep!",
+  },
 ];
 // ============================= FEATURED ON =============================
 export const featuredSlider = [
-    {
-        img: temboNickel,
-        alt: "temboNickel",
-    },
-    {
-        img: whitebird,
-        alt: "whitebird",
-    },
-    {
-        img: dixon,
-        alt: "dixon",
-    },
-    {
-        img: firstQuantumMinerals,
-        alt: "firstQuantumMinerals",
-    },
-    {
-        img: artemis,
-        alt: "artemis",
-    },
-    {
-        img: steppeGold,
-        alt: "steppeGold",
-    },
-    {
-        img: trxGold,
-        alt: "trxGold",
-    },
+  {
+    img: temboNickel,
+    alt: "temboNickel",
+  },
+  {
+    img: whitebird,
+    alt: "whitebird",
+  },
+  {
+    img: dixon,
+    alt: "dixon",
+  },
+  {
+    img: firstQuantumMinerals,
+    alt: "firstQuantumMinerals",
+  },
+  {
+    img: artemis,
+    alt: "artemis",
+  },
+  {
+    img: steppeGold,
+    alt: "steppeGold",
+  },
+  {
+    img: trxGold,
+    alt: "trxGold",
+  },
 ];
 
 export const faqAccordionData = [
-    {
-        head: "What makes Tilak Stone Arts unique in temple craftsmanship?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations.",
-    },
-    {
-        head: "Can I visit your workshop or showroom?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "Is there a price difference between ready-made and custom temples? ",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "How can I ensure the security of my website and data?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "What is the delivery process for an international order?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "How long does it typically take for an international delivery?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "Do you offer any guarantees or warranties on your temples?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
-    {
-        head: "Can I make changes to my order once it's placed?",
-        content:
-            "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
-    },
+  {
+    head: "What makes Tilak Stone Arts unique in temple craftsmanship?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations.",
+  },
+  {
+    head: "Can I visit your workshop or showroom?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "Is there a price difference between ready-made and custom temples? ",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "How can I ensure the security of my website and data?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "What is the delivery process for an international order?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "How long does it typically take for an international delivery?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "Do you offer any guarantees or warranties on your temples?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
+  {
+    head: "Can I make changes to my order once it's placed?",
+    content:
+      "At Tilak Stone Arts, our unique blend of ancient artisanship and modern design sets us apart. Our temples are not just structures but are handcrafted pieces of art that are meant to be passed down through generations..",
+  },
 ];
 
 // ================pursuit section data ====================

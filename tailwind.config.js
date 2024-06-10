@@ -31,17 +31,18 @@ module.exports = {
         navBorder: "#D4D4D4",
         navBlack: "#333333",
         skyBlue: "#4286F4",
-        lightSkyBlue: "#f5f5f5",
-        tundora: "#4D4D4D"
+        lightBlack: "#43181829",
       },
       backgroundImage: {
         latestblogsgradient: ["linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 49.55%, rgba(255, 255, 255, 0.1) 100%)",],
-        footerLineGradient:["linear-gradient(90deg, #f6f3fb 0%, #0c0c0c 51.5%, #f6f3fb 100%)"]
+        footerLineGradient:["linear-gradient(90deg, #f6f3fb 0%, #0c0c0c 51.5%, #f6f3fb 100%)"],
+        latestblogsgradient: [
+          "linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 49.55%, rgba(255, 255, 255, 0.1) 100%)",
+        ],
       },
       fontFamily: {
         plusJkarta: "Plus Jakarta Sans",
         graphik: "Graphik",
-        roboto: ["Roboto", "sans-serif"],
       },
       fontSize: {
         "6xl": "64px",
@@ -61,6 +62,8 @@ module.exports = {
       },
       boxShadow: {
         "inspire-img-shadow": "0px 4px 16px 0px #0000000F",
+        commuinityCard: "0px 4px 16px 0px #0000000F",
+        commuinityin: "0px 2px 17.2px 0px #0000000A",
       },
       screen: {
         xs: "425px",
@@ -69,12 +72,13 @@ module.exports = {
         videoBackground:"url('/src/assets/images/webp/header/video-background.webp')",
         commuinityCard: "0px 4px 16px 0px #0000000F",
         commuinityin: "0px 2px 17.2px 0px #0000000A",
+        videoBackground:
+          "url('/src/assets/images/webp/header/video-background.webp')",
       },
       screen: {
-        xs: "400px"
-      }
+        xs: "400px",
+      },
     },
   },
   plugins: [],
 };
-
