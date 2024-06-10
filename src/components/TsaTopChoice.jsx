@@ -42,17 +42,19 @@ const TsaTopChoice = () => {
             className="mySwiper md:!pb-[52px] !pb-[37px]"
           >
             {topChoiceCardlist.map((value, index) => (
-              <SwiperSlide key={index} className='border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl'>
-                <div className="relative w-full">
-                  <img
-                    src={value.img}
-                    alt={value.alt}
-                    className="w-full relative rounded-xl shadow-[0px_2px_17.2px_0px_#0000000A] md:min-h-[370px] object-cover object-center"
-                  />
-                  <div className="absolute left-0 right-0 bottom-0 lg:px-3 pb-3 md:px-[15px] px-[11px]">
-                    <button className="bg-darkYellow font-plusJkarta text-base rounded-md !leading-md text-white w-full sm:py-4 py-[15px]">
-                      View Reel
-                    </button>
+              <SwiperSlide key={index} className=''>
+                <div className='border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl max-sm:max-w-[335px] max-sm:mx-auto'>
+                  <div className="relative w-full">
+                    <img
+                      src={value.img}
+                      alt={value.alt}
+                      className="w-full relative rounded-xl shadow-[0px_2px_17.2px_0px_#0000000A] md:min-h-[370px] object-cover object-center"
+                    />
+                    <div className="absolute left-0 right-0 bottom-0 lg:px-3 pb-3 md:px-[15px] px-[11px]">
+                      <button className="bg-darkYellow font-plusJkarta text-base rounded-md !leading-md text-white w-full sm:py-[15px] py-[15px] border border-darkYellow hover:bg-white hover:text-darkYellow transition-all duration-300 ease-linear">
+                        View Reel
+                      </button>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
