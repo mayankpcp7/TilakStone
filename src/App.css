@@ -86,12 +86,8 @@
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none !important;
 }
-/* 
-.swiper-pagination {
-  position: unset !important;
-} */
 
-.swiper-pagination-bullet {
+.pursuit .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
   border-radius: 100%;
@@ -99,7 +95,7 @@
   opacity: 0.3;
 }
 
-.swiper-pagination-bullet-active {
+.pursuit .swiper-pagination-bullet-active {
   background: #E0A922 !important;
   position: relative !important;
   opacity: 1;
