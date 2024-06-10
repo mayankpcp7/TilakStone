@@ -5,13 +5,13 @@ import getRightEllipse2 from "../assets/images/webp/getTouch/getRightEllipse2.we
 
 const GetTouch = () => {
   return (
-    <div className=" lg:translate-y-[156px] sm:translate-y-[166px] lg:-mt-4 sm:mt-[-74px] -mt-24 translate-y-[172px]">
-      <div className="container max-w-[1140px] sm:px-3 px-5 mx-auto">
+    <div className=" lg:translate-y-[156px] overflow-hidden sm:translate-y-[166px] lg:-mt-4 sm:mt-[-74px] -mt-24 translate-y-[172px]">
+      <div className="container max-w-[1140px] lg:px-3 sm:px-[60px] px-5 mx-auto">
         <div className="bg-darkYellow px-[35px] relative rounded-xl sm:py-16 py-[50px]">
           <img
             src={getLeftEllipse2}
             alt="left2"
-            className="max-w-[154px] max-h-[153px] top-[-10%] sm:hidden block left-[-4%] absolute"
+            className="max-w-[154px] max-h-[153px] top-[-8%] sm:hidden block left-[-10%] absolute"
           />
           <img
             src={getRightEllipse2}

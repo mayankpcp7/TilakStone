@@ -4,11 +4,13 @@ import { footerLinks, footerSocialIcons } from "./common/Helper";
 const Footer = () => {
   return (
     <div className=" sm:pt-60 pt-56 mt-2 lg:mt-[2px] sm:mt-1 lightSkyBlue">
-      <div className="container sm:px-3 px-4 mx-auto pt-[2px] max-w-[1140px]">
+      <div className="container lg:px-3 px-4 mx-auto pt-[2px] max-w-[1140px]">
         <div className="flex flex-wrap flex-row -mx-3">
           <div className="lg:w-4/12 w-full lg:pb-0 sm:pb-[43px] pb-[25px] px-3">
             <div className="flex lg:justify-start sm:justify-center justify-start ">
-              <a href="#"><img src={footerLogo} alt="logo" /></a>
+              <a href="#">
+                <img src={footerLogo} alt="logo" />
+              </a>
             </div>
             <p className="pt-3 text-offBlack opacity-70 lg:max-w-[340px] lg:text-start sm:text-center sm:max-w-[488px] max-w-[335px] lg:mx-0 sm:mx-auto sm:text-base text-sm font-normal font-plusJkarta">
               Transforming Devotion: Crafting a Divine Space that Embodies
@@ -87,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14 sm:pt-0 pt-1 h-[1px] footerLineGradient"></div>
+      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14  h-[1px] footerLineGradient"></div>
       <p className=" font-plusJkarta font-normal sm:text-sm text-xs text-offBlack py-5 opacity-80 text-center">
         Copyright © {new Date().getFullYear()} TilakStone. All Rights reserved.
       </p>
