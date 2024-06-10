@@ -26,15 +26,14 @@ const TSAPromise = () => {
                     {obj.tittle}
                   </p>
                   <p
-                    className={`${
-                      id === 0
+                    className={`${id === 0
                         ? "lg:max-w-[414px] max-[420px]:max-w-[302px]"
                         : id === 1
-                        ? "lg:max-w-[456px] max-[420px]:max-w-[299px]"
-                        : id === 2
-                        ? "lg:max-w-[460px] max-[420px]:max-w-[297px]"
-                        : ""
-                    } font-normal font-plusJkarta sm:text-base text-sm leading-normal sm:text-black opacity-80 text-lightBlack group-hover:text-white transition-colors ease-linear duration-300`}
+                          ? "lg:max-w-[456px] max-[420px]:max-w-[299px]"
+                          : id === 2
+                            ? "lg:max-w-[460px] max-[420px]:max-w-[297px]"
+                            : ""
+                      } font-normal font-plusJkarta sm:text-base text-sm leading-normal sm:text-black opacity-80 text-lightBlack group-hover:text-white transition-colors ease-linear duration-300`}
                   >
                     {obj.description}
                   </p>
