@@ -113,3 +113,18 @@ export const CommuinityList3 = [
   { image: taliatate, alt: "taliatate" },
   { image: travis, alt: "travis" },
 ];
+
+// ================pursuit section data ====================
+
+export const pursuitSecList = [
+  { title: "Desire a pooja room that’s a true  reflection of your faith and aesthetics?" },
+  { title: "Exhausted by the search for creators who understand your vision?" },
+  { title: "Longing for a bespoke design that blends tradition, modernity and functionality ?" },
+  { title: "Need a guarantee that your most spiritual space will be crafted with devotion?" },
+  { title: "Disappointed with the standards of local craftsmanship and service?" },
+  { title: "Looking for an all-in-one service to design, deliver, and install your sacred space?" },
+  { title: "In search of expert advice and superior marble artistry?" },
+  { title: "Are you a designer seeking a collaborator who values precision and detail?" },
+  { title: "Require a partner who brings both technical expertise and creative insight?" },
+]
+
