@@ -159,7 +159,7 @@ const ContactInformation = () => {
                             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
                                 <div className='flex sm:flex-row flex-col sm:gap-4'>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded "
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded "
                                             type="text"
                                             placeholder="First Name*"
                                             id="name"
@@ -173,7 +173,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Last Name*"
                                             id="lastname"
@@ -189,7 +189,7 @@ const ContactInformation = () => {
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Email*"
                                             id="email"
@@ -203,7 +203,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Company*"
                                             id="company"
@@ -219,7 +219,7 @@ const ContactInformation = () => {
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="City*"
                                             id="city"
@@ -233,7 +233,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                             type="text"
                                             placeholder="Customer details*"
                                             id="details"
@@ -248,7 +248,7 @@ const ContactInformation = () => {
                                     </div>
                                 </div>
                                 <div className="w-full sm:mb-[20px] mb-[15px]">
-                                    <textarea className="resize-none font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                    <textarea className="resize-none !text-offGrey font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
                                         type="text"
                                         placeholder="Message*"
                                         id="message"
