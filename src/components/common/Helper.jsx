@@ -18,6 +18,13 @@ import taliatate from "../../assets/images/webp/commuinity/taliatate.webp";
 import travis from "../../assets/images/webp/commuinity/travis.webp";
 import lynch from "../../assets/images/webp/commuinity/lynch.webp";
 import mattan from "../../assets/images/webp/commuinity/mattan.webp";
+import temboNickel from "../../assets/images/webp/featured/temboNickel.webp";
+import whitebird from "../../assets/images/webp/featured/whitebird.webp";
+import dixon from "../../assets/images/webp/featured/dixon.webp";
+import firstQuantumMinerals from "../../assets/images/webp/featured/firstQuantumMinerals.webp";
+import artemis from "../../assets/images/webp/featured/artemis.webp";
+import steppeGold from "../../assets/images/webp/featured/steppeGold.webp";
+import trxGold from "../../assets/images/webp/featured/trxGold.webp";
 
 // ===============================TSA TOP CHOICE =============================//
 export const topChoiceCardlist = [
@@ -142,4 +149,55 @@ export const CommuinityList3 = [
     { image: tony, alt: "tony" },
     { image: taliatate, alt: "taliatate" },
     { image: travis, alt: "travis" },
+]
+
+
+// =============================== The TSA PROMISE ===============================
+export const promiseCardlist = [
+    {
+        tittle: "Holistic Service",
+        description:
+            "We take care of everything from start to finish! From the first sketch to the final setup, we make sure your experience with us is smooth and hassle-free. Sit back, relax, and let us handle it all!",
+    },
+    {
+        tittle: "Tradition Meets Today",
+        description:
+            "Our designs are a mix of old and new. Imagine a timeless space that feels classic yet fits perfectly in your modern home. It's like bringing the best of the past into the present!",
+    },
+    {
+        tittle: "Create from Home Picture this",
+        description:
+            "You can plan and perfect your pooja room without ever leaving your house! We'll bring the entire process to you, making it super convenient. It's like having your dream temple delivered right to your doorstep!",
+    },
+];
+// ============================= FEATURED ON =============================
+export const featuredSlider = [
+    {
+        img: temboNickel,
+        alt: "temboNickel",
+    },
+    {
+        img: whitebird,
+        alt: "whitebird",
+    },
+    {
+        img: dixon,
+        alt: "dixon",
+    },
+    {
+        img: firstQuantumMinerals,
+        alt: "firstQuantumMinerals",
+    },
+    {
+        img: artemis,
+        alt: "artemis",
+    },
+    {
+        img: steppeGold,
+        alt: "steppeGold",
+    },
+    {
+        img: trxGold,
+        alt: "trxGold",
+    },
 ];
