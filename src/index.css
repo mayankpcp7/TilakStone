@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* temple journey swiper */
 #journey_swiper .swiper-pagination-bullet {
     width: 12px !important;
     height: 12px !important;
