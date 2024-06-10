@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundSize: {
-        "full": "100% 100%"
+        full: "100% 100%",
       },
       colors: {
         darkYellow: "#E0A922",
@@ -47,6 +47,10 @@ module.exports = {
       },
       screen: {
         xs: "425px",
+      },
+      backgroundImage: {
+        videoBackground:
+          "url('/src/assets/images/webp/header/video-background.webp')",
       },
     },
   },

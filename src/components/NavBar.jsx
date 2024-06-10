@@ -40,7 +40,7 @@ const NavBar = () => {
           <button
             aria-label="navshow-hide"
             onClick={() => setNavBarVisible(!navBarVisible)}
-            className="md:hidden relative z-[4]"
+            className="lg:hidden relative z-[4]"
           >
             {navBarVisible ? (
               <div className="flex lg:hidden flex-col relative z-50 justify-between w-[25px]  h-[25px] sm:w-[45px] sm:h-[45px] p-[5.99px_3.39px] sm:p-[10.78px_6.09px] cursor-pointer">
