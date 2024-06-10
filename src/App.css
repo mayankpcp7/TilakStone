@@ -82,9 +82,11 @@
     height: 74px;
   }
 }
-
+.scroll-bar-hidden::-webkit-scrollbar{
+  display: none !important;
+}
 .swiper-pagination {
-  position: unset;
+  position: unset !important;
 }
 
 .swiper-pagination-bullet {
