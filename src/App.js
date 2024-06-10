@@ -19,11 +19,11 @@ import ContactInformation from "./components/ContactInformation";
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      {/* <Header />
+      <Header />
       <HeroVideo />
-      <ThisYou /> */}
+      <ThisYou />
       <PursuitSec />
-      {/* <Commuinity />
+      <Commuinity />
       <TsaTopChoice />
       <Choose />
       <TempleJourney />
@@ -34,7 +34,7 @@ function App() {
       <LatestBlogs />
       <Faq />
       <GetTouch />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
