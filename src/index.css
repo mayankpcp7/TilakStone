@@ -16,7 +16,7 @@
 
 #journey_swiper horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: var(--swiper-pagination-bottom, 0px) !important;
+    bottom: var(--swiper-pagination-bottom, -5px) !important;
 }
 
 @media (max-width:640px) {
