@@ -1,11 +1,22 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import Heading from "./common/Heading"
-import { Virtual } from "swiper/modules"
+import { Pagination, Virtual } from "swiper/modules"
+import { useCallback, useRef } from 'react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import temple from "../assets/images/webp/pursuit-sec/temple-half.png"
+import vector from "../assets/images/webp/pursuit-sec/vector.png"
 const PursuitSec = () => {
+    const sliderRef = useRef(null);
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slideNext();
+    }, []);
     const RightTick = () => {
         return (
             <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,14 +51,14 @@ const PursuitSec = () => {
     ]
 
     return (
-        <section className="px-5 sm:px-10 md:px-[60px] pt-[140px]">
-            <div className="container max-w-[1140px] mx-auto">
+        <section className="px-5 sm:px-10 md:px-[60px] pt-[140px] relative">
+            <div className="container max-w-[1140px] mx-auto relative z-20">
                 <Heading className="max-w-[789px] mx-auto" commonHeading="In pursuit of the ideal pooja room? Look no further. if you" />
-                <Swiper spaceBetween={27} modules={[Virtual]} slidesPerView={1} loop={true}
-                    breakpoints={{ 640: { slidesPerView: 2, }}} navigation={{ nextEl: ".next-arrow", prevEl: ".prev-arrow" }} pagination={{ el: ".swiper-pagination", type: "bullets", bulletActiveClass: "swiper-pagination-bullet-active", }} className="mt-[35px] sm:mt-14 md:mt-20 lg:!hidden !h-full">
+                <Swiper ref={sliderRef} spaceBetween={27} modules={[Virtual, Pagination]} slidesPerView={1} loop={true}
+                    breakpoints={{ 640: { slidesPerView: 2, } }} pagination={{ el: ".swiper-pagination", type: "bullets", bulletActiveClass: "swiper-pagination-bullet-active", }} className="mt-[35px] sm:mt-14 md:mt-20 lg:!hidden h-[]">
                     {pursuitSecList.map((item, index) => (
                         <SwiperSlide className="h-full col-span-1" key={index}>
-                            <div className="flex flex-col sm:min-h-[262px] group justify-between border rounded-2xl border-[#DEDEDE] shadow-[0_4px_16px_0_#0000000F] bg-[#FCFCFC] duration-300 hover:bg-[#ECC744] py-6 pl-6 pr-5 sm:p-5 lg:pt-6 lg:px-6 lg:pb-7 lg:pr-7 hover:pb-6 hover:border-[#BF9602]">
+                            <div className="flex flex-col min-h-[258px] sm:min-h-[290px] md:min-h-[262px] group justify-between border rounded-2xl border-[#DEDEDE] shadow-[0_4px_16px_0_#0000000F] hover:shadow-none bg-[#FCFCFC] duration-300 hover:bg-[#ECC744] py-6 pl-6 pr-5 sm:p-5 lg:pt-6 lg:px-6 lg:pb-7 lg:pr-7 hover:pb-6 hover:border-[#BF9602]">
                                 <div className="flex flex-col gap-3">
                                     <span className="flex items-center justify-center w-[42px] h-[42px] sm:w-12 sm:h-12 rounded-full bg-[#F3F3F3] duration-300 group-hover:bg-white">
                                         <RightTick />
@@ -62,7 +73,7 @@ const PursuitSec = () => {
                 <div className="grid grid-cols-3 gap-5 md:mt-20 max-lg:hidden">
                     {pursuitSecList.map((item, index) => (
                         <div className="h-full col-span-1" key={index}>
-                            <div className="flex flex-col h-full group justify-between border rounded-2xl border-[#DEDEDE] shadow-[0_4px_16px_0_#0000000F] bg-[#FCFCFC] duration-300 hover:bg-[#ECC744] py-6 pl-6 pr-5 sm:p-5 lg:pt-6 lg:px-6 lg:pb-7 lg:pr-7 hover:pb-6 hover:border-[#BF9602]">
+                            <div className="flex flex-col h-full group justify-between border rounded-2xl border-[#DEDEDE] shadow-[0_4px_16px_0_#0000000F] hover:shadow-none bg-[#FCFCFC] duration-300 hover:bg-[#ECC744] py-6 pl-6 pr-5 sm:p-5 lg:pt-6 lg:px-6 lg:pb-7 lg:pr-7 hover:pb-6 hover:border-[#BF9602]">
                                 <div className="flex flex-col gap-3">
                                     <span className="flex items-center justify-center w-[42px] h-[42px] sm:w-12 sm:h-12 rounded-full bg-[#F3F3F3] duration-300 group-hover:bg-white">
                                         <RightTick />
@@ -74,12 +85,14 @@ const PursuitSec = () => {
                         </div>
                     ))}
                 </div>
-                <div className="swiper-pagination sm:hidden"><span className='swiper-pagination-bullet'></span></div>
+                <div className="flex justify-center gap-2 mt-6 swiper-pagination sm:hidden"><span className='swiper-pagination-bullet'></span></div>
                 <div className="flex items-center justify-center gap-4 mt-8 max-sm:hidden lg:hidden">
-                    <button className='flex next-arrow items-center justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 group-hover:stroke-white" /></button>
-                    <button className='flex items-center prev-arrow justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 rotate-180 group-hover:stroke-white" /></button>
+                    <button onClick={handlePrev}  className='flex next-arrow items-center justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 group-hover:stroke-white" /></button>
+                    <button onClick={handleNext} className='flex items-center prev-arrow justify-center w-12 group h-12 bg-white border-[2px] border-darkYellow duration-300 hover:bg-darkYellow rounded-full'><LeftArrow className="duration-300 rotate-180 group-hover:stroke-white" /></button>
                 </div>
             </div>
+            <img className="absolute bottom-0 right-0 z-0 translate-y-10 max-md:hidden md:h-[688px] lg:h-[846px]" src={temple} alt="temple" />
+            <img className="absolute bottom-0 left-0 z-0 translate-y-[113px] max-md:hidden md:h-[358px] lg:h-[424px]" src={vector} alt="vector" />
         </section>
     )
 }

@@ -6,7 +6,7 @@
 }
 
 .swiper-pagination {
-  position: unset;
+  position: unset !important;
 }
 
 .swiper-pagination-bullet {
