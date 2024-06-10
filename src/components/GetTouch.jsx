@@ -5,9 +5,9 @@ import getRightEllipse2 from "../assets/images/webp/getTouch/getRightEllipse2.we
 
 const GetTouch = () => {
   return (
-    <div className=" sm:translate-y-[166px] translate-y-[184px]">
+    <div className=" lg:translate-y-[156px] sm:translate-y-[166px] translate-y-[172px]">
       <div className="container max-w-[1140px] px-3 mx-auto">
-        <div className="bg-darkYellow px-11 relative rounded-xl py-16">
+        <div className="bg-darkYellow px-11 relative rounded-xl sm:py-16 py-[50px]">
           <img
             src={getLeftEllipse2}
             alt="left2"
@@ -31,7 +31,7 @@ const GetTouch = () => {
           <h2 className="font-plusJkarta font-semibold text-center text-white leading-128 sm:text-4xl text-2xl">
             Get into touch
           </h2>
-          <p className="text-center opacity-80 lg:max-w-[639px] max-w-[527px] mt-3 text-white mx-auto font-normal font-plusJkarta sm:text-base text-sm">
+          <p className="text-center opacity-80 lg:max-w-[639px] max-w-[527px] mt-4 text-white mx-auto font-normal font-plusJkarta sm:text-base text-sm">
             Have questions or ready to get started? Reach out to us today. We're
             here to help you every step of the way on your journey to success.
           </p>

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
  .footerLinkHover {
-    @apply after:absolute relative hover:after:left-[0] after:bottom-0 after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-darkYellow hover:text-darkYellow hover:after:w-full after:duration-300;
+    @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-darkYellow hover:text-darkYellow hover:after:w-full after:duration-300;
   }

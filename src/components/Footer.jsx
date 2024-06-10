@@ -3,12 +3,12 @@ import { footerLinks, footerSocialIcons } from "./common/Helper";
 
 const Footer = () => {
   return (
-    <div className=" sm:pt-60 pt-56 lg:mt-[2px] sm:mt-1 lightSkyBlue">
+    <div className=" sm:pt-60 pt-56 mt-2 lg:mt-[2px] sm:mt-1 lightSkyBlue">
       <div className="container px-3 mx-auto pt-[2px] max-w-[1140px]">
         <div className="flex flex-wrap flex-row -mx-3">
           <div className="lg:w-4/12 w-full lg:pb-0 sm:pb-[43px] pb-[25px] px-3">
             <div className="flex lg:justify-start sm:justify-center justify-start ">
-              <img src={footerLogo} alt="logo" />
+              <a href="#"><img src={footerLogo} alt="logo" /></a>
             </div>
             <p className="pt-3 text-offBlack opacity-70 lg:max-w-[340px] lg:text-start sm:text-center sm:max-w-[488px] max-w-[335px] lg:mx-0 sm:mx-auto sm:text-base text-sm font-normal font-plusJkarta">
               Transforming Devotion: Crafting a Divine Space that Embodies
@@ -26,7 +26,7 @@ const Footer = () => {
                     {footerLinks.column1.map((obj, i) => (
                       <li
                         key={i}
-                        className="pt-3 lg:text-start sm:text-center text-start"
+                        className="pt-4 lg:text-start sm:text-center text-start"
                       >
                         <a
                           href=""
@@ -48,7 +48,7 @@ const Footer = () => {
                     {footerLinks.column2.map((obj, i) => (
                       <li
                         key={i}
-                        className="pt-3 lg:text-start sm:text-center text-start"
+                        className="pt-4 lg:text-start sm:text-center text-start"
                       >
                         <a
                           href=""
