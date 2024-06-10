@@ -19,7 +19,6 @@ const Featured = () => {
     },
   };
   const sliderRef = useRef(null);
-
   return (
     <div className="relative">
       <img
