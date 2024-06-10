@@ -1,8 +1,69 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
   font-family: "graphik";
   src: url(assets/fonts/Graphik-600-Semibold.otf);
+}
+.dreamEmoji {
+  height: 52px !important;
+}
+
+.sleepEmoji {
+  height: 58px !important;
+}
+
+.hidefaceEmoji {
+  height: 57px;
+}
+
+.handsGroup {
+  height: 69px;
+}
+
+.twopersonEmoji {
+  height: 69px;
+}
+
+.deliveryBoy {
+  height: 65px;
+}
+
+@media (min-width: 768px) {
+  .dreamEmoji {
+    height: 62px;
+  }
+
+  .sleepEmoji {
+    height: 66px;
+  }
+
+  .hidefaceEmoji {
+    height: 64px;
+  }
+
+  .handsGroup {
+    height: 50px;
+  }
+
+  .twopersonEmoji {
+    height: 62px;
+  }
+
+  .deliveryBoy {
+    height: 74px;
+  }
+
+  .professionEmoji {
+    height: 91px;
+  }
+
+  .thumbEmoji {
+    height: 67px;
+  }
+
+  .templeEmoji {
+    height: 74px;
+  }
 }
 
 .swiper-pagination {
@@ -21,4 +82,21 @@
   background: #E0A922 !important;
   position: relative !important;
   opacity: 1;
+}
+
+.partners_slider_track {
+  animation: scroll 20s linear infinite;
+}
+.partners_slider_track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(calc(-200px * 5));
+  }
 }

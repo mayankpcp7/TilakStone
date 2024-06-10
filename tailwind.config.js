@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
+      backgroundSize: {
+        full: "100% 100%",
+      },
       colors: {
         darkYellow: "#E0A922",
         gold: "#EDC743",
@@ -17,6 +20,7 @@ module.exports = {
         red: "#ff0000",
         blogPera: "#000700",
         blogBorder: "#D4D4D4",
+        navBorder: "#D4D4D4",
         navBlack: "#333333",
         skyBlue: "#4286F4",
       },
@@ -37,6 +41,18 @@ module.exports = {
         md: "125%",
         lg: "150%",
         xl: "166%",
+      },
+      boxShadow: {
+        "inspire-img-shadow": "0px 4px 16px 0px #0000000F",
+      },
+      screen: {
+        xs: "425px",
+      },
+      backgroundImage: {
+        videoBackground:
+          "url('/src/assets/images/webp/header/video-background.webp')",
+        commuinityCard: "0px 4px 16px 0px #0000000F",
+        commuinityin: "0px 2px 17.2px 0px #0000000A",
       },
     },
   },
