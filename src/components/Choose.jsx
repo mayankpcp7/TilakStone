@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { data } from './common/Helper';
 import { Correct, Cross } from './common/Icons';
 
-const Table = () => {
+const Choose = () => {
     const [hoveredColumn, setHoveredColumn] = useState(null);
 
     return (
@@ -16,27 +16,24 @@ const Table = () => {
                     <thead>
                         <tr>
                             <th
-                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${
-                                    hoveredColumn === 0 ? 'bg-darkYellow text-white scale-105' : ''
-                                }`}
+                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${hoveredColumn === 0 ? 'bg-darkYellow text-white hover:rounded-tl-2xl hover:rounded-tr-2xl ' : ''
+                                    }`}
                                 onMouseEnter={() => setHoveredColumn(0)}
                                 onMouseLeave={() => setHoveredColumn(null)}
                             >
                                 Feature
                             </th>
                             <th
-                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${
-                                    hoveredColumn === 1 ? 'bg-darkYellow text-white scale-105' : ''
-                                }`}
+                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${hoveredColumn === 1 ? 'bg-darkYellow text-white hover:rounded-tl-2xl hover:rounded-tr-2xl' : ''
+                                    }`}
                                 onMouseEnter={() => setHoveredColumn(1)}
                                 onMouseLeave={() => setHoveredColumn(null)}
                             >
                                 Tilak Stone Arts (TSA)
                             </th>
                             <th
-                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${
-                                    hoveredColumn === 2 ? 'bg-darkYellow text-white scale-105' : ''
-                                }`}
+                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold text-2xl leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white  hover:rounded-tl-2xl hover:rounded-tr-2xl ' : ''
+                                    }`}
                                 onMouseEnter={() => setHoveredColumn(2)}
                                 onMouseLeave={() => setHoveredColumn(null)}
                             >
@@ -48,18 +45,16 @@ const Table = () => {
                         {data.map((row, index) => (
                             <tr key={index}>
                                 <td
-                                    className={`px-7 py-6 whitespace-nowrap font-normal font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${
-                                        hoveredColumn === 0 ? 'bg-darkYellow text-white scale-105' : ''
-                                    }`}
+                                    className={`px-7 py-6 whitespace-nowrap font-normal font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${hoveredColumn === 0 ? 'bg-darkYellow text-white ' : ''
+                                        }`}
                                     onMouseEnter={() => setHoveredColumn(0)}
                                     onMouseLeave={() => setHoveredColumn(null)}
                                 >
                                     {row.feature}
                                 </td>
                                 <td
-                                    className={`px-7 py-6 whitespace-nowrap font-normal font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${
-                                        hoveredColumn === 1 ? 'bg-darkYellow text-white scale-105' : ''
-                                    }`}
+                                    className={`px-7 py-6 whitespace-nowrap font-normal font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${hoveredColumn === 1 ? 'bg-darkYellow text-white ' : ''
+                                        }`}
                                     onMouseEnter={() => setHoveredColumn(1)}
                                     onMouseLeave={() => setHoveredColumn(null)}
                                 >
@@ -69,9 +64,8 @@ const Table = () => {
                                     </span>
                                 </td>
                                 <td
-                                    className={`px-7 py-6 whitespace-nowrap font-normal flex font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${
-                                        hoveredColumn === 2 ? 'bg-darkYellow text-white scale-105' : ''
-                                    }`}
+                                    className={`px-7 py-6 whitespace-nowrap font-normal flex font-plusJkarta text-sm leading-[17px] text-black transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white ' : ''
+                                        }`}
                                     onMouseEnter={() => setHoveredColumn(2)}
                                     onMouseLeave={() => setHoveredColumn(null)}
                                 >
@@ -87,4 +81,4 @@ const Table = () => {
     );
 };
 
-export default Table;
+export default Choose
