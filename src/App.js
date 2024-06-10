@@ -2,7 +2,6 @@ import "./App.css";
 import TsaTopChoice from "./components/TsaTopChoice";
 import Footer from "./components/Footer";
 import GetTouch from "./components/GetTouch";
-import Header from "./components/Header";
 import PursuitSec from "./components/PursuitSec";
 import Commuinity from "./components/Commuinity";
 import Featured from "./components/Featured";
@@ -15,24 +14,27 @@ import TempleJourney from "./components/TempleJourney";
 import Choose from "./components/Choose";
 import LatestBlogs from "./components/LatestBlogs";
 import ContactInformation from "./components/ContactInformation";
+import HelpingDevotees from "./components/HelpingDevotees";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      <Header />
+      {/* <NavBar />
+      <HelpingDevotees />
       <HeroVideo />
       <ThisYou />
       <PursuitSec />
+      <TempleJourney />
       <Commuinity />
       <TsaTopChoice />
       <Choose />
-      <TempleJourney />
       <TSAPromise />
       <ContactInformation />
-      <GetInspired />
       <Featured />
+      <GetInspired />
       <LatestBlogs />
-      <Faq />
+      <Faq /> */}
       <GetTouch />
       <Footer />
     </div>

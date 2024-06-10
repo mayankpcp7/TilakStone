@@ -97,20 +97,10 @@ textarea::placeholder {
   line-height: 128%;
 }
 
-.footerLineGradient {
-  background: linear-gradient(90deg, #f6f3fb 0%, #0c0c0c 51.5%, #f6f3fb 100%);
-}
-
 .lightSkyBlue {
   background-color: #F5F5F5;
 }
 
 .text-faqAccordionBlack {
   color: #575757;
-}
-
-@media (min-width:400px) {
-  .xs-w-auto {
-    width: auto;
-  }
 }

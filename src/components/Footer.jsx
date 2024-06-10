@@ -1,4 +1,4 @@
-import footerLogo from "../assets/images/footerLogo.svg"
+import footerLogo from "../assets/images/footerLogo.svg";
 import { footerLinks, footerSocialIcons } from "./common/Helper";
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
                         className="pt-4 lg:text-start sm:text-center text-start"
                       >
                         <a
-                          href=""
+                          href={obj.to}
                           className="text-offBlack footerLinkHover sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
                         >
                           {obj.link}
@@ -89,12 +89,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14  h-[1px] footerLineGradient"></div>
+      <div className="w-full lg:mt-10 sm:mt-[43px] mt-14  h-[1px] bg-footerLineGradient"></div>
       <p className=" font-plusJkarta font-normal sm:text-sm text-xs text-offBlack py-5 opacity-80 text-center">
         Copyright © {new Date().getFullYear()} TilakStone. All Rights reserved.
       </p>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
