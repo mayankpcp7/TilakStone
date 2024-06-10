@@ -17,6 +17,7 @@ function App() {
       <PursuitSec />
       <Commuinity />
       <TsaTopChoice />
+      <TempleJourney />
     </div>
   );
 }
