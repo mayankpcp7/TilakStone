@@ -20,7 +20,7 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      {/* <NavBar />
+      <NavBar />
       <HelpingDevotees />
       <HeroVideo />
       <ThisYou />
@@ -34,7 +34,7 @@ function App() {
       <GetInspired />
       <ContactInformation />
       <LatestBlogs />
-      <Faq /> */}
+      <Faq />
       <GetTouch />
       <Footer />
     </div>

@@ -12,7 +12,7 @@ const Footer = () => {
                 <img src={footerLogo} alt="logo" />
               </a>
             </div>
-            <p className="pt-3 text-offBlack opacity-70 lg:max-w-[340px] lg:text-start sm:text-center sm:max-w-[488px] max-w-[335px] lg:mx-0 sm:mx-auto sm:text-base text-sm font-normal font-plusJkarta">
+            <p className="pt-3 text-offBlack opacity-70 lg:max-w-[340px] max-sm:leading-[21px] lg:text-start sm:text-center sm:max-w-[488px] max-w-[335px] lg:mx-0 sm:mx-auto sm:text-base text-sm font-normal font-plusJkarta">
               Transforming Devotion: Crafting a Divine Space that Embodies
               Spirituality, Elegance, and Contemporary Style with Grace
             </p>
@@ -22,7 +22,7 @@ const Footer = () => {
               <div className="sm:w-4/12 w-1/2 px-3">
                 <div className="flex lg:justify-center sm:justify-center">
                   <ul>
-                    <li className=" text-offBlack lg:text-start sm:text-center text-start font-plusJkarta font-medium sm:text-lg text-sm">
+                    <li className=" text-offBlack lg:text-start sm:text-center text-start font-plusJkarta font-medium sm:text-lg text-base">
                       Quick links
                     </li>
                     {footerLinks.column1.map((obj, i) => (
@@ -32,7 +32,7 @@ const Footer = () => {
                       >
                         <a
                           href={obj.to}
-                          className="text-offBlack footerLinkHover sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
+                          className="text-offBlack footerLinkHover max-sm:leading-[21px] sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
                         >
                           {obj.link}
                         </a>
@@ -54,7 +54,7 @@ const Footer = () => {
                       >
                         <a
                           href=""
-                          className="text-offBlack footerLinkHover lg:text-start sm:text-center text-start sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
+                          className="text-offBlack footerLinkHover lg:text-start max-sm:leading-[21px] sm:text-center text-start sm:text-base text-sm font-normal  font-plusJkarta opacity-70"
                         >
                           {obj.link}
                         </a>
