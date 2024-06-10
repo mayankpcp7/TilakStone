@@ -34,6 +34,7 @@ module.exports = {
         lightSkyBlue: "#f5f5f5",
         tundora: "#4D4D4D",
         whitegrey: "#fefefe",
+       lightBlackClr:"#18181829",
       },
       backgroundImage: {
         latestblogsgradient: [
