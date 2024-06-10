@@ -28,7 +28,7 @@ const HeroVideo = () => {
                             Your browser does not support the video tag.
                         </video>
                     ) : (
-                        <div className="cursor-pointer" onClick={handlePlayVideo} >
+                        <div className="cursor- pointer" onClick={handlePlayVideo} >
                             <img
                                 src={videoThumbnail}
                                 alt="Video Thumbnail"
