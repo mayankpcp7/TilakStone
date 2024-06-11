@@ -30,9 +30,9 @@
   background: #E0A922 !important;
 }
 
-#journey_swiper .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: var(--swiper-pagination-bottom, -5px) !important;
+#journey_swiper horizontal>.swiper-pagination-bullets,
+#journey_swiper .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -5px) !important;
 }
 
 @media (max-width:640px) {
