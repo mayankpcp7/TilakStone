@@ -16,35 +16,6 @@
   opacity: 100% !important;
 }
 
-/* .swiper-pagination-bullet {
-  display: none;
-  margin: 0 5px;
-} */
-
-/* 
-.swiper-pagination-bullet.swiper-pagination-bullet-active,
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet,
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet,
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet+.swiper-pagination-bullet {
-  display: inline-block;
-}
-
-.swiper-pagination-bullet:nth-last-child(1),
-.swiper-pagination-bullet:nth-last-child(2) {
-  display: inline-block;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(1),
-.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(2) {
-  display: none;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(2),
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(1),
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(2),
-.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(1) {
-  display: inline-block;
-} */
 #journey_swiper .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
@@ -57,14 +28,14 @@
   background: #E0A922 !important;
 }
 
-#journey_swiper horizontal>.swiper-pagination-bullets,
+#journey_swiper .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, -5px) !important;
 }
 
 @media (max-width:640px) {
 
-  #journey_swiper horizontal>.swiper-pagination-bullets,
+  #journey_swiper .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     left: -10% !important;
     bottom: var(--swiper-pagination-bottom, -40px) !important;
@@ -79,4 +50,13 @@
     height: 10px !important;
   }
 
+}
+
+#journey_swiper .swiper {
+  overflow: visible !important;
+}
+
+#journey_swiper .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
 }
