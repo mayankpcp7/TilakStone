@@ -14,7 +14,7 @@ const Featured = () => {
     dynamicBullets: true,
     renderBullet: (index, className) => {
       return `
-        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block  featured-swiper"></span>
+        <span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block  featured-swiper !relative !bottom-0"></span>
       `;
     },
   };
@@ -67,22 +67,23 @@ const Featured = () => {
                   <img
                     src={obj.img}
                     alt={obj.alt}
-                    className={`${index === 0
-                      ? "sm:max-w-[139px] max-w-[102px] w-full"
-                      : index === 1
+                    className={`${
+                      index === 0
+                        ? "sm:max-w-[139px] max-w-[102px] w-full"
+                        : index === 1
                         ? "sm:max-w-[184px] max-w-[88.77px] w-full"
                         : index === 2
-                          ? "sm:max-w-[127px] max-w-[61.27px] w-full"
-                          : index === 3
-                            ? "sm:max-w-[145px] max-w-[69.96px] w-full"
-                            : index === 4
-                              ? "sm:max-w-[95px] max-w-[45.83px] w-full"
-                              : index === 5
-                                ? "sm:max-w-[134px] max-w-[64.65px] w-full"
-                                : index === 6
-                                  ? "sm:max-w-[176px] max-w-[84.91px] w-full"
-                                  : ""
-                      }`}
+                        ? "sm:max-w-[127px] max-w-[61.27px] w-full"
+                        : index === 3
+                        ? "sm:max-w-[145px] max-w-[69.96px] w-full"
+                        : index === 4
+                        ? "sm:max-w-[95px] max-w-[45.83px] w-full"
+                        : index === 5
+                        ? "sm:max-w-[134px] max-w-[64.65px] w-full"
+                        : index === 6
+                        ? "sm:max-w-[176px] max-w-[84.91px] w-full"
+                        : ""
+                    }`}
                   />
                 </a>
               </div>

@@ -21,7 +21,7 @@ const TsaTopChoice = () => {
         <h2 className='font-plusJkarta font-bold md:text-5xl sm:text-4xl text-2xl text-black text-center sm:max-w-[563px] max-w-[400px] mx-auto !leading-md'>
           TSA is the top choice by families like you.
         </h2>
-        <div className='md:mt-20 mt-[30px]'>
+        <div className="md:mt-20 mt-[30px]">
           <Swiper
             slidesPerView={3}
             spaceBetween={24}
@@ -44,8 +44,8 @@ const TsaTopChoice = () => {
             className="md:!pb-[52px] !pb-[37px]"
           >
             {topChoiceCardlist.map((value, index) => (
-              <SwiperSlide key={index} className=''>
-                <div className='border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl max-sm:max-w-[335px] max-sm:mx-auto'>
+              <SwiperSlide key={index} className="">
+                <div className="border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl max-sm:max-w-[335px] max-sm:mx-auto">
                   <div className="relative w-full">
                     <img
                       src={value.img}
