@@ -6,7 +6,7 @@ const Choose = () => {
     const [hoveredColumn, setHoveredColumn] = useState(null);
 
     return (
-        <div className="max-w-[963px] mx-auto px-3 scroll overflow-scroll">
+        <div className="sm:max-w-[963px] mx-auto sm:px-3 ps-3 scroll overflow-scroll pt-[120px]">
             <h2 className="font-bold sm:text-5xl text-2xl sm:leading-[60px] leading-[30px] text-black text-center font-plusJkarta">Why Choose Tilak</h2>
             <p className="text-normal sm:text-base text-sm text-black max-w-[511px] mx-auto text-center font-plusJkarta pt-2 pb-[56px]">
                 Tilak font is elegant, legible, and versatile, making it ideal for various design projects, ensuring clarity and aesthetic appeal.
