@@ -16,6 +16,7 @@ import LatestBlogs from "./components/LatestBlogs";
 import ContactInformation from "./components/ContactInformation";
 import HelpingDevotees from "./components/HelpingDevotees";
 import NavBar from "./components/NavBar";
+import DayAtTilak from "./components/DayAtTilak";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <HelpingDevotees />
       <HeroVideo />
       <ThisYou />
+      <DayAtTilak />
       <PursuitSec />
       <TempleJourney />
       <Commuinity />

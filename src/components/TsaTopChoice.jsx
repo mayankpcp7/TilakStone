@@ -8,8 +8,9 @@ import { topChoiceCardlist } from './common/Helper';
 const TsaTopChoice = () => {
   const pagination = {
     clickable: true,
+    dynamicBullets: true,
     renderBullet: (index, className) => {
-      return `<span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear"></span>`;
+      return `<span class="${className} !w-3!h-3 rounded-full !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear featured-swiper"></span>`;
     },
   };
 
@@ -19,7 +20,7 @@ const TsaTopChoice = () => {
         <h2 className='font-plusJkarta font-bold sm:text-5xl text-2xl text-black text-center sm:max-w-[563px] max-w-[400px] mx-auto !leading-md'>
           TSA is the top choice by families like you.
         </h2>
-        <div className='md:mt-20 mt-[30px]'>
+        <div className="md:mt-20 mt-[30px]">
           <Swiper
             slidesPerView={3}
             spaceBetween={24}
@@ -42,8 +43,8 @@ const TsaTopChoice = () => {
             className="md:!pb-[52px] !pb-[37px]"
           >
             {topChoiceCardlist.map((value, index) => (
-              <SwiperSlide key={index} className=''>
-                <div className='border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl max-sm:max-w-[335px] max-sm:mx-auto'>
+              <SwiperSlide key={index} className="">
+                <div className="border border-[#dedede] bg-white shadow-[0px_4px_16px_0px_#0000000F] lg:p-[23px] md:p-[19px] p-[21px] rounded-2xl max-sm:max-w-[335px] max-sm:mx-auto">
                   <div className="relative w-full">
                     <img
                       src={value.img}
