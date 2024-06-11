@@ -11,7 +11,7 @@ const ThisYou = () => {
         src={bgTemple}
         alt="backgroundTemple"
       />
-      <div className="container max-w-[1164px] mx-auto sm:px-12 lg:px-3 pt-5 md:pt-10 lg:pt-5">
+      <div className="container max-w-[1164px] mx-auto sm:px-12 lg:px-3 xl:px-1 2xl:px-3 pt-12 md:pt-10 lg:pt-5">
         <Heading commonHeading="Is this You ?" className="mb-10" />
         <div className="flex flex-row flex-wrap">
           {ThisYouData.map((thisYou, index) => {
