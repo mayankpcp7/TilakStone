@@ -10,9 +10,8 @@ import { Pagination } from 'swiper/modules';
 const TempleJourney = () => {
   
   return (
-    <>
-      <div className="max-w-[400px] overflow-x-clip sm:max-w-[738px] lg:max-w-[1064px]  mx-auto px-[20px] sm:px-3 relative">
-        <img src={ellips} alt="ellips" className='w-[130px] h-[176px] absolute  top-[-3%] lg:top-56 right-[-8.5%] lg:right-[-5%]' />
+    <div id='journey_swiper' className='relative pt-[90px] sm:pt-[120px] lg:pt-[140px] overflow-hidden'>
+      <img src={ellips} alt="ellips" className='w-[130px] pointer-events-none h-[176px] absolute top-[-8%] right-[-33%] rotate-[-80deg] sm:rotate-[-10deg] lg:rotate-0   sm:top-[50%] lg:top-[52%] sm:right-[0.6%] lg:right-[10%] 2xl:right-[20%]' />
 
         <div className="flex sm:flex-col">
           {/* -----------animation button */}
@@ -25,7 +24,7 @@ const TempleJourney = () => {
             </div>
           </div>
 
-          <div className='w-[80%] sm:w-full mx-auto'>
+          <div className='w-[80%] sm:w-full max-[640px]:h-[545px]  mx-auto overflow-hidden'>
             {/* -----------swiper slider----------- */}
             <Swiper id='journey_swiper'
               slidesPerView={1}
@@ -36,20 +35,19 @@ const TempleJourney = () => {
                 clickable: true,
               }}
             >
-              <SwiperSlide>
-                <div className=" justify-end sm:justify-center w-full flex flex-wrap mt-[65px] sm:mt-[60px] sm:mb-[40px] items-center ">
-                  <div className="order-1 sm:w-1/2 sm:order-0">
-                    <img src={submitrequirements} alt="submit requirements" className='w-[265px] lg:object-cover h-[229px] mt-6 sm:mt-0 sm:w-[280px] md:w-[311px] md:h-[316px] lg:w-[449px] lg:h-[389px] border-[1px] border-germanGrey shadow-[0px_4px_16px_0px_#0000000F] rounded-2xl' />
-                  </div>
-                  <div className="flex flex-col items-end justify-end sm:w-1/2 order-0 sm:order-1">
-                    <div className="flex flex-col">
-                      <h3 className='mb-6 sm:mb-[16px] lg:mb-6 text-darkYellow font-bold text-xl sm:text-2xl lg:text-3xxl font-plusJkarta'>Submit Your Requirements</h3>
-                      <div className="rounded-2xl border-[1px] bg-white relative z-10 border-germanGrey max-w-[265px] sm:max-w-[350px] lg:max-w-[511px] p-[11px] sm:py-[21px] sm:px-[17px] lg:p-[40px] lg:pb-16  shadow-[0px_4px_16px_0px_#0000000F]">
-                        <p className='font-bold text-base sm:text-xl lg:text-2xl text-black font-plusJkarta mb-[10px] lg:mb-[16px]'>Initiate Your Project</p>
-                        <p className='text-xs font-normal leading-lg sm:text-base font-plusJkarta text-navBlack '>Start by sending us your requirements along with details about the space where you plan to install the temple. This allows us to understand your needs, preferences, and the specifics of your environment.</p>
-                      </div>
-                    </div>
-                  </div>
+
+              {slides.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <div className="justify-end sm:justify-center w-full max-[640px]:h-[473px] flex flex-wrap mt-[35px] sm:mt-[60px] sm:mb-[40px] items-center">
+            <div className="order-1 sm:w-1/2 sm:order-0">
+              <img src={slide.imgSrc} alt={slide.imgAlt} className='w-[265px] lg:object-cover h-[229px] mt-6 sm:mt-0 sm:w-[280px] md:w-[311px] md:h-[316px] lg:w-[449px] lg:h-[389px] border-[1px] border-germanGrey shadow-[0px_4px_16px_0px_#0000000F] rounded-2xl' />
+            </div>
+            <div className="flex flex-col items-end justify-end sm:w-1/2 order-0 sm:order-1">
+              <div className="flex flex-col">
+                <h3 className='mb-6 sm:mb-[16px] lg:mb-6 text-darkYellow !leading-md font-bold text-xl sm:text-2xl lg:text-3xxl font-plusJkarta'>{slide.title}</h3>
+                <div className="rounded-2xl border-[1px] bg-white relative z-10 border-germanGrey max-w-[265px] sm:max-w-[350px] lg:max-w-[511px] p-[11px] sm:py-[21px] sm:px-[17px] lg:p-[40px] lg:pb-16 shadow-[0px_4px_16px_0px_#0000000F]">
+                  <p className='font-bold text-base !leading-md sm:text-xl lg:text-2xl text-black font-plusJkarta mb-[10px] lg:mb-[16px]'>{slide.subtitle}</p>
+                  <p className='text-xs font-normal leading-lg sm:text-base font-plusJkarta text-navBlack'>{slide.description}</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
