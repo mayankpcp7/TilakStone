@@ -7,7 +7,7 @@ const GetTouch = () => {
   return (
     <div className=" lg:translate-y-[156px] lg:px-3 sm:px-[60px] px-5 overflow-hidden sm:translate-y-[166px] lg:-mt-4 sm:mt-[-74px] -mt-24 translate-y-[172px]">
       <div className="container max-w-[1140px]  mx-auto">
-        <div className="bg-darkYellow px-[35px] relative rounded-xl sm:py-16 py-[50px]">
+        <div className="bg-darkYellow px-[35px] lg:h-[322px] relative rounded-xl sm:py-16 py-[50px]">
           <img
             src={getLeftEllipse2}
             alt="left2"
@@ -28,7 +28,7 @@ const GetTouch = () => {
             alt="right"
             className="absolute lg:right-[-8%] right-[-2%] lg:top-[-28%] sm:block hidden top-[-14%] lg:max-w-[429px] max-w-[290px] max-h-[289px] lg:max-h-[428px]"
           />
-          <h2 className="font-plusJkarta lg:pt-[2px] font-semibold text-center text-white leading-128 sm:text-4xl text-2xl">
+          <h2 className="font-plusJkarta lg:mt-1 font-semibold text-center text-white leading-[128%] sm:text-4xl text-2xl">
             Get into touch
           </h2>
           <p className="text-center opacity-80 lg:max-w-[639px] max-w-[527px] mt-4 text-white mx-auto font-normal font-plusJkarta max-sm:!leading-[21px] sm:text-base text-sm">
