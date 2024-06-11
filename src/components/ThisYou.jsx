@@ -11,7 +11,7 @@ const ThisYou = () => {
         src={bgTemple}
         alt="backgroundTemple"
       />
-      <div className="container max-w-[1164px] mx-auto sm:px-12 lg:px-3 pt-5 md:pt-10 lg:pt-5">
+      <div className="container max-w-[1164px] mx-auto sm:px-12 lg:px-3 xl:px-1 2xl:px-3 pt-12 md:pt-10 lg:pt-5">
         <Heading commonHeading="Is this You ?" className="mb-10" />
         <div className="flex flex-row flex-wrap">
           {ThisYouData.map((thisYou, index) => {
@@ -37,7 +37,7 @@ const ThisYou = () => {
             );
           })}
         </div>
-        <p className="text-center text-base  md:text-2xl  md:px-0 max-w-[694px] mx-auto text-black font-semibold !leading-lg mt-[25px] md:mt-4 mb-10 font-graphik">
+        <p className="text-center text-base  md:text-2xl px-4 md:px-0 max-w-[694px] mx-auto text-black font-semibold !leading-lg mt-[25px] md:mt-4 mb-[25px] sm:mb-10 font-graphik">
           If you can relate to any of these, then we can help you
           <span className="text-darkYellow"> build the temple </span>
           of your Dreams
