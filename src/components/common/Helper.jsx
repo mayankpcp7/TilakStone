@@ -34,10 +34,6 @@ import designconsulatation from "../../assets/images/webp/templeJourney/design-c
 import finalizeorder from "../../assets/images/webp/templeJourney/finalize-order.webp"
 import delivery from "../../assets/images/webp/templeJourney/delivery.webp"
 import { FaceBookIcon, InstaIcon, LinkDinIcon, TwitterIcon } from "./Icons";
-import submitrequirements from "../../assets/images/webp/templeJourney/submit-requirements.webp"
-import designconsulatation from "../../assets/images/webp/templeJourney/design-consulataion.webp"
-import finalizeorder from "../../assets/images/webp/templeJourney/finalize-order.webp"
-import delivery from "../../assets/images/webp/templeJourney/delivery.webp"
 
 export const slides = [
     {
@@ -72,41 +68,33 @@ export const slides = [
 
 
 export const footerLinks = {
-  column1: [
-<<<<<<< HEAD
-    { link: "About Us" },
-    { link: "Our Services" },
-    { link: "Why choose Us" },
-    { link: "Testimonials" },
-    { link: "Contact Us" },
-=======
-    {
-      link: "About Us",
-      to: "#aboutus",
-    },
-    {
-      link: "Our Services",
-      to: "#ourservices",
-    },
-    {
-      link: "Why choose Us",
-      to: "#whychooseus",
-    },
-    {
-      link: "Testimonials",
-      to: "#testimonials",
-    },
-    {
-      link: "Contact Us",
-      to: "#contactus",
-    },
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
-  ],
-  column2: [
-    { link: "Privacy Policy" },
-    { link: " Privacy settings" },
-    { link: "Terms and conditions" },
-  ],
+    column1: [
+        {
+            link: "About Us",
+            to: "#aboutus",
+        },
+        {
+            link: "Our Services",
+            to: "#ourservices",
+        },
+        {
+            link: "Why choose Us",
+            to: "#whychooseus",
+        },
+        {
+            link: "Testimonials",
+            to: "#testimonials",
+        },
+        {
+            link: "Contact Us",
+            to: "#contactus",
+        },
+    ],
+    column2: [
+        { link: "Privacy Policy" },
+        { link: " Privacy settings" },
+        { link: "Terms and conditions" },
+    ],
 };
 export const footerSocialIcons = [
     {
@@ -236,31 +224,10 @@ export const ThisYouData = [
     },
 ];
 export const CommuinityList = [
-<<<<<<< HEAD
-  { image: katya, alt: "katya" },
-  { image: tony, alt: "tony" },
-  { image: taliatate, alt: "taliatate" },
-  { image: travis, alt: "travis" },
-  { image: lynch, alt: "lynch" },
-  { image: mattan, alt: "mattan" },
-  { image: katya, alt: "katya" },
-  { image: tony, alt: "tony" },
-  { image: taliatate, alt: "taliatate" },
-  { image: travis, alt: "travis" },
-];
-export const CommuinitySlidList = [
-  { image: katya, alt: "katya" },
-  { image: tony, alt: "tony" },
-  { image: taliatate, alt: "taliatate" },
-  { image: travis, alt: "travis" },
-];
-export const CommuinityList3 = [
-=======
     { image: katya, alt: "katya" },
     { image: tony, alt: "tony" },
     { image: taliatate, alt: "taliatate" },
     { image: travis, alt: "travis" },
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
     { image: lynch, alt: "lynch" },
     { image: mattan, alt: "mattan" },
     { image: katya, alt: "katya" },
@@ -295,38 +262,6 @@ export const promiseCardlist = [
 ];
 // ============================= FEATURED ON =============================
 export const featuredSlider = [
-<<<<<<< HEAD
-  {
-    img: temboNickel,
-    alt: "temboNickel",
-  },
-  {
-    img: whitebird,
-    alt: "whitebird",
-  },
-  {
-    img: dixon,
-    alt: "dixon",
-  },
-  {
-    img: firstQuantumMinerals,
-    alt: "firstQuantumMinerals",
-  },
-  {
-    img: artemis,
-    alt: "artemis",
-  },
-  {
-    img: steppeGold,
-    alt: "steppeGold",
-  },
-  {
-    img: trxGold,
-    alt: "trxGold",
-  },
-];
-
-=======
     {
         url: "https://tembonickel.com/",
         lable: "tembonickel",
@@ -371,100 +306,7 @@ export const featuredSlider = [
     },
 ];
 
-export const features = [
-    "Craftsmanship",
-    "Material Quality",
-    "Design Expertise",
-    "Durability Guarantee",
-    "International Standards",
-    "Customer Service",
-    "Innovation",
-    "Trust & Reliability",
-    "After-Sales Support",
-    "Value for Money",
-    "Cultural Sensitivity",
-    "Professional Collaboration",
-    "Technical Expertise",
-    "Community Involvement",
-    "Antique Replicas",
-    "Premium Materials",
-    "Customized Design",
-    "Durability and Quality",
-    "Global Standards Compliance",
-    "Comprehensive Customer Care",
-    "Technological Innovation",
-    "Established Trust",
-    "After-Sales Support",
-    "Transparent Value",
-    "Cultural Sensitivity",
-    "Collaboration with Designers",
-    "Marble Expertise",
-    "Community Endorsement",
-];
 
-export const Stone = [
-    "25 years of trusted excellence",
-    "Premium Australian marble",
-    "Custom, modern-traditional fusion",
-    "Long-lasting beauty assurance",
-    "Global quality benchmarks",
-    "End-to-end personalized service",
-    "Latest design and tech adoption",
-    "Legacy of trust with clients",
-    "Comprehensive support",
-    "Quality and satisfaction focus",
-    "Culturally nuanced designs",
-    "Works with designers",
-    "Specialized marble knowledge",
-    "Active community engagement",
-    "25+ Years Experience",
-    "Sustainable Sourcing",
-    "Tradition & Modernity",
-    "Assured",
-    "International Quality",
-    "Personalized Service",
-    "Cutting-Edge Design",
-    "Proven Reliability",
-    "Ongoing Assistance",
-    "No Hidden Costs",
-    "Respectful Design",
-    "Professional Harmony",
-    "Specialized Knowledge",
-    "Customer-Driven",
-];
-
-export const localVendor = [
-    "Vandalism-prone",
-    "Inconsistent quality",
-    "Limited, templated designs",
-    "Limited or no guarantee",
-    "May not meet standards",
-    "Fragmented services",
-    "Slower to innovate",
-    "Varies widely",
-    "Often limited support",
-    "Hidden long-term costs",
-    "May lack cultural insight",
-    "Limited collaboration",
-    "General Knowledge",
-    "Minimal community input",
-    "May Vary",
-    "Inconsistent",
-    "Limited Options",
-    "Questionable",
-    "Unverified",
-    "Fragmented Support",
-    "Rarely Updated",
-    "Uncertain",
-    "Limited",
-    "Potential Extras",
-    "May Lack Insight",
-    "Not Common",
-    "General Know-how",
-    "Minimal Interaction",
-];
-
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
 export const faqAccordionData = [
     {
         head: "What makes Tilak Stone Arts unique in temple craftsmanship?",
@@ -511,33 +353,13 @@ export const faqAccordionData = [
 // ================pursuit section data ====================
 
 export const pursuitSecList = [
-<<<<<<< HEAD
     { title: "Desire a pooja room that’s a true  reflection of your faith and aesthetics?" },
-=======
-    {
-        title:
-            "Desire a pooja room that’s a true  reflection of your faith and aesthetics?",
-    },
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
     { title: "Exhausted by the search for creators who understand your vision?" },
-    {
-        title:
-            "Longing for a bespoke design that blends tradition, modernity and functionality ?",
-    },
-    {
-        title:
-            "Need a guarantee that your most spiritual space will be crafted with devotion?",
-    },
-    {
-        title:
-            "Disappointed with the standards of local craftsmanship and service?",
-    },
-    {
-        title:
-            "Looking for an all-in-one service to design, deliver, and install your sacred space?",
-    },
+    { title: "Longing for a bespoke design that blends tradition, modernity and functionality ?", },
+    { title: "Need a guarantee that your most spiritual space will be crafted with devotion?", },
+    { title: "Disappointed with the standards of local craftsmanship and service?", },
+    { title: "Looking for an all-in-one service to design, deliver, and install your sacred space?", },
     { title: "In search of expert advice and superior marble artistry?" },
-<<<<<<< HEAD
     { title: "Are you a designer seeking a collaborator who values precision and detail?" },
     { title: "Require a partner who brings both technical expertise and creative insight?" },
 ]
@@ -572,34 +394,3 @@ export const data = [
     { feature: "Marble Expertise", tsa: "Specialized Knowledge", localVendors: "General Know-how" },
     { feature: "Community Endorsement", tsa: "Customer-Driven", localVendors: "Minimal Interaction" }
 ];
-export const slides = [
-=======
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
-    {
-        title:
-            "Are you a designer seeking a collaborator who values precision and detail?",
-    },
-    {
-        title:
-            "Require a partner who brings both technical expertise and creative insight?",
-    },
-<<<<<<< HEAD
-    {
-      imgSrc: finalizeorder,
-      imgAlt: "finalize order",
-      title: "Finalize and Place Your Order",
-      subtitle: "Confirm Your Design",
-      description: "Once you’ve selected a design that you love, we’ll finalize the details, including materials, finishes, and cost. After your approval, place your order to begin the creation of your bespoke temple."
-    },
-    {
-      imgSrc: delivery,
-      imgAlt: "delivery",
-      title: "Delivery and Installation",
-      subtitle: "Receive and Install",
-      description: "Your temple will be crafted by our skilled artisans and shipped to your location. Upon arrival, either utilize our easy self-installation kit or schedule an installation by our professional team, ensuring your temple is set up perfectly in your home."
-    }
-  ];
-  
-=======
-];
->>>>>>> e2fec3718642824c15e3bcd57d6c59f7a52cc497
