@@ -9,8 +9,9 @@ import laxmiDoll from '../assets/images/webp/header/laxmi-doll.webp'
 const TsaTopChoice = () => {
   const pagination = {
     clickable: true,
+    dynamicBullets: true,
     renderBullet: (index, className) => {
-      return `<span class="${className} !w-3 !h-3 rounded-full !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear"></span>`;
+      return `<span class="${className} !w-3!h-3 rounded-full !bg-darkYellow !opacity-30 block transition-all duration-300 ease-linear featured-swiper"></span>`;
     },
   };
 
