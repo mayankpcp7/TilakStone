@@ -32,7 +32,7 @@ const Choose = () => {
                                 Tilak Stone Arts (TSA)
                             </th>
                             <th
-                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold sm:text-2xl text-base leading-[15px] sm:leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white  hover:rounded-tl-2xl hover:rounded-tr-2xl ' : ''
+                                className={`px-7 pt-7 pb-[22px] text-left font-plusJkarta font-bold sm:text-2xl text-base leading-[15px] sm:leading-[22px] text-black tracking-wider transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white  hover:!rounded-tl-2xl hover:!rounded-tr-2xl ' : ''
                                     }`}
                                 onMouseEnter={() => setHoveredColumn(2)}
                                 onMouseLeave={() => setHoveredColumn(null)}
@@ -58,13 +58,13 @@ const Choose = () => {
                                     onMouseEnter={() => setHoveredColumn(1)}
                                     onMouseLeave={() => setHoveredColumn(null)}
                                 >
-                                    <span className="flex">
+                                    <span className="flex items-center">
                                         <Correct />
                                         <span className="ml-2">{row.tsa}</span>
                                     </span>
                                 </td>
                                 <td
-                                    className={`px-7 py-6 whitespace-nowrap font-normal flex font-plusJkarta sm:text-sm text-[10px] leading-[12px] sm:leading-[17px] text-black transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white ' : ''
+                                    className={`px-7 py-6 whitespace-nowrap font-normal flex items-center font-plusJkarta sm:text-sm text-[10px] leading-[12px] sm:leading-[17px] text-black transform transition-transform duration-300 ${hoveredColumn === 2 ? 'bg-darkYellow text-white ' : ''
                                         }`}
                                     onMouseEnter={() => setHoveredColumn(2)}
                                     onMouseLeave={() => setHoveredColumn(null)}
