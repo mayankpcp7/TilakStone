@@ -12,8 +12,8 @@ import Heading from "./common/Heading";
 const LatestBlogs = () => {
   return (
     <div className="2xl:max-w-[1920px] lg:mx-auto py-12 max-sm:px-5 relative z-[1] overflow-x-clip">
-      <div className="pointer-events-none absolute max-sm:hidden sm:top-[3%] lg:top-[7%] sm:-left-[7%] sm:max-w-[148px] lg:max-w-[200px] rotate-[15deg]">
-        <img className="w-full" src={latestblogsvector} alt=" latest-blogs" />
+      <div className="pointer-events-none absolute max-sm:hidden sm:top-[3%] lg:top-[7%] 2xl:left-[-4%] sm:-left-[7%] sm:max-w-[148px] xl:max-w-[200px] rotate-[15deg]">
+        <img className="w-full" src={latestblogsvector} alt="latest-blogs" />
       </div>
       <div className="pointer-events-none absolute top-[-6%] right-[-6%] max-w-[101px] sm:hidden">
         <img
@@ -35,6 +35,7 @@ const LatestBlogs = () => {
           modules={[Navigation, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
+          slidesPerGroup={1}
           loop={true}
           autoplay={{ delay: 4000 }}
           speed={900}
@@ -56,8 +57,7 @@ const LatestBlogs = () => {
           }}
         >
           {LatestBlogsArray.map((obj, index) => (
-            <SwiperSlide key={index}>
-              {" "}
+            <SwiperSlide key={index} className="h-full">
               <div className="border border-blogBorder rounded-xl md:max-w-[364px] duration-300 hover:shadow-[0px_11px_15.9px_0px_#00000014] mb-[35px] mt-[25px] hover:-translate-y-2 sm:hover:-translate-y-3 sm:my-10">
                 <img
                   className="w-full rounded-t-xl"
@@ -74,7 +74,7 @@ const LatestBlogs = () => {
                       5 min read
                     </p>
                   </div>
-                  <h3 className="font-plusJkarta font-semibold text-base md:text-xl !leading-xmd capitalize mt-4">
+                  <h3 className="font-plusJkarta font-semibold text-base md:text-xl !leading-xmd capitalize mt-4 max-sm:max-w-[324px]">
                     {obj.title}
                   </h3>
                   <p className="font-plusJkarta font-normal text-blogPera text-sm !leading-lg mt-2">
