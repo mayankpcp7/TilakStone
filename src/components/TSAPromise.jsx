@@ -17,7 +17,7 @@ const TSAPromise = () => {
           commonHeading="The TSA Promise"
           className="capitalize md:pb-[51px] pb-6"
         />
-        <div className="flex flex-row flex-wrap justify-center items-center">
+        <div className="flex flex-row flex-wrap items-center justify-center">
           <div className="lg:w-6/12 sm:w-[75.70%] w-full flex gap-6 flex-col">
             {promiseCardlist.map((obj, id) => (
               <div key={id} className="w-full">
@@ -42,7 +42,7 @@ const TSAPromise = () => {
               </div>
             ))}
           </div>
-          <div className="lg:w-6/12 w-full flex justify-center lg:justify-end">
+          <div className="flex justify-center w-full lg:w-6/12 lg:justify-end">
             <img
               width={558}
               height={558}

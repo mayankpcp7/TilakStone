@@ -5,6 +5,8 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { featuredSlider } from "./common/Helper";
 import Heading from "./common/Heading";
+import temple from "../assets/images/webp/featured/featuredTemple.webp";
+import vector from "../assets/images/webp/featured/featuredLeftVector.webp";
 
 const Featured = () => {
   const pagination = {
