@@ -62,3 +62,7 @@
 .featured-swiper {
   transform: unset !important;
 }
+
+.scroll::-webkit-scrollbar {
+  display: none !important;
+}
