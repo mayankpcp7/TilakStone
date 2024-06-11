@@ -13,7 +13,7 @@ const Faq = () => {
     setOpen(open === index ? true : index);
   };
   return (
-    <div className='lg:py-[140px] sm:py-[120px] py-20 relative z-[1]'>
+    <div className='lg:pt-[140px] sm:pt-[120px] pt-20 relative z-[1]'>
       <div className=' container max-w-[1164px] mx-auto sm:px-3 px-5'>
         <Heading commonHeading={"Frequently Asked Questions"} className="!text-faqHeadBlack mb-4 leading-128" />
         <p className=' sm:text-base text-sm leading-lg text-faqPeraBlack max-w-[586px] text-center mx-auto mb-[25px] sm:mb-10'>Browse through our FAQs for quick answers to common queries about our services, policies, and procedures.</p>
@@ -43,3 +43,4 @@ const Faq = () => {
 }
 
 export default Faq
+

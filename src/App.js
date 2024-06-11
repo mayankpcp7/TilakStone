@@ -20,7 +20,8 @@ import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="overflow-hidden max-w-[1920px] mx-auto">
-      <Faq />
+   <Faq/>
+      <TempleJourney/>
     </div>
   );
 }

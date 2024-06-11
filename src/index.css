@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
- .footerLinkHover {
+.footerLinkHover {
     @apply after:absolute relative hover:after:left-[0] after:bottom-[-2%] after:w-0 after:left-[50%] after:rounded-[10px] after:h-[2px] after:bg-darkYellow hover:text-darkYellow hover:after:w-full after:duration-300;
-  }
+}
+
+#journey_swiper .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    display: inline-block;
+    background: #E0A922 !important;
+}
+
+#journey_swiper .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #E0A922 !important;
+}
+
+#journey_swiper horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, -5px) !important;
+}
+
+@media (max-width:640px) {
+
+    #journey_swiper horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        left:-10% !important;
+        bottom: var(--swiper-pagination-bottom, -40px) !important;
+    }
+    #journey_swiper .swiper {
+        overflow: visible !important;
+    }
+    #journey_swiper .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    
+}
+
