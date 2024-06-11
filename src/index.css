@@ -7,6 +7,45 @@
 }
 
 /* temple journey swiper */
+
+.swiper-pagination {
+  bottom: 0 !important;
+  opacity: 100% !important;
+  z-index: 20 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 100% !important;
+}
+
+.swiper-pagination-bullet {
+  display: none;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet,
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet+.swiper-pagination-bullet {
+  display: inline-block;
+}
+
+.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet:nth-last-child(2) {
+  display: inline-block;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet:nth-last-child(2) {
+  display: none;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(2),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet+.swiper-pagination-bullet:nth-last-child(1),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(2),
+.swiper-pagination-bullet.swiper-pagination-bullet-active+.swiper-pagination-bullet:nth-last-child(1) {
+  display: inline-block;
+}
 #journey_swiper .swiper-pagination-bullet {
     width: 12px !important;
     height: 12px !important;

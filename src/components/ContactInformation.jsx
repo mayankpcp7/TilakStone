@@ -136,19 +136,25 @@ const ContactInformation = () => {
                                     <div>
                                         <PhoneIcon />
                                     </div>
-                                    <p className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>+91 971-100-8738</p>
+                                    <p>
+                                        <a href="tel:+919711008738" className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>+91 971-100-8738</a>
+                                    </p>
                                 </div>
                                 <div className='flex items-center gap-3 mb-4'>
                                     <div>
                                         <MessageIcon />
                                     </div>
-                                    <p className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>ishat@magpie.com</p>
+                                    <p>
+                                        <a href="mailto:ishat@magpie.com" className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>ishat@magpie.com</a>
+                                       </p>
                                 </div>
                                 <div className='flex items-center gap-3 mb-4'>
                                     <div>
                                         <LocationIcon />
                                     </div>
-                                    <p className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>Tilakstone  Offices</p>
+                                    <p>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Tilakstone+Offices" target="_blank" rel="noopener noreferrer" className='text-black font-plusJkarta text-sm sm:text-lg font-normal'>Tilakstone Offices</a>
+                                    </p>
                                 </div>
                                 <div className='sm:pl-[44px]'>
                                     <p className='text-sm sm:text-base font-plusJkarta font-semibold text-black mb-[10px]'>India</p>
@@ -162,7 +168,7 @@ const ContactInformation = () => {
                             <form className="lg:mt-[10px]" onSubmit={handleSubmit}>
                                 <div className='flex sm:flex-row flex-col sm:gap-4'>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded "
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded "
                                             type="text"
                                             placeholder="First Name*"
                                             id="name"
@@ -176,7 +182,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                             type="text"
                                             placeholder="Last Name*"
                                             id="lastname"
@@ -192,7 +198,7 @@ const ContactInformation = () => {
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]" >
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                             type="text"
                                             placeholder="Email*"
                                             id="email"
@@ -206,7 +212,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                             type="text"
                                             placeholder="Company*"
                                             id="company"
@@ -222,7 +228,7 @@ const ContactInformation = () => {
                                 </div>
                                 <div className="flex sm:flex-row flex-col sm:gap-4">
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                             type="text"
                                             placeholder="City*"
                                             id="city"
@@ -236,7 +242,7 @@ const ContactInformation = () => {
                                         )}
                                     </div>
                                     <div className="lg:max-w-[271px] w-full mb-3 sm:mb-[14px]">
-                                        <input className="text-base !text-offGrey font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                        <input required className="text-base !text-offGrey h-[52px] font-plusJkarta font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                             type="text"
                                             placeholder="Customer details*"
                                             id="details"
@@ -251,7 +257,7 @@ const ContactInformation = () => {
                                     </div>
                                 </div>
                                 <div className="w-full sm:mb-[20px] mb-[15px]">
-                                    <textarea className="resize-none !text-offGrey font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-lightBlack rounded"
+                                    <textarea required className="resize-none !text-offGrey font-plusJkarta text-base font-normal p-3 outline-none w-full border-solid border border-lightBlackClr rounded"
                                         type="text"
                                         placeholder="Message*"
                                         id="message"
@@ -267,28 +273,30 @@ const ContactInformation = () => {
                                     )}
                                 </div>
                                 <div className="w-full sm:mb-[32px] mb-[35px]">
-                                    <div className="flex gap-3">
-                                        <input className="custom-checkbox text-base w-[20px] h-[20px] sm:h-[24px] sm:w-[24px] font-normal p-3 outline-none rounded"
+                                 <div className="flex gap-3">
+                                        <input required className="custom-checkbox text-base w-[20px] h-[20px] sm:h-[24px] sm:w-[24px] font-normal p-3 outline-none rounded"
                                             type="checkbox"
                                             id="box"
                                             name="box"
                                             checked={formData.box}
                                             onChange={handleChange}
                                         />
-                                        <p className="text-black font-plusJkarta opacity-[80%] text-sm sm:text-base font-normal max-sm:pr-10">I agree to terms of services and privacy policy</p>
+                                        <label htmlFor="box" className="text-black font-plusJkarta opacity-[80%] text-sm sm:text-base font-normal max-sm:pr-10">
+                                            I agree to terms of services and privacy policy
+                                        </label>
                                     </div>
                                     {formErrors.box && (
-                                        <p className="error-message font-plusJkarta text-red-500">{formErrors.box}</p>
+                                        <p onChange={handleChange} className="error-message font-plusJkarta ">{formErrors.box}</p>
                                     )}
                                 </div>
-                                <YelloCommonButton className="flex justify-center" text="Submit" />
+                                <YelloCommonButton className="w-full flex justify-center" text="Submit" />
                             </form>
                             {showSuccessPopup && (
-                                <div className="success-popup fixed top-[50%] left-[50%] h-[200px] sm:h-[280px] md:h-[350px] w-full max-w-[300px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] bg-white border border-solid border-darkYellow p-[20px] sm:p-[40px] rounded  shadow-[0px_0px_10px_0px_#0000001A] flex justify-center items-center flex-col">
+                                <div className="success-popup fixed top-[50%] left-[50%] h-[200px] sm:h-[280px] md:h-[350px] w-full max-w-[300px] sm:max-w-[500px] md:max-w-[550px] lg:max-w-[600px] bg-white border border-solid border-darkYellow p-[20px] sm:p-[40px] rounded  shadow-[0px_0px_10px_0px_#0000001A] flex justify-center items-center flex-col translate-x-[-50%] translate-y-[-50%] z-[50]">
                                     <p className="mb-[40px] text-black text-xl sm:text-3xl font-semibold font-plusJkarta text-center leading-lg">Your form submitted successfully!</p>
                                     <div className="flex justify-center items-center">
                                         <div className='w-full'>
-                                            <YelloCommonButton onClick={handlePopupClose} className="" text="Close" />
+                                            <YelloCommonButton  onClick={handlePopupClose} text="Close" />
                                         </div>
                                     </div>
                                 </div>
