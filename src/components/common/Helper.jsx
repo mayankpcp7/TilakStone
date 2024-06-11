@@ -397,3 +397,33 @@ export const pursuitSecList = [
     { title: "Require a partner who brings both technical expertise and creative insight?" },
 ]
 
+export const data = [
+    { feature: "Craftsmanship", tsa: "25+ years of artisanal excellence", localVendors: "Variable expertise" },
+    { feature: "Material Quality", tsa: "Premium, sustainable marble", localVendors: "Inconsistent quality" },
+    { feature: "Design Expertise", tsa: "Custom, modern-traditional fusion", localVendors: "May Lack Insight" },
+    { feature: "Durability Guarantee", tsa: "Long-lasting beauty assurance", localVendors: "Limited, templated designs" },
+    { feature: "International Standards", tsa: "Global safety benchmarks", localVendors: "Limited or no guarantee" },
+    { feature: "Customer Service", tsa: "End-to-end personalized service", localVendors: "Fragmented service" },
+    { feature: "Innovation", tsa: "Latest design and tech adoptions", localVendors: "Slower to innovate" },
+    { feature: "Trust & Reliability", tsa: "Legacy of trust with clients", localVendors: "Varies widely" },
+    { feature: "After-Sales Support", tsa: "Comprehensive support", localVendors: "Often limited support" },
+    { feature: "Value for Money", tsa: "Quality and satisfaction focus", localVendors: "Hidden/extra costs" },
+    { feature: "Cultural Sensitivity", tsa: "Culturally nuanced designs", localVendors: "May lack cultural insight" },
+    { feature: "Professional Collaboration", tsa: "Works with designers", localVendors: "Limited collaboration" },
+    { feature: "Technical Expertise", tsa: "Specialized marble knowledge", localVendors: "General knowledge" },
+    { feature: "Community Involvement", tsa: "Active community engagement", localVendors: "Minimal community input" },
+    { feature: "Artisan Heritage", tsa: "25+ Years Experience", localVendors: "May Vary" },
+    { feature: "Premium Materials", tsa: "Sustainable Sourcing", localVendors: "Inconsistent" },
+    { feature: "Customized Design", tsa: "Tradition & Modernity", localVendors: "Limited Options" },
+    { feature: "Design for Quality", tsa: "Assured", localVendors: "Questionable" },
+    { feature: "Global Standards Compliance", tsa: "International Quality", localVendors: "Unverified" },
+    { feature: "Comprehensive Customer Care", tsa: "Personalized Service", localVendors: "Fragmented Support" },
+    { feature: "Technological Innovation", tsa: "Cutting-Edge Design", localVendors: "Rarely Updated" },
+    { feature: "Established Trust", tsa: "Proven Reliability", localVendors: "Uncertain" },
+    { feature: "After-Sales Support", tsa: "Ongoing Assistance", localVendors: "Limited" },
+    { feature: "Transparent Value", tsa: "No Hidden Costs", localVendors: "Potential Extras" },
+    { feature: "Cultural Sensitivity", tsa: "Respectful Design", localVendors: "May lack insight" },
+    { feature: "Collaboration with Designers", tsa: "Professional Harmony", localVendors: "Not Common" },
+    { feature: "Marble Expertise", tsa: "Specialized Knowledge", localVendors: "General Know-how" },
+    { feature: "Community Endorsement", tsa: "Customer-Driven", localVendors: "Minimal Interaction" }
+];

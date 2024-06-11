@@ -119,3 +119,7 @@ textarea::placeholder {
 .text-faqAccordionBlack {
   color: #575757;
 }
+
+.scroll::-webkit-scrollbar {
+  display: none !important;
+}
